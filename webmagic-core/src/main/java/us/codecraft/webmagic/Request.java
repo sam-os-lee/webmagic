@@ -10,6 +10,8 @@ import java.util.Map;
 /**
  * Object contains url to crawl.<br>
  * It contains some additional information.<br>
+ * 
+ * 爬取请求类
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0
@@ -28,11 +30,15 @@ public class Request implements Serializable {
 
     /**
      * Store additional information in extras.
+     * 
+     * 保存额外信息
      */
     private Map<String, Object> extras;
 
     /**
      * cookies for current url, if not set use Site's cookies
+     * 
+     * 当前url链接cookie
      */
     private Map<String, String> cookies = new HashMap<String, String>();
 
@@ -41,6 +47,9 @@ public class Request implements Serializable {
     /**
      * Priority of the request.<br>
      * The bigger will be processed earlier. <br>
+     * 
+     * 爬取url优先级,越大越优先
+     * 
      * @see us.codecraft.webmagic.scheduler.PriorityScheduler
      */
     private long priority;
@@ -59,6 +68,9 @@ public class Request implements Serializable {
     /**
      * Set the priority of request for sorting.<br>
      * Need a scheduler supporting priority.<br>
+     * 
+     * 设置请求优先级
+     * 
      * @see us.codecraft.webmagic.scheduler.PriorityScheduler
      *
      * @param priority priority

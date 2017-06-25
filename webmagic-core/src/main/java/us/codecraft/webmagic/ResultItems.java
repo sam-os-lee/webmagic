@@ -7,6 +7,8 @@ import java.util.Map;
 /**
  * Object contains extract results.<br>
  * It is contained in Page and will be processed in pipeline.
+ * 
+ * 提取结果类,将会被pipeline使用
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0

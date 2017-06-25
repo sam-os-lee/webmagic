@@ -6,6 +6,9 @@ import java.util.List;
 /**
  * All selectors will be arranged as a pipeline. <br>
  * The next selector uses the result of the previous as source.
+ * 
+ * 所有选择器排列,下一个选择器使用上一个结果
+ * 
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
  */

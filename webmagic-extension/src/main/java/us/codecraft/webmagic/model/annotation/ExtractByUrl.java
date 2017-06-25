@@ -6,6 +6,8 @@ import java.lang.annotation.Target;
 
 /**
  * Define a extractor to extract data in url of current page. Only regex can be used. <br>
+ * 
+ * 定义当前页的数据提取,仅适用于正则
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0

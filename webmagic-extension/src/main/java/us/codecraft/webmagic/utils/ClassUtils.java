@@ -10,9 +10,16 @@ import java.util.Set;
  */
 public abstract class ClassUtils {
 
+	/**
+	 * 迭代获取类所有的声明的字段
+	 * 
+	 * @param clazz
+	 * @return
+	 */
     public static Set<Field> getFieldsIncludeSuperClass(Class clazz) {
         Set<Field> fields = new LinkedHashSet<Field>();
         Class current = clazz;
+        // 迭代获取类所有声明的字段,包括父类+
         while (current != null) {
             Field[] currentFields = current.getDeclaredFields();
             for (Field currentField : currentFields) {

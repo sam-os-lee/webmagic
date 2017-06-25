@@ -70,19 +70,38 @@ public class UrlUtils {
 
     private static Pattern patternForProtocal = Pattern.compile("[\\w]+://");
 
+    /**
+     * 去除协议头
+     * 
+     * @param url
+     * @return
+     */
     public static String removeProtocol(String url) {
         return patternForProtocal.matcher(url).replaceAll("");
     }
 
+    /**
+     * 获取链接domian域名
+     * 
+     * @param url
+     * @return
+     */
     public static String getDomain(String url) {
         String domain = removeProtocol(url);
         int i = StringUtils.indexOf(domain, "/", 1);
         if (i > 0) {
             domain = StringUtils.substring(domain, 0, i);
         }
+        
         return removePort(domain);
     }
 
+    /**
+     * 去除端口
+     * 
+     * @param domain
+     * @return
+     */
     public static String removePort(String domain) {
         int portIndex = domain.indexOf(":");
         if (portIndex != -1) {

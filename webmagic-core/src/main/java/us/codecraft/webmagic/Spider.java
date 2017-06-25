@@ -60,11 +60,11 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Spider implements Runnable, Task {
 
-    protected Downloader downloader;
+    protected Downloader downloader;  // download
 
     protected List<Pipeline> pipelines = new ArrayList<Pipeline>();
 
-    protected PageProcessor pageProcessor;
+    protected PageProcessor pageProcessor;  // process
 
     protected List<Request> startRequests;
 
@@ -72,7 +72,7 @@ public class Spider implements Runnable, Task {
 
     protected String uuid;
 
-    protected Scheduler scheduler = new QueueScheduler();
+    protected Scheduler scheduler = new QueueScheduler();  // scheduler
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -86,11 +86,11 @@ public class Spider implements Runnable, Task {
 
     protected boolean exitWhenComplete = true;
 
-    protected final static int STAT_INIT = 0;
+    protected final static int STAT_INIT = 0;  // 初始状态
 
-    protected final static int STAT_RUNNING = 1;
+    protected final static int STAT_RUNNING = 1;  // 正在运行
 
-    protected final static int STAT_STOPPED = 2;
+    protected final static int STAT_STOPPED = 2;  // 停止运行
 
     protected boolean spawnUrl = true;
 
@@ -214,6 +214,8 @@ public class Spider implements Runnable, Task {
 
     /**
      * add a pipeline for Spider
+     * 
+     * 添加spider的pipeline
      *
      * @param pipeline pipeline
      * @return this
@@ -279,9 +281,11 @@ public class Spider implements Runnable, Task {
         if (downloader == null) {
             this.downloader = new HttpClientDownloader();
         }
+        
         if (pipelines.isEmpty()) {
             pipelines.add(new ConsolePipeline());
         }
+        
         downloader.setThread(threadNum);
         if (threadPool == null || threadPool.isShutdown()) {
             if (executorService != null && !executorService.isShutdown()) {
@@ -290,12 +294,15 @@ public class Spider implements Runnable, Task {
                 threadPool = new CountableThreadPool(threadNum);
             }
         }
+        
         if (startRequests != null) {
             for (Request request : startRequests) {
                 addRequest(request);
             }
+            
             startRequests.clear();
         }
+        
         startTime = new Date();
     }
 
@@ -353,6 +360,9 @@ public class Spider implements Runnable, Task {
         }
     }
 
+    /**
+     * 检查运行统计
+     */
     private void checkRunningStat() {
         while (true) {
             int statNow = stat.get();
@@ -498,6 +508,8 @@ public class Spider implements Runnable, Task {
 
     /**
      * Download urls synchronizing.
+     * 
+     * 同步下载url集合
      *
      * @param urls urls
      * @param <T> type of process result
@@ -505,16 +517,20 @@ public class Spider implements Runnable, Task {
      */
     public <T> List<T> getAll(Collection<String> urls) {
         destroyWhenExit = false;
-        spawnUrl = false;
+        spawnUrl = false;  // 产生url种子
         if (startRequests!=null){
             startRequests.clear();
         }
+        
         for (Request request : UrlUtils.convertToRequests(urls)) {
             addRequest(request);
         }
+        
         CollectorPipeline collectorPipeline = getCollectorPipeline();
         pipelines.add(collectorPipeline);
+        
         run();
+        
         spawnUrl = true;
         destroyWhenExit = true;
         return collectorPipeline.getCollected();
@@ -525,6 +541,7 @@ public class Spider implements Runnable, Task {
     }
 
     public <T> T get(String url) {
+    	// 获取提取url集合
         List<String> urls = WMCollections.newArrayList(url);
         List<T> resultItemses = getAll(urls);
         if (resultItemses != null && resultItemses.size() > 0) {

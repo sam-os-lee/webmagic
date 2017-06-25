@@ -7,6 +7,8 @@ import java.lang.annotation.Target;
 /**
  * Define the 'help' url patterns for class. <br>
  * All urls matching the pattern will be crawled and but not extracted for new objects. <br>
+ * 
+ * 定义class的help url模式,所有匹配的url模式将会被爬取,但是不会被提取
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
@@ -29,6 +31,9 @@ public @interface HelpUrl {
      * Define the region for url extracting. <br>
      * Only support XPath.<br>
      * When sourceRegion is set, the urls will be extracted only from the region instead of entire content. <br>
+     * 
+     * 定义url提取区域.仅支持Xpath
+     * 如果定义了sourceRegion,urls只会提取指定区域,而不是全部内容
      *
      * @return the region for url extracting
      */

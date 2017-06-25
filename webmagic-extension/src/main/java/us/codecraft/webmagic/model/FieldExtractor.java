@@ -8,14 +8,17 @@ import java.lang.reflect.Method;
 
 /**
  * Wrapper of field and extractor.
+ * 
+ * 字段提取包装类
+ * 
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
  */
 class FieldExtractor extends Extractor {
 
-    private final Field field;
+    private final Field field;  // 字段
 
-    private Method setterMethod;
+    private Method setterMethod;  // 方法
 
     private ObjectFormatter objectFormatter;
 

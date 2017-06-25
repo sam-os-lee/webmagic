@@ -16,6 +16,8 @@ public @interface ComboExtract {
 
     /**
      * The extractors to be combined.
+     * 
+     * 联合提取
      *
      * @return the extractors to be combined
      */
@@ -25,17 +27,23 @@ public @interface ComboExtract {
         /**
          * All extractors will be arranged as a pipeline. <br>
          * The next extractor uses the result of the previous as source.
+         * 
+         * 下一个提取使用上一次结果
          */
         And,
         /**
          * All extractors will do extracting separately, <br>
          * and the results of extractors will combined as the final result.
+         * 
+         * 所有提取结果分开
          */
         Or;
     }
 
     /**
      * Combining operation of extractors.<br>
+     * 
+     * 联合提取操作
      *
      * @return combining operation of extractors
      */
@@ -51,6 +59,8 @@ public @interface ComboExtract {
 
     /**
      * types of source for extracting.
+     * 
+     * 提取源类型
      */
     public static enum Source {
         /**

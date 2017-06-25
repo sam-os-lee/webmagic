@@ -19,16 +19,16 @@ public class ExtractorUtils {
         Selector selector;
         switch (extractBy.type()) {
             case Css:
-                selector = new CssSelector(value);
+                selector = new CssSelector(value);  // css选择器
                 break;
             case Regex:
-                selector = new RegexSelector(value);
+                selector = new RegexSelector(value);  // 正则选择器
                 break;
             case XPath:
                 selector = getXpathSelector(value);
                 break;
             case JsonPath:
-                selector = new JsonPathSelector(value);
+                selector = new JsonPathSelector(value);  // json选择器
                 break;
             default:
                 selector = getXpathSelector(value);

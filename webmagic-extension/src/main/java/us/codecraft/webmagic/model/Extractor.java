@@ -9,9 +9,9 @@ import us.codecraft.webmagic.selector.Selector;
  */
 class Extractor {
 
-    protected Selector selector;
+    protected Selector selector;  // 选择器
 
-    protected final Source source;
+    protected final Source source;  // 源页面类型
 
     protected final boolean notNull;
 

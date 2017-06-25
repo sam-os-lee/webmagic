@@ -13,6 +13,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * The extension to Pipeline for page model extractor.
+ * 
+ * 处理结果
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0

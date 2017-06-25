@@ -6,6 +6,9 @@ import java.util.List;
 /**
  * All extractors will do extracting separately, <br>
  * and the results of extractors will combined as the final result.
+ * 
+ * 所有提取器将分开提去,并且提取结果将会联合成最终结果
+ * 
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
  */

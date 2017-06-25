@@ -3,6 +3,7 @@ package us.codecraft.webmagic.model;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.model.annotation.*;
 import us.codecraft.webmagic.model.formatter.BasicTypeFormatter;
@@ -40,7 +41,7 @@ class PageModelExtractor {
 
     private Class clazz;
 
-    private List<FieldExtractor> fieldExtractors;
+    private List<FieldExtractor> fieldExtractors;  // 字段提取类
 
     private Extractor objectExtractor;
 
@@ -52,25 +53,39 @@ class PageModelExtractor {
         return pageModelExtractor;
     }
 
+    /**
+     * @param clazz PageMode类
+     * @return
+     */
     private void init(Class clazz) {
         this.clazz = clazz;
         initClassExtractors();
         fieldExtractors = new ArrayList<FieldExtractor>();
+        // 迭代获取类所有声明的字段
         for (Field field : ClassUtils.getFieldsIncludeSuperClass(clazz)) {
+        	
             field.setAccessible(true);
+            // 获取每个字段的ExtractBy注解
             FieldExtractor fieldExtractor = getAnnotationExtractBy(clazz, field);
+            // 获取每个字段的ComboExtract注解
             FieldExtractor fieldExtractorTmp = getAnnotationExtractCombo(clazz, field);
+            
+            // ExtractBy和ComboExtract和ExtractByUrl不能同时注解到同一个字段
             if (fieldExtractor != null && fieldExtractorTmp != null) {
                 throw new IllegalStateException("Only one of 'ExtractBy ComboExtract ExtractByUrl' can be added to a field!");
             } else if (fieldExtractor == null && fieldExtractorTmp != null) {
                 fieldExtractor = fieldExtractorTmp;
             }
+            
+            // 获取每个字段的ExtractByUrl注解
             fieldExtractorTmp = getAnnotationExtractByUrl(clazz, field);
+            // ExtractBy和ComboExtract和ExtractByUrl不能同时注解到同一个字段
             if (fieldExtractor != null && fieldExtractorTmp != null) {
                 throw new IllegalStateException("Only one of 'ExtractBy ComboExtract ExtractByUrl' can be added to a field!");
             } else if (fieldExtractor == null && fieldExtractorTmp != null) {
                 fieldExtractor = fieldExtractorTmp;
             }
+            
             if (fieldExtractor != null) {
                 checkFormat(field, fieldExtractor);
                 fieldExtractors.add(fieldExtractor);
@@ -78,11 +93,20 @@ class PageModelExtractor {
         }
     }
 
+    /**
+     * 
+     * 
+     * @param field
+     * @param fieldExtractor
+     */
     private void checkFormat(Field field, FieldExtractor fieldExtractor) {
         //check custom formatter
+    	// 检查是否自定义字段转换
         Formatter formatter = field.getAnnotation(Formatter.class);
         if (formatter != null && !formatter.formatter().equals(ObjectFormatter.class)) {
             if (formatter != null) {
+            	
+            	// 实例化自定义转换类
                 if (!formatter.formatter().equals(ObjectFormatter.class)) {
                     ObjectFormatter objectFormatter = initFormatter(formatter.formatter());
                     objectFormatter.initParam(formatter.value());
@@ -91,7 +115,10 @@ class PageModelExtractor {
                 }
             }
         }
+        
+        // 根据字段类型,实例化字段转换类
         if (!fieldExtractor.isMulti() && !String.class.isAssignableFrom(field.getType())) {
+        	
             Class<?> fieldClazz = BasicTypeFormatter.detectBasicClass(field.getType());
             ObjectFormatter objectFormatter = getObjectFormatter(field, fieldClazz, formatter);
             if (objectFormatter == null) {
@@ -131,10 +158,18 @@ class PageModelExtractor {
         return null;
     }
 
+    /**
+     * 获取每个字段的ExtractByUrl注解
+     * 
+     * @param clazz
+     * @param field
+     * @return
+     */
     private FieldExtractor getAnnotationExtractByUrl(Class clazz, Field field) {
         FieldExtractor fieldExtractor = null;
         ExtractByUrl extractByUrl = field.getAnnotation(ExtractByUrl.class);
         if (extractByUrl != null) {
+        	// 获取正则提取模式
             String regexPattern = extractByUrl.value();
             if (regexPattern.trim().equals("")) {
                 regexPattern = ".*";
@@ -150,12 +185,22 @@ class PageModelExtractor {
         return fieldExtractor;
     }
 
+    /**
+     * 获取每个字段的ComboExtract注解
+     * 
+     * @param clazz
+     * @param field
+     * @return
+     */
     private FieldExtractor getAnnotationExtractCombo(Class clazz, Field field) {
         FieldExtractor fieldExtractor = null;
         ComboExtract comboExtract = field.getAnnotation(ComboExtract.class);
         if (comboExtract != null) {
-            ExtractBy[] extractBies = comboExtract.value();
+            
+        	ExtractBy[] extractBies = comboExtract.value();
             Selector selector;
+            
+            // 提取操作
             switch (comboExtract.op()) {
                 case And:
                     selector = new AndSelector(ExtractorUtils.getSelectors(extractBies));
@@ -176,12 +221,22 @@ class PageModelExtractor {
         return fieldExtractor;
     }
 
+    /**
+     * 获取每个字段的ExtractBy注解
+     * 
+     * @param clazz
+     * @param field
+     * @return
+     */
     private FieldExtractor getAnnotationExtractBy(Class clazz, Field field) {
         FieldExtractor fieldExtractor = null;
         ExtractBy extractBy = field.getAnnotation(ExtractBy.class);
         if (extractBy != null) {
+        	
+        	// 获取文本选择器
             Selector selector = ExtractorUtils.getSelector(extractBy);
 
+            // 字段源类型
             FieldExtractor.Source source = null;
             switch (extractBy.source()){
                 case  RawText:
@@ -208,6 +263,15 @@ class PageModelExtractor {
         return fieldExtractor;
     }
 
+    /**
+     * 获取字段设置方法
+     * 
+     * @param clazz
+     *       		类
+     * @param field
+     * 				字段
+     * @return
+     */
     public static Method getSetterMethod(Class clazz, Field field) {
         String name = "set" + StringUtils.capitalize(field.getName());
         try {
@@ -219,7 +283,15 @@ class PageModelExtractor {
         }
     }
 
+    /**
+     * 获取pagemode类爬取提取的注解配置
+     * annotation:
+     * 		TargetUrl
+     * 		HelpUrl
+     * 		ExtractBy
+     */
     private void initClassExtractors() {
+    	// 定义爬取提取的Target
         Annotation annotation = clazz.getAnnotation(TargetUrl.class);
         if (annotation == null) {
             targetUrlPatterns.add(Pattern.compile("(.*)"));
@@ -233,6 +305,8 @@ class PageModelExtractor {
                 targetUrlRegionSelector = new XpathSelector(targetUrl.sourceRegion());
             }
         }
+        
+        // 定义爬取提取的HelpUrl
         annotation = clazz.getAnnotation(HelpUrl.class);
         if (annotation != null) {
             HelpUrl helpUrl = (HelpUrl) annotation;
@@ -244,6 +318,8 @@ class PageModelExtractor {
                 helpUrlRegionSelector = new XpathSelector(helpUrl.sourceRegion());
             }
         }
+        
+        // 定义爬取提取的ExtractBy
         annotation = clazz.getAnnotation(ExtractBy.class);
         if (annotation != null) {
             ExtractBy extractBy = (ExtractBy) annotation;

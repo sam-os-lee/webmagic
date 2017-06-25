@@ -7,6 +7,8 @@ import java.lang.annotation.Target;
 /**
  * Define the url patterns for class. <br>
  * All urls matching the pattern will be crawled and extracted for new objects. <br>
+ * 
+ * 定义class的url模式,所有匹配的url模式将会被爬取与提取
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
@@ -20,6 +22,8 @@ public @interface TargetUrl {
      * Use regex expression with some changes: <br>
      *      "." stand for literal character "." instead of "any character". <br>
      *      "*" stand for any legal character for url in 0-n length ([^"'#]*) instead of "any length". <br>
+     *      
+     * 定义类的url模式
      *
      * @return the url patterns for class
      */
@@ -29,6 +33,9 @@ public @interface TargetUrl {
      * Define the region for url extracting. <br>
      * Only support XPath.<br>
      * When sourceRegion is set, the urls will be extracted only from the region instead of entire content. <br>
+     * 
+     * 定义url提取区域.仅支持Xpath
+     * 如果定义了sourceRegion,urls只会提取指定区域,而不是全部内容
      *
      * @return the region for url extracting
      */

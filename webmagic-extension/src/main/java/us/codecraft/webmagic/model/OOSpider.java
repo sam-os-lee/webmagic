@@ -49,7 +49,7 @@ public class OOSpider<T> extends Spider {
 
     private PageModelPipeline pageModelPipeline;
 
-    private List<Class> pageModelClasses = new ArrayList<Class>();
+    private List<Class> pageModelClasses = new ArrayList<Class>();  // pageModel类集
 
     protected OOSpider(ModelPageProcessor modelPageProcessor) {
         super(modelPageProcessor);
@@ -71,6 +71,8 @@ public class OOSpider<T> extends Spider {
         this(ModelPageProcessor.create(site, pageModels));
         this.modelPipeline = new ModelPipeline();
         super.addPipeline(modelPipeline);
+        
+        // pagemodel页面model类
         for (Class pageModel : pageModels) {
             if (pageModelPipeline != null) {
                 this.modelPipeline.put(pageModel, pageModelPipeline);
