@@ -11,6 +11,9 @@ import us.codecraft.webmagic.Site;
  * start urls and other settings in {@link Site}<br>
  * how the urls to fetch are detected               <br>
  * how the data are extracted and stored             <br>
+ * 
+ * url如何获取
+ * 数据如何提取保存
  *
  * @author code4crafter@gmail.com <br>
  * @see Site
@@ -21,6 +24,8 @@ public interface PageProcessor {
 
     /**
      * process the page, extract urls to fetch, extract the data and store
+     * 
+     * 处理页面,提取urls,提取保存数据
      *
      * @param page page
      */
@@ -28,6 +33,8 @@ public interface PageProcessor {
 
     /**
      * get the site settings
+     * 
+     * 获取页面配置
      *
      * @return site
      * @see Site

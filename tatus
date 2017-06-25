@@ -1,0 +1,5902 @@
+[33mcommit cbf80af5dd02abd46c966d2257bc954567ab27df[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 16 10:50:27 2017 +0800
+
+    test for SimpleProxyProvider #535
+
+[33mcommit eb632a93d36585be2d159e32ff17b26340e72762[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 16 10:43:00 2017 +0800
+
+    SimpleProxyProvider #535
+
+[33mcommit 62a69851031f5b24c025feecc4183577b21ba5a1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 15 20:07:13 2017 +0800
+
+    update javadoc config
+
+[33mcommit d38d51dfcb0a9ac07e070e3840bc4fc6fa1050f8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 15 12:24:50 2017 +0800
+
+    fix javadoc
+
+[33mcommit 0cd2f6031ace0864b8d7690cb010bfe890444385[m
+Merge: 4a2c0f4 5f34adf
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Mon Apr 10 07:43:53 2017 +0800
+
+    Merge pull request #528 from GZhY/master
+    
+    对 WebMagic-0.7.0 的小修补
+
+[33mcommit 5f34adf938972e235716dff87c8d932dc2595af8[m
+Author: GZhY <gaoz_y@163.com>
+Date:   Sun Apr 9 21:29:01 2017 +0800
+
+    完善 LinksSelector.selectList 的测试用例
+
+[33mcommit ce3f0ac23968acee622017220f67d2d0874a477b[m
+Author: GZhY <gaoz_y@163.com>
+Date:   Sun Apr 9 21:01:32 2017 +0800
+
+    删除 fixAllRelativeHrefs 并修复 SeleniumDownloader 对 fixAllRelativeHrefs 的依赖
+
+[33mcommit bc6e81e00f23bf0c89ae88ac3b5c4cedf43380a7[m
+Author: GZhY <gaoz_y@163.com>
+Date:   Sun Apr 9 20:40:00 2017 +0800
+
+    修复checkElementAndConvert方法注释中注释错误
+
+[33mcommit 4a2c0f4f9728246daf01994c3538e91bca03eb19[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 9 09:28:36 2017 +0800
+
+    add returnProxy for proxyProvider
+
+[33mcommit 1b04a7f2b39546bf8c522b2c2c0059be57587dbd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 9 09:23:10 2017 +0800
+
+    #527 move logic check from downloaderto spider
+
+[33mcommit 6ead04a758df9a5735d41d5615d5cb8c7fd8a8be[m
+Merge: 25df665 0f4d6e8
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 23:19:08 2017 +0800
+
+    Merge pull request #524 from code4craft/proxyRefactor
+    
+    HttpClient部分重构
+
+[33mcommit 0f4d6e8b1201b047204bf5c2a0ddacae94d800dc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 23:17:00 2017 +0800
+
+    #525 remove port in UrlUtils.getDomain()
+
+[33mcommit a1ae632b62ffb63b36858b42116c35ed8246a284[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 23:13:16 2017 +0800
+
+    test for request cookies and headers
+
+[33mcommit db67db8103b05506d131c74ce0036a5c875fb92a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 22:06:18 2017 +0800
+
+    #523 remove fixAllRelativeHrefs by default, get absolute urls for links()
+
+[33mcommit abd020b45be4bd04d5efe82537a7a40ff3bc66e8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 20:16:17 2017 +0800
+
+    some comments
+
+[33mcommit 2622b448b8ff2eca6823f118e31c2534d27a5f4a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 20:09:43 2017 +0800
+
+    fix test
+
+[33mcommit b06a248c00a8e23db5e87db470d0c82363c89523[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 20:06:04 2017 +0800
+
+    fix test
+
+[33mcommit 1cfbd13aaedfb1bd20dcd576570f6a0a65662200[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 20:04:56 2017 +0800
+
+    refacor in httpclientdownloader
+
+[33mcommit 83ada9749ee51383672f55002b4950ec2717f2e3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 12:16:34 2017 +0800
+
+    fix test
+
+[33mcommit fe95a6842f791f03cdac9032c6ccf18f444a3dc0[m
+Merge: 74110e6 395396c
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 12:12:39 2017 +0800
+
+    Request再次重构:去掉params，仅保留HttpRequestBody
+
+[33mcommit 395396c68ec257d1e982e696dab53653cb4bccfe[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 8 11:59:52 2017 +0800
+
+    增加HttpRequestBody
+
+[33mcommit 25df6650d92dea65016ed49a675421305d90c41c[m
+Merge: 221c155 c93a8a2
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Mon Apr 3 07:57:40 2017 +0800
+
+    Merge pull request #513 from xbynet/master
+    
+    Request支持设置header与cookie、新增POST请求时,XML、JSON参数支持、Page支持获取响应header
+
+[33mcommit c93a8a27227defa82788783ca012e60dbd2a5014[m
+Author: xbynet <xbynet@outlook.com>
+Date:   Fri Mar 31 18:27:18 2017 +0800
+
+    修复字符编码检测BUG
+
+[33mcommit 74110e6ec5cf5c89115dbafa814563ea5b8ce71a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 30 09:19:00 2017 +0800
+
+    remove useless file
+
+[33mcommit b100dfe273cd681d0f897d0f298ea6cb8cf64ce9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 30 09:18:12 2017 +0800
+
+    update version
+
+[33mcommit 1c24baa8d12e27e311527a09c569f9b425d8b5f0[m
+Author: xbynet@outlook.com <xbynet@outlook.com>
+Date:   Wed Mar 29 02:27:06 2017 +0800
+
+    Request支持设置header与cookie
+    新增POST请求时,XML、JSON参数支持
+    Page支持获取响应header
+
+[33mcommit 5824e9515b2b6113104894da7d269e4381b9bb85[m
+Merge: 76729c9 221c155
+Author: xbynet <xbynet@163.com>
+Date:   Wed Mar 29 02:20:16 2017 +0800
+
+    Merge pull request #3 from code4craft/master
+    
+    合并最新代码
+
+[33mcommit 6bd197859b2d7c0a342997008f0ee6c61d56092c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 27 09:55:50 2017 +0800
+
+    fix test
+
+[33mcommit f23e138c728f95622170990e732be9f77c6b1f17[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 27 09:52:25 2017 +0800
+
+    add response headers to Page #508
+
+[33mcommit ba000b364cc32a124822e60ae7a2d77c16e177ce[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 21 08:00:15 2017 +0800
+
+    remove site.addStartUrl in samples
+
+[33mcommit 3824232171f17a100ce3096d37552e34c03c8df3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 21 07:59:33 2017 +0800
+
+    remove site.addStartUrl in samples
+
+[33mcommit 8564d51e569bfa4ac81eb551f920b11ff87021d1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 21 07:57:56 2017 +0800
+
+    remove site.addStartUrl in samples
+
+[33mcommit c13110c4cbae35443e19d7e57fc8f47d0a3358fd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 21 07:53:43 2017 +0800
+
+    fix samples
+
+[33mcommit c51ac6017c1371f2fd64b281a221edf125f5fb2f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 21 07:31:58 2017 +0800
+
+    remove Site.addStartRequest() etc. #494
+
+[33mcommit 68050fc88ee91e3fb18804d3efc3f61f919ca7e2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 21 07:19:12 2017 +0800
+
+    test pass
+
+[33mcommit 474b7c9d578102791c0091f234ab777acbede9f5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 20 23:13:49 2017 +0800
+
+    refactor
+
+[33mcommit 25c81013ca6573f1646613f1c5c7e3572dff734a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 20 22:47:24 2017 +0800
+
+    new proxy pool api
+
+[33mcommit 46297deaa1f15d2167f72004957e7e2f6beec2d0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 20 22:43:32 2017 +0800
+
+    HttpUriRequestConverter
+
+[33mcommit 1d86f7c048b27cf15f84d1690740f0b338026137[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 20 22:40:14 2017 +0800
+
+    compile passed in httpclientDownloader
+
+[33mcommit b71f379512d74598a3a4877c60e653c072f652c7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 18 12:18:00 2017 +0800
+
+    fix
+
+[33mcommit a7f9e7cad5a17b14a1e9ab22009d893fd670fc4b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 18 12:16:21 2017 +0800
+
+    重构一部分httpclient
+
+[33mcommit 221c1550600192d1b5f4ebf91e6c1ac8a56a9546[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 18 11:15:36 2017 +0800
+
+    move release connection before return proxy #396
+
+[33mcommit 68beff42c5c563770c4b978bd8d47ca188e4b9ff[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 18 11:01:30 2017 +0800
+
+    add test #493
+
+[33mcommit d6b4e98a66d3a4d21e50160f8424463dfe95fb98[m
+Merge: e9341d0 79522f9
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Mar 18 10:49:19 2017 +0800
+
+    Merge pull request #493 from cheiftain/my_change
+    
+    Bug, add null check to site in HttpClientDownloader & HttpClientGener…
+
+[33mcommit 76729c9302ea3c28bc05334b36f011dc94c7aa68[m
+Merge: 650468c e9341d0
+Author: xbynet <xbynet@163.com>
+Date:   Fri Mar 17 16:07:56 2017 +0800
+
+    Merge pull request #2 from code4craft/master
+    
+    合并官方最新代码
+
+[33mcommit 79522f941ec930700613d2430c9af9a5aed42f7f[m
+Author: wuyifan <84390524@qq.com>
+Date:   Fri Mar 17 14:10:54 2017 +0800
+
+    Bug, add null check to site in HttpClientDownloader & HttpClientGenerator
+
+[33mcommit e9341d0291101f24af259f62a15d26427a2df853[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Mar 17 07:54:28 2017 +0800
+
+    complete test #447
+
+[33mcommit e7d35c4846e723958ac9409ec02288001dd2403f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Mar 17 07:18:05 2017 +0800
+
+    add params to all method of request #447
+
+[33mcommit 75bad591d74a9f9fb99c528821ccb2277357651e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Mar 17 07:10:14 2017 +0800
+
+    rewrite hashCode and equals for params #447
+
+[33mcommit 11c32669b23cc404be2ca2be0dd1dc112c420520[m
+Merge: aa01e27 650468c
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Mar 17 07:06:46 2017 +0800
+
+    Merge pull request #447 from xbynet/master
+    
+    简化POST参数设置.
+
+[33mcommit aa01e27779a8148f2372abe25645169b4d56f5b0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Mar 17 07:02:02 2017 +0800
+
+    change constructor for Proxy to public #490
+
+[33mcommit 0fbf657d86a14d281f05ce367f9910c5df9612bd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Mar 17 06:59:28 2017 +0800
+
+    update fastjson to 1.2.28 #489
+
+[33mcommit 676758349fa7ac829e75b122d610cd0da8daf63e[m
+Merge: c175ea8 791520e
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Mar 17 06:55:07 2017 +0800
+
+    Merge pull request #492 from eyougo/master
+    
+    fix a bug of RegexSelector when regex has zero-width assertions.
+
+[33mcommit 791520e6a0a0315f24c6e5030795658c38a0c125[m
+Author: mei <hongyuan.mei@bluegogo.com>
+Date:   Fri Mar 17 00:06:15 2017 +0800
+
+    fix a bug of RegexSelector when regex has zero-width assertions.
+
+[33mcommit c175ea88c0bcc2a35055f7d851fc98bbd37e4838[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 11:43:18 2017 +0800
+
+    #more test #484
+
+[33mcommit 9b964c0a9968f3c4bb6837b5c584f45ed87851c2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 11:41:01 2017 +0800
+
+    test for #484
+
+[33mcommit fc702fd3b659f156a738057b5066c59e0d542dc2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 11:31:15 2017 +0800
+
+    introduce mockito for test
+
+[33mcommit 5215a492ccfe69bc83b6cba31f76211c5fef3dae[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 11:26:13 2017 +0800
+
+    remove duplicate check for POST request #484
+
+[33mcommit 45bf2b6fd7433bb1b8e85617e761f83bc4978e98[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 11:01:25 2017 +0800
+
+    remove javadoc link because it's out of date
+
+[33mcommit 2a35bb468813bfdf46d00c4a1087b32d08dce7d9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 10:59:55 2017 +0800
+
+    remove contributors because it's hard to maintain the list: see https://github.com/code4craft/webmagic/graphs/contributors instead
+
+[33mcommit 0a1fb190526283e70963d4433780b626808eee0c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 10:56:31 2017 +0800
+
+    add tests #483
+
+[33mcommit a2e7f0004bf58d6a581f11e1044dca7b463c9c99[m
+Merge: ef32571 50247f9
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 10:52:54 2017 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit ef325718219ecb3cef56911dd72ea04c40dd8673[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 10:52:39 2017 +0800
+
+    rewrite Request.equals and hashCode, add Method to check #483
+
+[33mcommit 8b8f535c309658c3e33c1a2e53b61d1fce13651e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 11 10:43:10 2017 +0800
+
+    refactor:extract charset detect to utils
+
+[33mcommit 50247f9bc66f3cfa1485417ed2fcc894bb1dd8d6[m
+Merge: 11904a4 e645524
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Mon Mar 6 09:43:11 2017 +0800
+
+    Merge pull request #478 from ckex/develop
+    
+    fix bug
+
+[33mcommit e645524ad2166ac9155032ae808c2afa4f7b7905[m
+Author: Ckex.zha <ckex868@vip.qq.com>
+Date:   Sat Mar 4 20:57:29 2017 +0800
+
+    fix bug,set ExecutorService
+
+[33mcommit 11904a4d41d15deab7ad0f8811f9a13ffd366bd0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 4 11:42:25 2017 +0800
+
+    fix huaban demo #475
+
+[33mcommit 895fca9fd711990dd8a04c6ed94738a7f82dbcfb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 4 11:34:06 2017 +0800
+
+    修复seleniumDownloader配置文件写死的问题 #475
+
+[33mcommit d87c73b472061f17a92920fe5a0d1f76e9426d67[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Mar 1 22:24:34 2017 +0800
+
+    change check-and-set to atomic sadd for redis DuplicateRemover  #368
+
+[33mcommit d6cd92b1a889e0d53b71d7a7b3d81eeff28c3a56[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Feb 27 10:26:26 2017 +0800
+
+    LICENSE file
+
+[33mcommit a872a6480e3b1a7ce904b5e23e38652451b97111[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Feb 25 22:46:29 2017 +0800
+
+    fix code sample for github #348
+
+[33mcommit 1d2171805fbc7447c1f10b15f8033e406b7add0f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Feb 25 22:30:48 2017 +0800
+
+    add test for #228
+
+[33mcommit bbe0b52dddb7b32b82cd913a99f18672ef1df6a8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Feb 25 19:55:45 2017 +0800
+
+    remove synchronized in QueueScheduler #410
+
+[33mcommit 00e81bd650c0fc16adaf13b290ddc158ceae4a3c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Feb 25 19:51:03 2017 +0800
+
+    update common-collections to 3.2.2 #456
+
+[33mcommit ad6996300531f4f81f4a615469f00e1e9fcf936b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Feb 25 19:42:12 2017 +0800
+
+    remove synchronize in Page #411
+
+[33mcommit 3a796b9413b1166bd9fa3181e5f4f6f259d6393c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Feb 25 12:01:12 2017 +0800
+
+    remove duplicate code #421
+
+[33mcommit 42f1018010d858dc3ad77bb960c6de1d044b3df8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Feb 21 14:08:05 2017 +0800
+
+    remove messy code
+
+[33mcommit 650468c0e4a27982be4836b329cda441bb1220e5[m
+Author: xbynet <xbynet@outlook.com>
+Date:   Sun Jan 22 18:04:22 2017 +0800
+
+    解决POST中文参数乱码问题
+
+[33mcommit 1f85674ae169ca46563718329470792241021702[m
+Merge: c23627b 76076e5
+Author: xbynet <xbynet@163.com>
+Date:   Sun Jan 22 15:44:39 2017 +0800
+
+    Merge pull request #1 from code4craft/master
+    
+    test
+
+[33mcommit 76076e51d8a1f4c16847943dddcb856a7f8b3287[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 22:19:09 2017 +0800
+
+    update version in readme
+
+[33mcommit aaccc932155e106df7b8bcbfd81a60c190abcbc6[m[33m ([m[1;33mtag: webmagic-parent-0.6.1[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 12:04:12 2017 +0800
+
+    new version
+
+[33mcommit 3e633c6871ffc4e3b90aa08ee4879170cbdb4c6f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 11:51:14 2017 +0800
+
+    version
+
+[33mcommit f45e2f118b236f7a8e502f015658ce76af153835[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 11:38:36 2017 +0800
+
+    for release
+
+[33mcommit d60615f50390d7fc51d50bf60214f79124965206[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 11:29:42 2017 +0800
+
+    修复使用startUrls没有设置domain导致使用cookie空指针的问题#438
+
+[33mcommit 407fbb613080102e3658727955d8731e22de3722[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 11:05:54 2017 +0800
+
+    refactor logger#445
+
+[33mcommit f29a10472f00bb607c49d8fb6bdb1ceb12688d1f[m
+Merge: 93e7040 6d78d51
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 10:50:48 2017 +0800
+
+    Merge pull request #414 from jsbd/master
+    
+    新增构造函数，支持crawl.js路径自定义，因为当其他项目依赖此jar包时，runtime.exec()执行phantomjs命令时无使用法jar包中的crawl.js
+
+[33mcommit 93e7040fe56f4fa7d620a28e47038c6d20825898[m
+Merge: 4f76d62 0dc26c8
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Jan 21 10:45:32 2017 +0800
+
+    Merge pull request #445 from ckex/develop
+    
+    optimize code.
+
+[33mcommit 0dc26c8ca0f2e82f5ba49e0c064bfca28a6dbc21[m
+Author: Ckex.zha <ckex868@vip.qq.com>
+Date:   Fri Jan 20 14:03:26 2017 +0800
+
+    optimize code.
+
+[33mcommit 4f76d62d4f7e1d7a72deee7eb79f62c56aefa030[m
+Merge: e919bbd e4af05a
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed Jan 18 23:42:51 2017 +0800
+
+    Merge pull request #444 from ckex/develop
+    
+    绕过安全证书
+
+[33mcommit e4af05a6f24430ccbcc4ceb875482c73465d4e44[m
+Author: Ckex.zha <ckex868@vip.qq.com>
+Date:   Wed Jan 18 17:28:01 2017 +0800
+
+    绕过安全证书
+
+[33mcommit e919bbd85892e3d9dc4d3f00c574ab27ca7e3f94[m
+Merge: 7ca4ed0 c23627b
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Tue Jan 17 23:20:37 2017 +0800
+
+    Merge pull request #443 from xbynet/master
+    
+    解决post/redirect/post 302跳转问题
+
+[33mcommit c23627bf6322982e0cf60465f2e45caf283f0e71[m
+Author: xbynet@outlook.com <xbynet@outlook.com>
+Date:   Tue Jan 17 00:07:01 2017 +0800
+
+    解决post/redirect/post 302跳转问题
+
+[33mcommit 7ca4ed04b4932e5d1248374929488e8f27d9e88b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jan 14 06:25:39 2017 +0800
+
+    add Gather Platform to readme zh
+
+[33mcommit 6d78d51fc0e0e7cbd4e3de08e396092523be8055[m
+Merge: 1b886d4 e3131af
+Author: Jsbd <jingsibingdian@gmail.com>
+Date:   Tue Dec 27 14:15:40 2016 +0800
+
+    Merge branch 'master' into master
+
+[33mcommit e3131af8561b957fc6d309db893a69b9310cc1e6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Dec 24 07:34:25 2016 +0800
+
+    remove user manual link
+
+[33mcommit 7f0d79ccb02151131486002613240297d0e366fd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Dec 19 09:38:33 2016 +0800
+
+    readme
+
+[33mcommit ab1dad3a71f95d017be52da5d00eead554ab7e89[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 11:49:20 2016 +0800
+
+    remove lib
+
+[33mcommit a6b2e307f3c0aad1e4c23379de4bbd3e1634b91d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 11:48:57 2016 +0800
+
+    docs for 0.6.0
+
+[33mcommit d69204b9198ba12b091fee9314fde8b30efdb833[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 11:45:43 2016 +0800
+
+    0.6.0
+
+[33mcommit 9bdb48b2d084072623ddec2236f2c3b1163ca4d5[m[33m ([m[1;33mtag: WebMagic-0.6.0[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 11:20:28 2016 +0800
+
+    version 0.6.0
+
+[33mcommit eeb607fd0e24833a9021bc0a999473655a5141ea[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 11:04:58 2016 +0800
+
+    将Spider.processRequest()抛出异常改回原来的逻辑
+
+[33mcommit 97592d672032e2a56a05c4c87dc749a3152724a6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 10:58:24 2016 +0800
+
+    Version 0.6.0
+
+[33mcommit 42e5e623b4740d721e0f61fcf1486d24ac7f9f95[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 10:52:01 2016 +0800
+
+    remove project avalon
+
+[33mcommit 00dfebbcebcf3ebe169b47887ea015d3f16eced4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 10:45:50 2016 +0800
+
+    #424 remove guava dep and add fix docs
+
+[33mcommit c2531c681737e29229c6d8825adda4a6e6ddcaa4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 08:34:46 2016 +0800
+
+    clean dependency
+
+[33mcommit a960a39c44befdabc61c4b01e0399d6016470999[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 08:32:14 2016 +0800
+
+    fix compile error for example change
+
+[33mcommit a3ee9e3d08f2ae7171f1f4df58d3160032447456[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 08:18:26 2016 +0800
+
+    fix example
+
+[33mcommit 7476ceccee28827a1aab951e319e0ec915dbaaa3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 08:15:26 2016 +0800
+
+    more stable test
+
+[33mcommit 5ce3fdfe5ab7b370452584158db740fd62c7c6dc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 08:15:09 2016 +0800
+
+    some refactor in log
+
+[33mcommit 98163a3e40cc94dbc8c6d5102374aca26137e8d9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 07:46:18 2016 +0800
+
+    update examples
+
+[33mcommit 243ebc22fa132612569019cbc4b86deb7615f2e3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 07:15:40 2016 +0800
+
+    #374 update httpclient version to 4.5.2
+
+[33mcommit b090dcd20d200b51c1627636ba6a1155cddbdf1f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 07:14:34 2016 +0800
+
+    sepcific error page for HttpClientDownloaderTest to avoid test error when local port is available
+
+[33mcommit 8f942d6fe2db876a6ef3a9cd8cef9816570a1544[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Dec 18 06:56:01 2016 +0800
+
+    #419 修复抓取https链接线程无法结束导致进程一直运行的问题
+
+[33mcommit 1b886d48a2de1f621305a802faca5d94f72f7f86[m
+Author: Jsbd <jingsibingdian@gmail.com>
+Date:   Thu Dec 8 14:29:42 2016 +0800
+
+    新增PhantomJSDownloader构造函数，支持crawl.js路径自定义，因为当其他项目依赖此jar包时，runtime.exec()执行phantomjs命令时无使用法jar包中的crawl.js
+
+[33mcommit d1f2e65e5d798936e535ceb809671133185c25d9[m
+Author: Jsbd <jingsibingdian@gmail.com>
+Date:   Thu Dec 8 14:28:48 2016 +0800
+
+    新增PhantomJSDownloader构造函数，支持crawl.js路径自定义，因为当其他项目依赖此jar包时，runtime.exec()执行phantomjs命令时无使用法jar包中的crawl.js
+
+[33mcommit f8a2328ead78f4bc3d6c711e02aee993566a4065[m
+Merge: ebc6136 1987cd3
+Author: Jsbd <jingsibingdian@gmail.com>
+Date:   Fri Dec 2 17:22:55 2016 +0800
+
+    Merge pull request #1 from code4craft/master
+    
+    merge
+
+[33mcommit 1987cd3ae1a5d6198b9d0c675bb7a1d50c4ef41e[m
+Merge: 65fe2c4 862ceee
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Dec 2 14:20:46 2016 +0800
+
+    Merge pull request #408 from code4craft/0.6.0
+    
+    groovy demo
+
+[33mcommit 65fe2c44878a97a66e2f83b5fb2896cf12f3e8ac[m
+Merge: fdf39eb ebc6136
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Dec 2 14:05:58 2016 +0800
+
+    Merge pull request #407 from jsbd/master
+    
+    为PhantomJSDownloader添加新的构造函数，支持phantomjs自定义命令
+
+[33mcommit ebc61363c8c5afc66a43f468520f93dac54a2637[m
+Author: Jsbd <jingsibingdian@gmail.com>
+Date:   Fri Dec 2 10:17:46 2016 +0800
+
+    为PhantomJSDownloader添加新的构造函数，支持phantomjs自定义命令
+    
+    为PhantomJSDownloader添加新的构造函数，支持phantomjs自定义命令
+     example:
+       *    phantomjs.exe 支持windows环境
+       *    phantomjs --ignore-ssl-errors=yes 忽略抓取地址是https时的一些错误
+       *    /usr/local/bin/phantomjs 命令的绝对路径，避免因系统环境变量引起的IOException
+
+[33mcommit fdf39eb99d4a68fc12c752a766e0130f8be59092[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Nov 25 18:20:59 2016 +0800
+
+    open in new page
+
+[33mcommit 1e74494708de5781d97dc2472a146fa295dba7a6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Nov 25 18:19:32 2016 +0800
+
+    add related link
+
+[33mcommit b92e6b04f0797dd39955bc2acc4c66e5ea793e65[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Nov 25 08:30:24 2016 +0800
+
+    #400 修复FileCacheQueueScheduler自己设置DuplicateRemover会导致NPE的问题
+
+[33mcommit dafd2b77ff53cafd6860919aa74afb7c9b296466[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 24 08:18:06 2016 +0800
+
+    fix GithubRepoPageProcessor in example
+
+[33mcommit cfed860fb9d7519170d7166c81527d9625d758e8[m
+Merge: 2189aab 1491033
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 22 17:00:27 2016 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit 2189aab652639d47dec3d7ee512893638ad899f4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 22 16:58:49 2016 +0800
+
+    fix test
+
+[33mcommit 1491033534dd2320668985c1a91f050b7026038f[m
+Merge: 228911b e56b8c3
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Nov 19 13:01:30 2016 +0800
+
+    Merge pull request #377 from jerry-sc/monitor-bug
+    
+    fix the monitor bug which the spider will terminate when a seed url with port
+
+[33mcommit 228911b58c91c8b6f4b7adfc09e3c28438819817[m
+Merge: 507556d 700898f
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Nov 19 12:59:48 2016 +0800
+
+    Merge pull request #370 from gyk001/master
+    
+    fixed #301 修复使用注解抽取JSON数据的问题
+
+[33mcommit 507556d0aaea8d964976062ba4c1257ba9454f4f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Nov 19 12:54:39 2016 +0800
+
+    fix test: ProxyTest.testProxy() do not load exist proxy config
+
+[33mcommit 55f131e5ef641266dc6b194d055654b01c7829fd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Nov 19 12:53:59 2016 +0800
+
+    #380 update fastjson to 1.2.21
+
+[33mcommit e56b8c3efcd866fc2cbca09ab877f30b2b106114[m
+Author: Jerry <jerry_shenchao@163.com>
+Date:   Thu Sep 22 22:36:18 2016 +0800
+
+    fix the monitor bug which the spider will terminate when a seed url with port
+
+[33mcommit 700898fe8acc7a32c1bdf339bc13beb2625819f1[m
+Author: 郭玉昆 <gyk001@gmail.com>
+Date:   Mon Aug 29 17:07:37 2016 +0800
+
+    fixed #301 修复使用注解抽取JSON数据的问题
+
+[33mcommit e22d6426fc5d7aa523945b1bcabf8ad8c4a46054[m
+Merge: 448e528 f89a6a6
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Thu Aug 18 13:28:25 2016 +0800
+
+    Merge pull request #343 from Salon-sai/master
+    
+    add: redis scheduler with priority
+
+[33mcommit f89a6a6826fbe5b4945a42559dfe3088bff93560[m
+Author: Salon.sai <coke1231078@gmail.com>
+Date:   Tue Jul 5 16:29:01 2016 +0800
+
+    add: redis scheduler with priority
+
+[33mcommit 448e528140851a246564140560e291be722f7809[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 24 13:33:17 2016 +0800
+
+    update StringUtils to apache lang3 #314
+
+[33mcommit 3e33959b7a99dbeccdc6fa8636768a99380a3b6b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 24 13:17:35 2016 +0800
+
+    #319 fix javadoc
+
+[33mcommit 3a6e24635094443542d62163e39700b9a6371718[m
+Merge: 37cb43b 8730e3e
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 20:54:57 2016 +0800
+
+    Merge branch 'kapsterio-fix'
+
+[33mcommit 8730e3e97a1f3711a5e6ab286db27171c931f109[m
+Merge: 37cb43b 6b179c3
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 20:46:22 2016 +0800
+
+    Merge branch 'fix' of git://github.com/kapsterio/webmagic into kapsterio-fix
+
+[33mcommit 37cb43b667b1896d01c3e5c3d6ab6929aa6fe61a[m
+Merge: 2400ff7 7628dc6
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sun May 8 20:36:17 2016 +0800
+
+    Merge pull request #176 from lavenderx/master
+    
+    add PhantomJSDownloader
+
+[33mcommit 2400ff7e1af7e9f95a29b33b0b3194302f50d587[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 20:31:43 2016 +0800
+
+    resovle conflict
+
+[33mcommit 9de64ea0f25d33b71e4778332d31b051a708299a[m
+Merge: d8f978f b7f3c4b
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 20:27:53 2016 +0800
+
+    Merge branch 'hepan-master'
+
+[33mcommit b7f3c4bba0bafb703221526062428cb17f86cf5b[m
+Merge: d8f978f 89c6e52
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 20:27:47 2016 +0800
+
+    Merge branch 'master' of git://github.com/hepan/webmagic into hepan-master
+
+[33mcommit d8f978fd20c6711309ae2b5a7f54f1deea543dd6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 19:32:03 2016 +0800
+
+    fix test in JsonPathSelectorTest #289
+
+[33mcommit 25821c3c06b5ee6e0cdc0262bca73435a4376620[m
+Merge: b541336 61c28a0
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 17:53:25 2016 +0800
+
+    Merge branch 'EdwardsBean-proxy-strategy'
+
+[33mcommit 61c28a0130cf50f359c7996969279de9aab229ca[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 17:53:15 2016 +0800
+
+    refactor on proxypool
+
+[33mcommit b871b210c52c86fd297bf2ab4edfb362a56ccfdd[m
+Merge: b541336 19474e4
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 17:53:02 2016 +0800
+
+    Merge branch 'proxy-strategy' of github.com:EdwardsBean/webmagic into EdwardsBean-proxy-strategy
+
+[33mcommit b5413368de4ef00bc652b27f0630f23fae96225d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 16:23:41 2016 +0800
+
+    update ut
+
+[33mcommit a8c90053812635878949c2d18c913daab75497f9[m
+Merge: ca072c5 83c27eb
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 16:18:29 2016 +0800
+
+    Merge branch 'oxf1-master'
+
+[33mcommit 83c27ebbc4090040f4a98b3f5b2c7a86ca33a152[m
+Author: Jon <xuchaoo@gmail.com>
+Date:   Fri Mar 6 21:28:29 2015 +0800
+
+    增加IP代理认证功能
+
+[33mcommit ca072c5575d7e6a4caa6324b128c20cf50efc364[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun May 8 12:09:45 2016 +0800
+
+    fix URL regex in GithubRepoPageProcessor #305
+
+[33mcommit 89c6e52863ccf8c32b5e8cca940241a32c8d2ca4[m
+Author: hepan <47487056@qq.com>
+Date:   Wed Apr 13 15:16:57 2016 +0800
+
+    代理增加用户名密码认证
+
+[33mcommit 047cb8ff8f009b14ff9c7d36ab6dc04c39a472f2[m
+Author: Linker Lin <linkerlin@icloud.com>
+Date:   Fri Apr 1 14:51:59 2016 +0800
+
+    updated versions to 0.5.4-SNAPSHOT
+
+[33mcommit b9544424f240d127ee71ce088caa8d5332b67749[m
+Author: Linker Lin <linker.lin@live.com>
+Date:   Fri Apr 1 14:36:15 2016 +0800
+
+    Update pom.xml
+    
+    回滚。。。
+    我想，主要的问题还是主版本号没了 SNAPSHOT
+
+[33mcommit b05d605c4b26a87fd221a0223e95201898e62993[m
+Author: Linker Lin <linker.lin@live.com>
+Date:   Fri Apr 1 14:19:28 2016 +0800
+
+    Update pom.xml
+    
+    在纯净的环境中，需要做上面的改动。
+
+[33mcommit 6b179c3d55d6e72676723ccdf0b7fa11870a7081[m
+Author: zhangheng09 <zhangheng09@meituan.com>
+Date:   Sat Mar 12 20:09:41 2016 +0800
+
+    这个改动的原因基于两点：1）代理归还给代理池的时机应该是执行完http请求后就要尽早归还 2)http代理应该是HttpClientDownloader该考虑的事，不应该有Spider来处理，Spider并不知道它的downloader是个HttpClientDownloader
+
+[33mcommit 5f106c9c69abfc8a264be9cad3f25b714d6823af[m
+Author: zhangheng09 <zhangheng09@meituan.com>
+Date:   Sat Mar 12 20:03:27 2016 +0800
+
+    当page为null时，意味着非正常的响应状态，应该抛出异常，否则SpiderListener的onSuccess方法和onError方法都会执行
+
+[33mcommit c0b8e8f8ae9d564fd29a7b0d6b9bc510d1868817[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jan 22 14:58:22 2016 +0800
+
+    remove .classpath .project
+
+[33mcommit ce89ebb2b49d0053d3ec0523f80100fefa09a777[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jan 22 10:49:36 2016 +0800
+
+    remove en_doc zh_docs dir
+
+[33mcommit b9ac76aa8b2e1dd47fec25cf2c77f026fbf35eb5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jan 22 10:48:44 2016 +0800
+
+    update readme
+
+[33mcommit a0c74a6a26a4342a74568ecb754b52da4c41690f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jan 22 10:47:10 2016 +0800
+
+    readme in zh
+
+[33mcommit cb61820d3169b3f6583337ad021df10aa5ec2c84[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jan 22 10:24:30 2016 +0800
+
+    update spiderman link
+
+[33mcommit a8e6de4b900f1237426e441f279303a51aec311f[m
+Merge: cd08b23 4efd471
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jan 22 10:16:58 2016 +0800
+
+    Merge branch 'master' of git.oschina.net:flashsword20/webmagic
+
+[33mcommit cd08b230b85dcc4fad2b7a221b25d5e04ccb8062[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jan 22 09:44:54 2016 +0800
+
+    update version to 0.5.3
+
+[33mcommit 0fd4623f0a8fa3ce328bf1d2702ccc297053c723[m
+Merge: ce5495e 2a8e1b6
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 19:33:30 2016 +0800
+
+    Merge branch 'osc'
+
+[33mcommit ce5495ecd53d35673c484dc4ce1f4c890852ee47[m[33m ([m[1;33mtag: webmagic-0.5.3[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 19:31:50 2016 +0800
+
+    remove useless files
+
+[33mcommit 8265c7dade7142c339ddb3f7dce7a727c6de26d1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 19:25:13 2016 +0800
+
+    remove submodules for relase
+
+[33mcommit 972ccd3d56e23a0e3488d9c8c10eb7dce8ceeafc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 19:02:55 2016 +0800
+
+    update version to 0.5.3-SNAPSHOT
+
+[33mcommit 7edfa26f90adbdc9dc9debc86a69f2a0b5594eb4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 18:34:07 2016 +0800
+
+    complete javadoc
+
+[33mcommit 8b90b91e331b9c5d34a429691beed3e42df99eb5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 18:14:10 2016 +0800
+
+    complete some javadoc
+
+[33mcommit 2b556cf0535b95e24c44e13d7f7c21701b363688[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 18:05:56 2016 +0800
+
+    update verison to 0.5.3-SNAPSHOT
+
+[33mcommit 9c5716a5439e329489166b646565548746f6a42c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 18:05:12 2016 +0800
+
+    complete javadoc
+
+[33mcommit db3cbf6ca5b132f1025ee973fbe8fbaaea40b439[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 17:58:36 2016 +0800
+
+    update version to 0.5.3-SNAPSHOT
+
+[33mcommit 81ce1ffc5f03fc1e6a2e9f8c6139bf796a538372[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 12:36:49 2016 +0800
+
+    fix ignore
+
+[33mcommit 93764fa2c9999a11fece0806f7bf4b3cdbe1cfce[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jan 21 12:28:32 2016 +0800
+
+    ignore some test
+
+[33mcommit 5706bb90af9bc93a155fb519818fe3ae3bce9f17[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jan 20 12:59:11 2016 +0800
+
+    update xsoup to 0.3.1
+
+[33mcommit 7586e3d75c62ee2226af349bad30ab665ec3732d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jan 19 08:05:53 2016 +0800
+
+    add some test for github repo downloader
+
+[33mcommit 800f66c4cc7e1e4b3e485af5236e3c9b8d54f028[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jan 18 23:20:08 2016 +0800
+
+    Revert "remove some unkown config"
+    
+    This reverts commit 0e245c989605c94b8daa21be8da9ac7002c10568.
+
+[33mcommit 73ae7a1d52253bd097283b62a7152f22ffadb60d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jan 18 23:19:39 2016 +0800
+
+    remove ci for jdk6
+
+[33mcommit 0e245c989605c94b8daa21be8da9ac7002c10568[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jan 18 22:39:45 2016 +0800
+
+    remove some unkown config
+
+[33mcommit 9ed06ccdf0b676447be6f51a502d6c372e1e93d1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jan 18 22:31:15 2016 +0800
+
+    update surefire version
+
+[33mcommit 9d0eeb900020ac3a507cf871a3c8c9a31fdec6fc[m
+Merge: 84b046e 5d365f7
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Jan 16 19:38:01 2016 +0800
+
+    Merge pull request #218 from bingoko/master
+    
+    添加PhantomJS无界面浏览器支持
+
+[33mcommit 84b046e4c962841b725cb1be6165f40c549e2ef8[m
+Merge: cfde3b7 1552152
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Jan 16 19:36:52 2016 +0800
+
+    Merge pull request #227 from hsqlu/master
+    
+    update deprecated method
+
+[33mcommit cfde3b7657d208a80625b61b430bef11889ecc0e[m
+Merge: 5f9e1a9 165e5a7
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed Dec 2 22:17:00 2015 +0800
+
+    Merge pull request #237 from SpenceZhou/master
+    
+    Update RedisScheduler.java
+
+[33mcommit 165e5a72eb08318db7cc75906695f2cf2427ac0e[m
+Author: SpenceZhou <SpenceZhou@users.noreply.github.com>
+Date:   Wed Dec 2 17:10:42 2015 +0800
+
+    Update RedisScheduler.java
+    
+    修改redisscheduler中获取爬取总数bug
+
+[33mcommit 5f9e1a96f291fe1bdbe0ebfbdfe26992c55c867d[m
+Merge: 7d7eb03 90e14b3
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Tue Nov 17 15:06:08 2015 +0800
+
+    Merge pull request #233 from x1ny/master
+    
+    修正FileCacheQueueScheduler导致程序不能正常结束和未关闭流
+
+[33mcommit 7d7eb033d30327978885f689f7b958f17a324948[m
+Merge: 56e0cd5 afd1617
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Tue Nov 17 15:05:46 2015 +0800
+
+    Merge pull request #234 from chy996633/master
+    
+    知乎爬虫抓取
+
+[33mcommit afd1617b5844dc5a318aac686ab33213d80e8e49[m
+Author: chy996633 <410775541@qq.com>
+Date:   Fri Nov 13 11:56:46 2015 +0800
+
+    知乎爬虫抓取
+
+[33mcommit 90e14b31b0c229d5664092ea01f739f264e419a8[m
+Author: x1ny <x1nyhh@163.com>
+Date:   Thu Nov 12 23:10:20 2015 +0800
+
+    修正FileCacheQueueScheduler导致程序不能正常结束和未关闭流
+    
+    FileCacheQueueScheduler中开启了一个线程周期运行来保存数据但在爬虫结束后没有关闭导致程序无法结束，以及没有关闭io流。
+    
+    解决方法：
+    让FileCacheQueueScheduler实现Closable接口，在close方法中关闭线程以及流。
+    在Spider的close方法中添加对scheduler的关闭操作。
+
+[33mcommit 155215290f592a308103d2ca70ed1974bc2d430f[m
+Author: Qiannan Lu <lvqiannan@gmail.com>
+Date:   Fri Sep 18 09:30:01 2015 +0800
+
+    resolve issue #226
+
+[33mcommit 21f81bb8c1b46c9da6b614c4f3a018893a044b3e[m
+Author: Qiannan Lu <lvqiannan@gmail.com>
+Date:   Fri Sep 18 08:59:40 2015 +0800
+
+    update deprecated method
+
+[33mcommit 5d365f7bf46f854d2e05dc31a066cd6c37994fab[m
+Author: bingoko <bob.li.0718@gmail.com>
+Date:   Sat Jul 11 15:43:49 2015 +0100
+
+    update and validate pom.xml
+    
+    Update selenium and GhostDriver (PhantomJSDriver) to latest version.
+
+[33mcommit d3bbece202613a4e8d9c25b557e853d50b516977[m
+Author: bingoko <bob.li.0718@gmail.com>
+Date:   Sat Jul 11 15:34:21 2015 +0100
+
+    Add PhantomJS support for selenium
+    
+    The configuration file is config.ini
+    The dependencies are updated in pom.xml.
+    Update SeleniumDownloader and WebDriverPool to support PhantomJS.
+    NOTE: The versions of GhostDriver, Selenium, and PhantomJS are stable
+    and validated.
+    
+    A GooglePlay Example is under samples package: GooglePlayProcessor.java
+
+[33mcommit 56e0cd513a48b05e2c472988047ced82dfe1c3e3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 15 23:21:06 2015 +0800
+
+    compile error fix
+
+[33mcommit c5740b184031502a24fa7598d146e7e093c7c0d0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 15 08:32:08 2015 +0800
+
+    change assert #200
+
+[33mcommit 67eb632f4dc19480400893f22b1d7ad2301edfae[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 15 08:31:45 2015 +0800
+
+    test for issue #200
+
+[33mcommit b30ca6ce1e7af0422cd8c42b2e749adee944afe0[m
+Merge: 05a1f39 590561a
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Mon Mar 9 16:58:52 2015 +0800
+
+    Merge pull request #198 from okuc/master
+    
+    修正site.setHttpProxy()不起作用的bug
+
+[33mcommit 590561a6e4534cd7dec1a8db926327afec07690e[m
+Author: 高军 <okuc@live.cn>
+Date:   Mon Mar 9 15:54:15 2015 +0800
+
+    修正site.setHttpProxy()不起作用的bug
+
+[33mcommit 19474e47169c24c1639c8ebbb671dec0937d54f2[m
+Author: edwardsbean <edwardsbean@gmail.com>
+Date:   Sat Feb 28 17:50:10 2015 +0800
+
+    add SimpleProxyPool and IProxyPool
+
+[33mcommit 05a1f3956936910d8d5d82001d8976cc4576c3aa[m
+Merge: 6b9d21f 74962d6
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed Feb 18 09:50:17 2015 +0800
+
+    Merge pull request #193 from EdwardsBean/fix-mppipeline
+    
+    Bug fix:MultiPagePipeline and DoubleKeyMap concurrent bug
+
+[33mcommit 74962d69b9e8dbd836edd3a9049e57bb00852978[m
+Author: edwardsbean <edwardsbean@gmail.com>
+Date:   Fri Feb 13 15:03:13 2015 +0800
+
+    fix bug:MultiPagePipeline and DoubleKeyMap concurrent bug
+
+[33mcommit 6b9d21fcf3e313cd78507d9a532d2c85adbe3cf4[m
+Merge: 8ffc1a7 4978665
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Thu Jan 22 10:40:03 2015 +0800
+
+    Merge pull request #188 from EdwardsBean/retry_time
+    
+    add retry sleep time
+
+[33mcommit 4978665633ab3b165b4c58995fe5dd626b616c99[m
+Author: edwardsbean <edwardsbean@gmail.com>
+Date:   Wed Jan 21 13:26:56 2015 +0800
+
+    add retry sleep time
+
+[33mcommit 862ceee6745b7a85367f9358d8031422e3d5bfe7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jan 13 17:18:27 2015 +0800
+
+    groovy demo
+
+[33mcommit 8ffc1a7093a6b641f3294368fbf89a8685dfd76a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jan 13 14:10:00 2015 +0800
+
+    add NPE check for POST method
+
+[33mcommit 7628dc6b63114aa5dd4bd3c56f72e6a1f4147308[m
+Author: dolphineor <dolphineor@gmail.com>
+Date:   Wed Nov 26 19:29:30 2014 +0800
+
+    move PhantomJSDownloader to webmagic-extension
+
+[33mcommit 0d9b148fc29fb83a573e2cb1ba8efb0fc735fd1f[m
+Author: dolphineor <dolphineor@gmail.com>
+Date:   Sun Nov 23 23:07:22 2014 +0800
+
+    add PhantomJSDownloader
+
+[33mcommit 8551b668a0a73548d75fd1759d46b929c9c9295f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 29 14:51:36 2014 +0800
+
+    remove commented code
+
+[33mcommit 20422f1b632d71c0e890d736860d3f7726465c50[m
+Merge: 3a9c1d3 eb3c78b
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Mon Sep 29 14:46:35 2014 +0800
+
+    Merge pull request #161 from zhugw/patch-4
+    
+    Update FileCacheQueueScheduler.java
+
+[33mcommit eb3c78b9d81950dec8ca1af4acf9b9777a74b0fc[m
+Author: zhugw <13656635451@qq.com>
+Date:   Sun Sep 14 16:20:03 2014 +0800
+
+    Update FileCacheQueueScheduler.java
+    
+    这样是不是更严谨? 否则的话,中断后再次启动时, (第一个)入口地址仍会被添加到队列及写入到文件中.
+    但是现在有另外一个问题存在,如第一遍全部抓取完毕了(通过spider.getStatus==Stopped判断),休眠24小时,再来抓取(通过递归调用抓取方法).
+    这时不同于中断后再启动,lineReader==cursor, 于是初始化时队列为空,入口地址又在urls集合中了, 故导致抓取线程马上就结束了.这样的话就没有办法去抓取网站上的新增内容了.
+    解决方案一:
+    判断抓取完毕后,紧接着覆盖cursor文件,第二次来抓取时,curosr为0, 于是将urls.txt中的所有url均放入队列中了, 可以通过这些url来发现新增url.
+    方案二:
+    对方案一进行优化,方案一虽然可以满足业务要求,但会做很多无用功,如仍会对所有旧target url进行下载,抽取,持久化等操作.而新增的内容一般都会在HelpUrl中, 比如某一页多了一个新帖子,或者多了几页内容. 故第二遍及以后来爬取时可以仅将HelpUrl放入队列中.
+    
+    希望能给予反馈,我上述理解对不对, 有什么没有考虑到的情况或者有更简单的方案?谢谢!
+
+[33mcommit 3a9c1d30026f893c07f37790ed105f79c094af98[m
+Merge: 42a3007 bc666e9
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Sep 12 13:09:50 2014 +0800
+
+    Merge pull request #159 from zhugw/patch-3
+    
+    Update Site.java
+
+[33mcommit bc666e927dbbed942085c93a808b4a003691faad[m
+Author: zhugw <13656635451@qq.com>
+Date:   Fri Sep 12 12:42:57 2014 +0800
+
+    Update Site.java
+    
+    setCycleRetryTimes的javadoc是这么说的:Set cycleRetryTimes times when download fail, 0 by default. Only work in RedisScheduler.
+    而通过查看源码发现似乎并没有做限制,即只能用于RedisScheduler. 故想问一下该javadoc是否过时了?
+
+[33mcommit 42a30074c920f412820cdd38eb802e6188b8f3f3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Sep 12 07:52:38 2014 +0800
+
+    update urls.contains to DuplicateRemover in FileCacheQueueScheduler #157
+
+[33mcommit 689e89a9b27c24b74ae2c17accdca59c4cae410f[m
+Merge: 147401c 1db940a
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Sep 12 07:37:56 2014 +0800
+
+    Merge pull request #157 from zhugw/patch-1
+    
+    Update FileCacheQueueScheduler.java
+
+[33mcommit 1db940a08829a9f9c09282229883df434edc8494[m
+Author: zhugw <13656635451@qq.com>
+Date:   Thu Sep 11 15:46:09 2014 +0800
+
+    Update FileCacheQueueScheduler.java
+    
+    在使用过程中发现urls.txt文件存在重复URL的情况,经跟踪源代码,发现初始化加载文件后,读取所有的url放入一集合中,但是之后添加待抓取URL时并未判断是否已存在该集合中(即文件中)了,故导致文件中重复URL的情况.故据此对源码做了修改,还请作者审阅.
+
+[33mcommit 147401ce5e33785a25d4409a4601086bfdb69860[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Sep 9 22:58:44 2014 +0800
+
+    remove duplicate setPath in ProxyPool
+
+[33mcommit 3734865a6a32bfe90a17bcd5fe9a7cf5d4c134b8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 21 14:39:44 2014 +0800
+
+    fix package name =.=
+
+[33mcommit e7668e01b8d4666e025d5a2f101c08d2cfd482fe[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 21 14:29:06 2014 +0800
+
+    fix SourceRegion error and add some tests on it #144
+
+[33mcommit 4e5ba02020f3861a82dd7e94f26a1d27e183f84f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 18 11:08:17 2014 +0800
+
+    fix test cont'
+
+[33mcommit 4446669c243ede3e7eac4a0ff5ae3954a3f6bed9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 18 10:54:24 2014 +0800
+
+    fix test
+
+[33mcommit 9866297ec4a240eb9fbfef34ccb3d29e3d5d6499[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 14 08:04:56 2014 +0800
+
+    Disable jsoup entity escape by Default. Set Html.DISABLE_HTML_ENTITY_ESCAPE to false to enable it.  #149
+
+[33mcommit 4e6e946dd7860f0e6291c3dd96ffd699c174c983[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 13 10:02:16 2014 +0800
+
+    more friendly exception message in PlainText #144
+
+[33mcommit ebb931e0bf4b93ac55e7986864f06c0d1f5d925f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 25 19:01:27 2014 +0800
+
+    update assertj to test scope
+
+[33mcommit af9939622b736551eb7d42efdb3fd19c97d2a74d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 25 18:19:44 2014 +0800
+
+    move thread package out of selector (because it is add by mistake at the beginning)
+
+[33mcommit 2fd8f05fe222ed371d9da975d358277f17991942[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 25 14:55:23 2014 +0800
+
+    change path seperator for varient OS #139
+
+[33mcommit eae37c868b51711eb9963b03e0a516916ca74b66[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 10 17:38:54 2014 +0800
+
+    new sample
+
+[33mcommit b3a282e58d63e98ca19ed8eedac0b3681761d4cf[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 10 00:05:30 2014 +0800
+
+    some fix for tests #130
+
+[33mcommit b75e64a61b4fb437d8dc9b58c3385889383bcb4e[m
+Merge: eb89d66 074d767
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 9 23:51:47 2014 +0800
+
+    t push origin masterMerge branch 'yxssfxwzy-proxy'
+
+[33mcommit 074d767f455046a4082020c731d06ed2573a1fb2[m
+Merge: eb89d66 2f89cfc
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 9 23:51:36 2014 +0800
+
+    Merge branch 'proxy' of github.com:yxssfxwzy/webmagic into yxssfxwzy-proxy
+
+[33mcommit 2f89cfc31a31887fdd6f634d9e708cd9031bfb36[m
+Author: zwf <yxssfxwzy@sina.com>
+Date:   Mon Jun 9 13:32:02 2014 +0800
+
+    add test and fix bug of proxy module
+
+[33mcommit 4efd471840c5e8c14c36a3d7b65023b7b08caf1b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 22:46:03 2014 +0800
+
+    remove duplicate jar
+
+[33mcommit 435922f00d950109dbc281f93ff82fd49a73b6eb[m
+Merge: baeb919 eb89d66
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 22:33:58 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+
+[33mcommit eb89d6656634622b503c7d0bf804566eb47e6ec9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 22:28:27 2014 +0800
+
+    fix test
+
+[33mcommit 2a15bc028962e650463db331794f2b515a77880a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 22:27:16 2014 +0800
+
+    contributor
+
+[33mcommit 5e8ca02ec670e18f52361296072929fc0a93efc3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 22:26:56 2014 +0800
+
+    contributor
+
+[33mcommit baeb919cbe141a231ec5c61b45253342908826ec[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 17:38:49 2014 +0800
+
+    update bin
+
+[33mcommit 8c33be48a60f1646b39e69f373164ead36e5ba8b[m
+Merge: b21e20f db0195b
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 17:37:45 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+
+[33mcommit db0195babb69c6147079882d5e980adf94945624[m[33m ([m[1;33mtag: WebMagic-0.5.2[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 17:35:31 2014 +0800
+
+    update version in docs
+
+[33mcommit 5f8c3fd5c518099b7028369fc35df4c01065f42e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 17:33:30 2014 +0800
+
+    update version
+
+[33mcommit 0e9042eefa1ddc2b0599853b025c37178bf38cc6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 17:17:48 2014 +0800
+
+    update pom
+
+[33mcommit 03170178c4e3a9bb6eff42cf032d449a3af655ef[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 17:01:37 2014 +0800
+
+    update pom
+
+[33mcommit c83b74f0f48ceb2805cd3424af4e9bc53bcab53b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 4 16:55:34 2014 +0800
+
+    update pom for deploy
+
+[33mcommit 7a64847a3c15a5825a686d5e4bc6c7f849684540[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 3 20:03:33 2014 +0800
+
+    Bugfix: selector does not works well in element #113
+
+[33mcommit 8d67fd0357ca37dea868b0dacd9c26632c9f5712[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed May 28 08:08:51 2014 +0800
+
+    change back return proxy from spider to httpclientdownloader #128
+
+[33mcommit 40bf8ca58fc7d52efafb2707cb266a23c213997f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed May 28 07:53:23 2014 +0800
+
+    change return proxy from spider to httpclientdownloader #128
+
+[33mcommit 1f21d9cc142b5c1984303a4a5b2147af8c0af1fb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed May 28 07:29:19 2014 +0800
+
+    spell mistake fix #128
+
+[33mcommit e310139d0075fc22ec1f423165eb452136594458[m
+Merge: b165090 c146e2c
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed May 28 07:22:08 2014 +0800
+
+    Merge pull request #128 from yxssfxwzy/proxy
+    
+    多个代理的管理
+
+[33mcommit b165090434fa4064f186fa528946d91f24ae196c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 27 21:19:22 2014 +0800
+
+    Bugfix:Type convert error in JsonPathSelector #129
+
+[33mcommit 95bdb3029635975b5660fb76df4c51cc3e70a972[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 27 20:46:48 2014 +0800
+
+    update xsoup version to release #113
+
+[33mcommit a5d1b56e44239c8ec7416b2d27fbb9be33706691[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 27 18:07:53 2014 +0800
+
+    fix ut #113
+
+[33mcommit 3939074a23d7ed201f4b4360c1fd6c2c8078d075[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 27 17:53:06 2014 +0800
+
+    Bugfix: nodes() only return the first element #113
+
+[33mcommit 41c2ea94984ed19120d9ef0abe2ef1d0b93135fd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 27 17:34:19 2014 +0800
+
+    refactor of selectable cont' #113
+    1. remove lazy init of Html
+    2. rename strings to sourceTexts for better meaning
+    3. make getSourceTexts abstract and DO NOT always store strings
+    4. instead store parsed elements of document in HtmlNode
+
+[33mcommit f9825c214ab2a6fa6fcd565ed8b2b8f8b52ad38c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue May 27 16:00:51 2014 +0800
+
+    refactor selectable for html fragment #113
+
+[33mcommit 03d26c169b63e8462940d1d181862f1eeed640fb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon May 26 17:45:30 2014 +0800
+
+    Enhance auto charset detect #126
+    1. Only read from content once to fix stream closed exception
+    2. invite moco as server test
+
+[33mcommit c146e2c7b45bfdfffe020c9024b805150cccb62b[m
+Author: zwf <yxssfxwzy@sina.com>
+Date:   Mon May 19 15:33:11 2014 +0800
+
+    add proxy pool
+
+[33mcommit 07ea04223f419d3eb4f3e68c2b69391c93283454[m
+Author: zwf <yxssfxwzy@sina.com>
+Date:   Tue May 13 19:28:33 2014 +0800
+
+    change_gitignore
+
+[33mcommit 21982d3460968ddaba7da3dc8a5f1d15c4a070f7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed May 14 23:52:27 2014 +0800
+
+    remove cpdetector temporary #126
+
+[33mcommit fcbfb756085544da530015ba6d8724c4149ed045[m
+Author: fengwuze <fengwuze@gmail.com>
+Date:   Wed May 14 19:14:42 2014 +0800
+
+    修改自动从网页中获取字符的代码块，抽取出来成为单独的方法。
+
+[33mcommit 95494d3c4d9e0165299726b27019d138844ae474[m
+Author: fengwuze <fengwuze@gmail.com>
+Date:   Wed May 14 14:45:39 2014 +0800
+
+    增加处理meta的逻辑。
+    遗留：
+    3、网页没有指定编码的情况下，需要采用cpdetector，但目前cpdetector这个在Maven的中央库里面没有，不清楚如何解决。
+
+[33mcommit dde2d89bbeb500de17c72ef045bebe2929498e0f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu May 8 23:37:18 2014 +0800
+
+    Ignore content in json when bracket when remove padding #124
+
+[33mcommit 2913da47637694b5d56bc3773caca473707b6aba[m
+Merge: 928f98d 5883ed9
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Thu May 8 15:20:02 2014 +0800
+
+    Merge pull request #123 from gsh199449/master
+    
+    Update JsonFilePipeline.java #122
+
+[33mcommit 928f98dd93bf3a0ebcb14cb663b5cd924c59f1e7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu May 8 15:12:17 2014 +0800
+
+    auto create folder in JsonFilePipeline #122
+
+[33mcommit 5883ed93d759e6eb23d736a0929a84ca0cad5a3c[m
+Author: GaoShen <gsh199449@hotmail.com>
+Date:   Thu May 8 15:08:55 2014 +0800
+
+    Update JsonFilePipeline.java
+    
+    JsonFilePipeline可以自动新建尚不存在的文件夹
+
+[33mcommit 4e65dac2497da61f9bce9a7be894fe1f2f0ff0b5[m
+Merge: 7fbe18b 259f0a1
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Tue May 6 20:14:35 2014 +0800
+
+    Merge pull request #121 from ywooer/master
+    
+    创建指定编码的Writer
+
+[33mcommit 259f0a16c5920a4a0493c860210dc9c34b3a6474[m
+Author: ywooer <sky.yqw@gmail.com>
+Date:   Tue May 6 18:33:00 2014 +0800
+
+    Update FilePipeline.java
+
+[33mcommit 26d38851b5d712377789c8e4ec8e9c86225b84b5[m
+Author: ywooer <sky.yqw@gmail.com>
+Date:   Tue May 6 18:28:50 2014 +0800
+
+    add charset to Writer
+
+[33mcommit 7fbe18b8c0f9024cdeec2ed9deca37cbe97a25eb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon May 5 08:01:39 2014 +0800
+
+    implementation of PageMapper #120
+
+[33mcommit 5dc9fe95a9fa256ce5d5868d5e500f5fe0f6bacd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon May 5 07:43:32 2014 +0800
+
+    interface of PageMapper #120
+
+[33mcommit 7668731f08a3118390e7651002d56b2223d4e656[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon May 5 07:03:55 2014 +0800
+
+    update version to snapshot
+
+[33mcommit b21e20fe425ebcffc655a065eaa12d0052db46ef[m
+Merge: 4a0e912 5f6f489
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 06:30:07 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+
+[33mcommit 5f6f48931497d80463dace8a97e66e9a7b10d79e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 06:29:37 2014 +0800
+
+    deperate in user manual
+
+[33mcommit 4a0e912fe1a6bdbfc792c0745c6c1537a1fb983f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 06:19:28 2014 +0800
+
+    dep
+
+[33mcommit 182dd51689b9c387f245811ad1fed4395f469b29[m
+Merge: feb604d 81e6e77
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 06:19:11 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+
+[33mcommit 81e6e772ac9d521647ffd93e7d6bdae68734ee8b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 06:18:57 2014 +0800
+
+    versions back to 0.5.1
+
+[33mcommit feb604da87826200d038430b8e0d379846763ead[m
+Merge: d5f34a4 dbebcbe
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 06:14:54 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+
+[33mcommit dbebcbe44f07acb8871a0e3f786dd3d10d938a1c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 06:14:31 2014 +0800
+
+    docs
+
+[33mcommit 358e906379fdb421a43ae9fac84353e8e0c58408[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat May 3 00:00:13 2014 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit 470750fc0d896874663acedb98436376d77450d1[m[33m ([m[1;33mtag: WebMagic-0.5.1[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 23:59:55 2014 +0800
+
+    [maven-release-plugin] prepare release WebMagic-0.5.1
+
+[33mcommit fc3d2906b0e74df940787c62e1728407193f450f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 23:47:14 2014 +0800
+
+    remove avalon from pom temporary
+
+[33mcommit 01aec7e1ab60c5e18cc9c00704827d070bbc6492[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 23:23:23 2014 +0800
+
+    extension point of geturl #118
+
+[33mcommit ec1c2e8cbcfbc091183c7ea83ffa4445d6e21b73[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 23:19:11 2014 +0800
+
+    test and so on
+
+[33mcommit 4f22f1210e58977f94a9161b1c63206358cdac73[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 20:38:49 2014 +0800
+
+    some bug fix #118
+
+[33mcommit 186b90512e1f8162944c047d3eabc59f70a04fa3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 20:24:15 2014 +0800
+
+    refactor redisscheduler  #118
+
+[33mcommit 56f033ce8dcf380ed4351a84b5b61b7a244c242b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 20:21:23 2014 +0800
+
+    set setDuplicateRemover for chain api #118
+
+[33mcommit d1140b9e29bd5bfcc1205a4306bd6f553249b924[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 20:20:22 2014 +0800
+
+    add bloom filter for scheduler #118
+
+[33mcommit 64293cba20ddc8b19996c34687400119f9c52e19[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 19:12:38 2014 +0800
+
+    samples
+
+[33mcommit bc1d14fed4c58e5f4f5b7702935a7199c7101940[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 17:54:21 2014 +0800
+
+    sample
+
+[33mcommit 8e4814bdc507d33e5618c562e88da1be4912fc16[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri May 2 17:06:34 2014 +0800
+
+    fix path seperator
+
+[33mcommit e8d4a9be2baa067f9820c0f2a0d2142b225a9d0f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 29 20:32:06 2014 +0800
+
+    fix remove duplicate error #117
+
+[33mcommit 22652c45214c3791f84313b73825387c34ccef78[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 16:27:12 2014 +0800
+
+    fix dep
+
+[33mcommit f84a858bce85921227fcc7cbd7860e6966047e3b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:38:38 2014 +0800
+
+    update verion of forge
+
+[33mcommit 5c00e59939a158103ceccc676dbd02ffb4beaf3a[m
+Merge: a08d8cb 66692b2
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:14:06 2014 +0800
+
+    Merge branch 'stable'
+
+[33mcommit d5f34a4c2001a68f0936b72bd726219d33558caf[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:13:05 2014 +0800
+
+    update lib
+
+[33mcommit 452ea9fd78c82883b71ad44372ee1bac3f711d86[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:12:21 2014 +0800
+
+    make file
+
+[33mcommit 24e26c56449b45234ae69c370b159027c87d581b[m
+Merge: 3abb912 66692b2
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:11:12 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+
+[33mcommit 66692b2f749900620565cae2ae196f6e6bfddba9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:09:26 2014 +0800
+
+    update forger version
+
+[33mcommit 3abb912baa99bdb28078592eed3e0ffe1349392a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:06:45 2014 +0800
+
+    readme
+
+[33mcommit ebaefb93ce871b97565eb410c4d53c40b37ddca3[m
+Merge: 04ade75 c07b32c
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:06:32 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+
+[33mcommit c07b32cd85591497bc395b24e83a3529afabf70f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:06:13 2014 +0800
+
+    en docs
+
+[33mcommit 335562403554c252419955cddef47d9e947703c8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:05:51 2014 +0800
+
+    docs
+
+[33mcommit 04ade75606fd473f6c39be753073800e365c9c40[m
+Merge: 74fdd1d 42a2676
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 15:03:15 2014 +0800
+
+    Merge branch 'stable' of github.com:code4craft/webmagic
+    
+    Conflicts:
+            README.md
+            pom.xml
+            webmagic-avalon/pom.xml
+            webmagic-core/pom.xml
+            webmagic-extension/pom.xml
+            webmagic-lucene/pom.xml
+            webmagic-samples/pom.xml
+            webmagic-saxon/pom.xml
+            webmagic-scripts/pom.xml
+            webmagic-selenium/pom.xml
+
+[33mcommit a08d8cb1677fe362571aa9c3fb4191ffa4c60120[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 14:59:48 2014 +0800
+
+    update verion
+
+[33mcommit 42a2676e8c8a17039b796ae5b696d7b1bf56465b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 14:56:21 2014 +0800
+
+    update version
+
+[33mcommit c892eadb5610121e9756935fe78bf8badb863f41[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 14:54:39 2014 +0800
+
+    contributor
+
+[33mcommit 028f5e8755aa7de767d52baf69f8c1c1bc64619e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 14:52:44 2014 +0800
+
+    readme
+
+[33mcommit c25b32f1ca6bf35be24d2a794c1481d127ccad37[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 12:52:27 2014 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit 7ff83bb11a90e64fdc754c02001cd548b2fc9e63[m[33m ([m[1;33mtag: WebMagic-0.5.0[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 12:52:12 2014 +0800
+
+    [maven-release-plugin] prepare release WebMagic-0.5.0
+
+[33mcommit dc3c1757729d64a1da91bf095adb3bbd2f7cdf0d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 10:50:35 2014 +0800
+
+    docs
+
+[33mcommit 110412297925415549cca50cfc0be78c30360171[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 09:30:01 2014 +0800
+
+    more abstraction in scheduler
+
+[33mcommit b0fb1c3e10c6c66c2a21ae96033cd458a7329a10[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 27 08:22:33 2014 +0800
+
+    remove copy-dependcies plugin for m2e error
+
+[33mcommit 94a67165e140f64b1f3fd6485422bed117249122[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 26 20:17:52 2014 +0800
+
+    remove jmx server for simplify #98
+
+[33mcommit 86a45a6643dee003043614928dc093f598c767cf[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 26 18:14:25 2014 +0800
+
+    change SpiderMonitor to singleton #98
+
+[33mcommit ab4d36806e211f71cee2982801ee1f2a0fe7254b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 26 11:45:21 2014 +0800
+
+    clean code
+
+[33mcommit 04fde8203b175a259ee102b2cfa94bd4aa36a298[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 26 11:44:14 2014 +0800
+
+    add control for monitor
+
+[33mcommit 2770811a10ee57838f3ca5ae10f36a7e6ab44bca[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 26 11:24:22 2014 +0800
+
+    update monitor example
+
+[33mcommit 5ecd909ef2282705cb8f6fb3c2accea2f283354d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 19:37:55 2014 +0800
+
+    add timeout for wait/notify #111
+
+[33mcommit 964e637264d8eba7f738f32466d45ad4505e8cfc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:46:31 2014 +0800
+
+    fix ut #110
+
+[33mcommit c7afdb516e0cda23a03017efc427a388eed997d4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:44:33 2014 +0800
+
+    remove thread utils #110
+
+[33mcommit 17e95f2a7feb713fcacd61f9ade7b140d9587f87[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:39:01 2014 +0800
+
+    comments
+
+[33mcommit 3a666fcebf40516a116ca6b290e255648af4e186[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:36:07 2014 +0800
+
+    add sample of 36kr #110
+
+[33mcommit b1258f4f160a84d080fc281568bfba01d3279044[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:30:49 2014 +0800
+
+    remove some test
+
+[33mcommit 05eb7831b68fbe4971d2aa3765d172ef3b5bd04f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:27:40 2014 +0800
+
+    refactor and comments #110
+
+[33mcommit 375e64e84521366dabbf1cc5bc08828dd25b8a81[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:10:14 2014 +0800
+
+    more monitor status
+
+[33mcommit 018061d2cdf26db11c3bb6804f39a84cf26a47b6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 18:01:02 2014 +0800
+
+    fix error in thread pool
+
+[33mcommit cdc423f2bf0e853729aaae41edf2565bad982f62[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 17:41:41 2014 +0800
+
+    log
+
+[33mcommit c6661899fd4b06f1590613c5c42503c46e9b909c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 17:33:48 2014 +0800
+
+    new thread pool #110
+
+[33mcommit 179baa7a227b97f6465c5140224df718bfe64123[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 16:07:41 2014 +0800
+
+    return when page is null
+
+[33mcommit 0336f4cdb4c71ed81bce53d7fb413503cdb312d5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 16:06:29 2014 +0800
+
+    remove IllegalStateException when download error for less error log
+
+[33mcommit 4738ae2d14a0d2419026cf5b2e9990cf3f3e06f1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 16:04:41 2014 +0800
+
+    change url find to match #94
+
+[33mcommit f973889cdac05a92b61916c8693efc5ad3390652[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 15:48:05 2014 +0800
+
+    refactor subpageprossor etc. #94
+
+[33mcommit acb63d55d71a3e704a0445020104ae1b3c11af79[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 13:26:08 2014 +0800
+
+    some check and example #98
+
+[33mcommit 11ba5beb42b4dca1cf37a3f73234c417c27dfd97[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 13:17:13 2014 +0800
+
+    [refactor]move monitor to webmagic-extension #98
+
+[33mcommit d61f65cef84cad0ada34e8744c1d1d5a8e311cf0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 11:31:43 2014 +0800
+
+    update mbean to mxbean #98
+
+[33mcommit ad6a273b12cadbc263fd6f5e86299030e0e0225f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 11:28:35 2014 +0800
+
+    update test url
+
+[33mcommit 30af23d003ba744cf5d15a947636b095644bdbb0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 11:25:52 2014 +0800
+
+    split monitor to server and client mode #98
+
+[33mcommit ced79630d324e199abb9c3becf93aab3defa307e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 25 11:10:35 2014 +0800
+
+    specify jndi and jmx #98
+
+[33mcommit 95d3802e772f6a17c14446c8c9801001b1f536b8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 24 11:48:58 2014 +0800
+
+    add formdata support for post request #108
+
+[33mcommit f49bb877c858617fa74cfd2c464adbfe616e45de[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 24 11:38:13 2014 +0800
+
+    clean some code #109
+
+[33mcommit e1aaf1dd11a7c2d2b6c1a869f1df27e28483fee7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 24 11:05:49 2014 +0800
+
+    fix mistake of guava Table  #109
+
+[33mcommit 8ba2da146cc21e460efcf92c1c62af5da750122d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 24 10:51:37 2014 +0800
+
+    request method #108 and more cookie #109 config
+
+[33mcommit b06aa489fba007ba1e634f792045f0b52caf3c80[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 18 17:48:26 2014 +0800
+
+    [BugFix]Only one url from sourceRegion can be extracted #107
+
+[33mcommit 08fa3b01c14225a52c78f806055c4a6abf37ce85[m
+Author: Bo LIANG <ccliangbo@gmail.com>
+Date:   Thu Apr 17 17:53:12 2014 +0800
+
+    when download error, throw an exception instead of calling onError and returning peacefully. #105
+
+[33mcommit 023c2ac84e2c42bbee6035bbd4bd4f7e009cf820[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 17 16:44:32 2014 +0800
+
+    spider config draft
+
+[33mcommit 27b37e8164c53f7079fadc0793d09553dd66bd3c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 17 08:12:37 2014 +0800
+
+    extension point and sample for JMX support #98
+
+[33mcommit a5db6cf2929d2ca9091e15c4f7c3fbdb40fe3ead[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 17 00:35:09 2014 +0800
+
+    some monitor and JMX support #98
+
+[33mcommit f39aa435cfc3758921eba038743adadd65566fab[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 16 19:46:32 2014 +0800
+
+    add null check #104
+
+[33mcommit 42bbe40a37ab64a845255c722737a1faad2e2ab7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 16 19:45:17 2014 +0800
+
+    [Bugfix]Urls will be lost when call setScheduler() #104
+
+[33mcommit aae1ab2cd609c5f12d79ca7654dc9dbd13a77ebe[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 16 18:14:13 2014 +0800
+
+    fix compile error
+
+[33mcommit bc8d0220eb49cc5c31cfa1d95e4df1b9b029b2e1[m
+Merge: 1fbfc92 93c4a2a
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 16 18:13:51 2014 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit 1fbfc92de2f2310d697747c7af7e5d5276a73439[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 16 18:13:44 2014 +0800
+
+    Inherit support of Field annotation in Model #103
+
+[33mcommit 93c4a2afb79660b4d8db4d955a0dcabbf5a2dcaa[m
+Merge: c8014a9 163773a
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed Apr 16 16:38:10 2014 +0800
+
+    Merge pull request #102 from ccliangbo/waitNewUrl
+    
+    combine two try-catch block into one, make it cleaner.
+
+[33mcommit 163773af6bff2c3fb0e21da59db2f873f40f7a3d[m
+Author: Bo LIANG <ccliangbo@gmail.com>
+Date:   Wed Apr 16 16:05:08 2014 +0800
+
+    combine two try-catch block into one, make it cleaner.
+
+[33mcommit c8014a9ae6df3ec6c81da35a43d891c172fc733c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 15 15:34:37 2014 +0800
+
+    update readme
+
+[33mcommit ec446277b139411112dc065281c5bb0417e06c32[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 15 15:30:37 2014 +0800
+
+    some refactor in httpclientdownloader
+
+[33mcommit 74fdd1df1b20885285294c2f52ecb4e2166a7e91[m
+Merge: a03f6a8 4abdff5
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 15 07:49:06 2014 +0800
+
+    Merge branch 'master' of git.oschina.net:flashsword20/webmagic
+    
+    Conflicts:
+            webmagic-avalon/.classpath
+            webmagic-core/.classpath
+            webmagic-extension/.classpath
+            webmagic-lucene/.classpath
+            webmagic-samples/.classpath
+            webmagic-saxon/.classpath
+            webmagic-scripts/.classpath
+            webmagic-selenium/.classpath
+
+[33mcommit a03f6a84310365bfdee899d648cac857590f814e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 15 07:44:43 2014 +0800
+
+    eclipse project
+
+[33mcommit e64178b072db11533a0cbf56cace64246cc6553c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 15 06:56:28 2014 +0800
+
+    update logo
+
+[33mcommit 4a035e729a52432bca196dd2d1e3d305888b3468[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 23:31:13 2014 +0800
+
+    extension point for LocalDuplicatedRemovedScheduler #95
+
+[33mcommit b249e49748bfb64c122d7a8f1c77c135f2065e87[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 23:04:09 2014 +0800
+
+    [Bugfix]loop error when add TargetRequest #99
+
+[33mcommit 3a79b1b64a3c1d4c46849df912874df983785278[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 23:02:34 2014 +0800
+
+    [Bugfix]formatter property does not work when field is String#100
+
+[33mcommit cc9d319fd9af973f15fcbb849cc261be6c040123[m
+Merge: da2f023 99e12aa
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 13:16:20 2014 +0800
+
+    Merge pull request #94 from sebastian1118/master
+    
+    update:PatternHandler
+
+[33mcommit da2f023c12c0fd35c716ce38a9fbc5d48e7a7c6b[m
+Merge: f7950eb 32ba1b8
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 13:12:12 2014 +0800
+
+    Merge pull request #96 from ouyanghuangzheng/master
+    
+    修改了Spider 和site  几处注释
+
+[33mcommit f7950ebcab37fb5e262d85f448ebbb056703c76f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 13:00:31 2014 +0800
+
+    fix tests
+
+[33mcommit b14f0ee47992e0456f05dd22363fb216e014a246[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 12:54:44 2014 +0800
+
+    fix jsonpath in AngularJSProcessor
+
+[33mcommit 32ba1b888941a5b1fe6e908c1b3e9c902bb80e9e[m
+Author: 愤怒的番茄 <ouyang.huangzheng@gmail.com>
+Date:   Sun Apr 13 12:41:15 2014 +0800
+
+    修复几处注释问题
+
+[33mcommit 84b897f83bcd9524bb57f0a5082fbe48bb6133cd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 12:20:57 2014 +0800
+
+    update AngularJSProcessor
+
+[33mcommit 03c251237b307ef5e5c193f165248fd7221f665d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 13 10:23:00 2014 +0800
+
+    add Json parse support
+
+[33mcommit 99e12aafaa6906c6e9800fd094e3b60b05f55011[m
+Author: Tian <matian85@gmail.com>
+Date:   Sun Apr 13 10:14:39 2014 +0800
+
+    update:PatternHandler
+
+[33mcommit 53184f0390e5c2e8b77d3642b8475f8e95788e63[m
+Author: 愤怒的番茄 <ouyang.huangzheng@gmail.com>
+Date:   Sat Apr 12 23:00:37 2014 +0800
+
+    test
+
+[33mcommit 644e8d1f72c08c83348e5c31a42f0f0dfa32f07d[m
+Author: 愤怒的番茄 <ouyang.huangzheng@gmail.com>
+Date:   Sat Apr 12 22:32:22 2014 +0800
+
+    同步官方源码
+
+[33mcommit 610ac42c070ea639ea5bad574916b90963232fac[m
+Author: 愤怒的番茄 <ouyang.huangzheng@gmail.com>
+Date:   Sat Apr 12 22:22:07 2014 +0800
+
+    更新
+
+[33mcommit 5b254e446b0a616bc91f5d9526fc83d0d2bc54cf[m
+Author: 愤怒的番茄 <ouyang.huangzheng@gmail.com>
+Date:   Sat Apr 12 22:08:53 2014 +0800
+
+    更新
+
+[33mcommit 843e928c2c81ed5385f2f281a829a71470e2b983[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 12 20:10:24 2014 +0800
+
+    comments on sinablogprocessor sample
+
+[33mcommit be37d8b2165e6514f2a3ef2dc8d5a19498d84180[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 12 20:03:44 2014 +0800
+
+    sinablogprocessor sample
+
+[33mcommit 094f9d1552b2439b326387f44e0b959852a0e2d1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 12 13:42:32 2014 +0800
+
+    rename assets for spell mistake
+
+[33mcommit 2b023c95c2d0ccd16614914405e925363a77e93f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 11 11:43:04 2014 +0800
+
+    qqmeishi demo
+
+[33mcommit db65dfafb831bb491f7a9cf9db21979cbd913471[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 9 23:32:07 2014 +0800
+
+    add baidunews sample
+
+[33mcommit 3669e73e4a6fe0d56010f76eb63f00281158188d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 9 16:43:22 2014 +0800
+
+    update News163: use Xsoup 0.2.0 syntax instead of ComboExtract
+
+[33mcommit 02b441ad38e11cc8e23ca68010a0437f71f70f7d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 9 15:40:33 2014 +0800
+
+    disable NativeObject in Rhino because it is a hotspot internal api and compile error in OpenJDK #93
+
+[33mcommit 9f5a6494a00c962232750cd0d9aeb04dce2bdf67[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 9 10:44:52 2014 +0800
+
+    add support for JDK6 #93
+
+[33mcommit c6c56ad511df4112c096e2b6182a7140e2ebd075[m
+Merge: c287392 7cb4e37
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 9 09:54:13 2014 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit c2873928c855869b6f05f270d5228909bf111b96[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 9 09:54:01 2014 +0800
+
+    [prototype] extractrule
+
+[33mcommit 7cb4e37812dfe39bcd2b1487b7094b6629949a0c[m
+Merge: c1e7207 9338001
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Mon Apr 7 23:22:35 2014 +0800
+
+    Merge pull request #93 from friddle/master
+    
+    update the script
+
+[33mcommit 933800147b9109141eef107c412f8b8bd263829d[m
+Author: friddle <friddle@qq.com>
+Date:   Mon Apr 7 23:18:00 2014 +0800
+
+    update ruby
+
+[33mcommit 37666a7151f64a8446b1b4a4a563d59a65bdbcd8[m
+Author: friddle <friddle@qq.com>
+Date:   Mon Apr 7 23:04:24 2014 +0800
+
+    update the script
+
+[33mcommit c1e7207869417a4f35bbabaa0216f703e78e07e5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Apr 7 11:00:09 2014 +0800
+
+    add FileCacheQueueScheduler support for cycleRetryTimes
+
+[33mcommit 969ad1766b51d9e7ad63a3862de3fde8e159a0d4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Apr 6 21:32:20 2014 +0800
+
+    change logger style to slf4j for cleaner code
+
+[33mcommit 9b2cb43f47a367623279fb20e8ff0de93e7cc56b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 5 23:40:10 2014 +0800
+
+    ConfigurablePageProcessor #91
+
+[33mcommit 1090d070d97fd317641eaf3a8293481787810419[m
+Merge: c143fc6 159eeea
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Apr 5 22:00:30 2014 +0800
+
+    Merge pull request #90 from ccliangbo/removeUnusedLines
+    
+    Remove unused variable to make the project cleaner.
+
+[33mcommit 159eeea2f56504fb1019667723ea16432e30e0ec[m
+Author: Bo LIANG <ccliangbo@gmail.com>
+Date:   Sat Apr 5 18:32:12 2014 +0800
+
+    Remove unused variable to make the project cleaner.
+
+[33mcommit c143fc662cb0e21ced7ed084aff63d25b09b5b3b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Apr 5 18:17:48 2014 +0800
+
+    add SubPageProcessor #86
+
+[33mcommit 2b2ce9ce132152e459d2995347308b0735cf6dba[m
+Merge: 474f785 b043ac7
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Sat Apr 5 15:11:58 2014 +0800
+
+    Merge pull request #89 from ccliangbo/slf4jFormat
+    
+    change the formatter of log.
+
+[33mcommit b043ac76d656467f342249f82a7a4c8f300030f6[m
+Author: Bo LIANG <ccliangbo@gmail.com>
+Date:   Sat Apr 5 11:31:56 2014 +0800
+
+    change the formatter of log.
+    To use slf4j, we should insert {} into the formatter string.
+
+[33mcommit 474f785dab083a147c2aa28407282f43d13e0887[m
+Merge: 8fe967b 38a12f8
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 23:41:27 2014 +0800
+
+    Merge pull request #86 from sebastian1118/master
+    
+    new feature: PatternProcessor
+
+[33mcommit 8fe967ba8d0d33804079c461ba9a0efb20fcac8d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 23:39:32 2014 +0800
+
+    [BugFix]exclude log4j.xml from maven jar plugin #82
+
+[33mcommit 38a12f864113b383824a1903a1b780487810102d[m
+Author: Tian <matian85@gmail.com>
+Date:   Fri Apr 4 22:02:52 2014 +0800
+
+    new feature: PatternProcessor
+
+[33mcommit dafd0b5875cd174db545e3cdcbd9b1c9908e4a76[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 20:36:31 2014 +0800
+
+    [BugFix]multi model in one pageprocessor will be skipped #85
+
+[33mcommit 7aaf837e154e89da4616caab289ffcdb622006c5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 20:10:00 2014 +0800
+
+    change logger to slf4j style for performance #84
+
+[33mcommit f9b157951db5b714b9746d1832dcbe4a31c94eee[m
+Merge: 22c394e 3efa774
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 20:01:14 2014 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit 22c394e6290edc2b0e4435a2d5a3647ed16d5646[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 20:00:58 2014 +0800
+
+    [doc]
+
+[33mcommit 3efa774191c1cbccf440c1330576e688c2213393[m
+Merge: 44293cd 762a397
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 17:16:34 2014 +0800
+
+    Merge pull request #84 from ccliangbo/logInScheduler
+    
+    Modify the log levels of LocalDuplicatedRemovedScheduler.java
+
+[33mcommit 762a3973fd912b6812d0bc059930ed4567a2677a[m
+Author: Bo LIANG <ccliangbo@gmail.com>
+Date:   Fri Apr 4 15:53:46 2014 +0800
+
+    Modify the log levels of LocalDuplicatedRemovedScheduler.java
+    The old version will print a debug level log each time the push method is
+    called. So sometimes, when a html page have multiple links for the same
+    page, the debug log will appears more than once. Also, when we meet a
+    duplicate URL, it will also print a log, which will be confusing.
+    I change the level of it to trace. And each time a URL is really push into
+    queue, print a debug level log.
+
+[33mcommit 44293cd8948fdb004115d16ee486d3dab2b2b8aa[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 10:07:48 2014 +0800
+
+    [doc]add qq group in readme
+
+[33mcommit 9a0a4051ed51eb73391d4c6a6894714eedec1960[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 08:05:34 2014 +0800
+
+    [doc] ch3 part1
+
+[33mcommit 7ca644cdd927c459561469924cab380ad1757ca1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Apr 4 06:47:28 2014 +0800
+
+    format readme
+
+[33mcommit a1c7e826f7a0a675428ed22a44f1f2bc3dd5d707[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 3 23:04:31 2014 +0800
+
+    fix dep of slf4j-log4j12
+
+[33mcommit a34e92d11a241690862d41a04b97c7a9a8993991[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 3 22:33:10 2014 +0800
+
+    fix huabanprocessor
+
+[33mcommit 50cee4c7bb97f157798476c5c0ffa13ea2257890[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 3 11:06:03 2014 +0800
+
+    [doc] complete docs2.0 ch1
+
+[33mcommit 4abdff5dd4ba90d1b6c1955399dfd01fe0747d01[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 3 09:56:02 2014 +0800
+
+    add eclipse project
+
+[33mcommit 9ec0ca02c629aac8cdbec362a71cc67447dc6ce4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Apr 3 08:18:59 2014 +0800
+
+    doc2.0 ch1
+
+[33mcommit 7e0e5b0969e6fe13e64fd9d4778b4444a425417f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 2 11:47:44 2014 +0800
+
+    clean ui
+
+[33mcommit 94f97da4dc96f19ad3b263e964f2961c59903b02[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Apr 2 07:36:31 2014 +0800
+
+    [Avalon] fix spring config for static and ignore google fonts for better loading speed
+
+[33mcommit 22e86976718f0a4315212c0cde2ebae598f44029[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 23:16:03 2014 +0800
+
+    add forger to folder
+
+[33mcommit 05abd566a4bbb9f90037c9f9c7d6a2eb22f34b99[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 23:08:28 2014 +0800
+
+    remove submodule
+
+[33mcommit 01848301d4098c8d884e1ccd667a774196f49f29[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 22:14:30 2014 +0800
+
+    encode illegal charactors in url #80
+
+[33mcommit 2780423e60c1f17e08594519f32a29115b044631[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 20:35:11 2014 +0800
+
+    enable blank space in quotes in UrlUtils.fixAllRelativeHrefs #80
+
+[33mcommit 97b6f4628095fd6c46ddf087f9d32324c382809a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 20:12:25 2014 +0800
+
+    Bugfix: break loop in addTargetRequests #81
+
+[33mcommit ff134a4fb7b6c8737d1ea5876ec453d81b7c2afb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 08:07:40 2014 +0800
+
+    add contributor
+
+[33mcommit d1563da33b59493d8632827131cab9bf9a71f99b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 08:07:25 2014 +0800
+
+    add contributor
+
+[33mcommit b13f1da03905bc7c05295b7ec9afc7613f1fb13c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 08:04:43 2014 +0800
+
+    reformat
+
+[33mcommit 7038c00a9a88821847e8aad2becb319f1ad39725[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 08:03:47 2014 +0800
+
+    reformat
+
+[33mcommit 6252042ed2ea857a574a42cf0b2741685b8d8e35[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 08:02:22 2014 +0800
+
+    add warning of slf4j #78
+
+[33mcommit f3c2503a296c65067aee494aa45035df1840f55d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Apr 1 07:42:23 2014 +0800
+
+    add warning of slf4j #78
+
+[33mcommit 4e15a68ff4c26d812c074729c45d3578e8433529[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Mar 30 09:43:35 2014 +0800
+
+    update xsoup version to 0.2.2
+    Bugfix: Parsing error when separate chars in quotes cause in xsoup #77
+
+[33mcommit 8d8194bee468bf259e28ee391358f9a56fbc6d45[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 25 08:23:20 2014 +0800
+
+    Change HashMap to LinkedHashMap in ResultItems for same order of input and output #76
+
+[33mcommit c72483a2209468e9b0b7389a1ceb6feb90798932[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 24 17:22:37 2014 +0800
+
+    update en_docs
+
+[33mcommit e008b7b85191900984e7199aa4b9da25c4e98d8f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 24 17:22:06 2014 +0800
+
+    update zh_docs
+
+[33mcommit 8958d774f20a4780bca22acdc2e95eed4afacb16[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 24 13:52:17 2014 +0800
+
+    add default values for @Formatter
+
+[33mcommit 90447bff027e1d03794d4d794a7e40e3a85596dd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 22 20:23:16 2014 +0800
+
+    update xsoup to 0.2.1 #75
+
+[33mcommit 8b35d79569fae48d58087b4f8183b5324babc4e1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Mar 19 22:19:06 2014 +0800
+
+    Do not cache document in Selectable for selected Html element #73
+
+[33mcommit 6201fd6966ec2496d31192478a2ebe4a631bacd9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 17 23:01:58 2014 +0800
+
+    add worker as container
+
+[33mcommit 6577a75892f30fff67c7f0bc46914eb93af64ebd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 17 11:08:12 2014 +0800
+
+    fix spring config path in web.xml of webmagic-worker
+
+[33mcommit c7169328c79c6eaf9ae38eec4fda3e0b22ff6880[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Mar 16 19:19:11 2014 +0800
+
+    refactor config resource
+
+[33mcommit 23d1151bc03562402a8d4e6450f959c6f0e10d52[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Mar 16 18:18:17 2014 +0800
+
+    seperate spring config file
+
+[33mcommit 316980973c8e52fe9e5a12d7f6d3d909e8d84d8d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Mar 16 18:10:05 2014 +0800
+
+    invite h2 as test and standalone db, add spring profile for switch
+
+[33mcommit 9a4eab44bef700077d3affbbb7758adf74dba2b3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Mar 16 08:48:04 2014 +0800
+
+    add DynamicClassException to DynamicClassService.compileAndSave
+
+[33mcommit 09c43efc969ccf044281c24c75059c369a677dcd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 21:56:12 2014 +0800
+
+    service and mock
+
+[33mcommit 7036950f281a7e027af87fb786bb7dcda6708388[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 21:11:39 2014 +0800
+
+    update submodule url
+
+[33mcommit f763764a21ba84ebad4cccdc830a57ed9162790c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 21:09:44 2014 +0800
+
+    add travis ci support for submodule
+
+[33mcommit 3eaa5c4d2331ee8ecce4f779908e6e7e39f751f7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 21:05:13 2014 +0800
+
+    ignore dao test after test pass
+
+[33mcommit 6e882b78b5a083659b0e5dd50c0482f8839213b7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 20:19:39 2014 +0800
+
+    add DynamicClassDao and UT
+
+[33mcommit 994c1d53411e644f0141429428cc81a87d225258[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 19:25:33 2014 +0800
+
+    avalon readme
+
+[33mcommit 8ea0a0624befa510e3f1294e02a5c4ad639f7a7c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 19:16:46 2014 +0800
+
+    fix submodule url for travis-ci
+
+[33mcommit 8f84fb2ab5c154f8ed65d98448b897c104d08950[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 19:14:56 2014 +0800
+
+    fix submodule url for travis-ci
+
+[33mcommit c2d27056ea6220e6d96134fb42688b09059ee6a6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 15 19:06:05 2014 +0800
+
+    move worker and admin into avalon #70
+
+[33mcommit 79e6eedb3115b8ec6442403025b831141345a8bd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Mar 14 23:52:56 2014 +0800
+
+    add web.xml for ci pass in webamgic-worker #70
+
+[33mcommit 6c11718566a0164245470454f331d32d4968a90f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Mar 14 23:24:25 2014 +0800
+
+    Clean project structure #70
+
+[33mcommit 9606a173cd9f887778f0a60669912a06e2d4d87d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 22:55:50 2014 +0800
+
+    fix ZipCodePageProcessor
+
+[33mcommit 39898d6ea7222121441213ddb9bf3951a705a1b5[m
+Merge: c383ed7 2801daf
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 16:46:00 2014 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit 2801daf1858a3a941a1670241b3f8f63fc7b1113[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 16:45:22 2014 +0800
+
+    update version in readme
+
+[33mcommit c383ed74fb0e6646f7189e7b659bdce138e86a4b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 08:15:17 2014 +0800
+
+    update verion and lib
+
+[33mcommit 930213b663a22563a7134d7d8631426aaf8bd1f6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 08:10:30 2014 +0800
+
+    fix pom
+
+[33mcommit 4f68368db0d482d6fce2a005da8b11a1144a0e11[m
+Merge: 98e2bba 1bdffc1
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 08:09:37 2014 +0800
+
+    Merge branch 'master' of git.oschina.net:flashsword20/webmagic
+    
+    Conflicts:
+            webmagic-core/src/main/java/us/codecraft/webmagic/selector/RegexSelector.java
+
+[33mcommit 98e2bba0994b1a0f5a6a62ed7be8615108772bff[m
+Merge: 0c3ff3d 757cc9b
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 08:07:33 2014 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+    
+    Conflicts:
+            README.md
+            pom.xml
+            webmagic-core/pom.xml
+            webmagic-extension/pom.xml
+            webmagic-scripts/pom.xml
+
+[33mcommit 757cc9b9427ee26d1aed9d5cbf365c0654ebb7b0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 07:49:51 2014 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit 63ffb5c7923ae6cc03f414bebcc540020e157c82[m[33m ([m[1;33mtag: webmaigc-0.4.3[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 07:49:27 2014 +0800
+
+    [maven-release-plugin] prepare release webmaigc-0.4.3
+
+[33mcommit 66d4d3c192def98672d188b54f3be2764bc64c89[m
+Merge: d5a978e af07280
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 07:12:29 2014 +0800
+
+    Merge branch 'master' into 0.4.x
+
+[33mcommit af07280176845b9ceb0289fc1c42754096ea7b49[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 07:11:56 2014 +0800
+
+    remove defend code for httpclient 4.3.1 because it is fixed in 4.3.3 #59
+
+[33mcommit d5a978e00fcb0e2257eeb38ef6248fd864286092[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Mar 13 06:55:05 2014 +0800
+
+    update version back to 0.4.3
+
+[33mcommit b33f84fdc9746e0d1feb69573fe32d55c890ce28[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Mar 12 22:50:03 2014 +0800
+
+    add distributed architechure
+
+[33mcommit 55368919dfa3a028d73b6c7afd44a5e97d086031[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 11 13:18:34 2014 +0800
+
+    add attribute 'text' support for CssSelector #66
+
+[33mcommit 88b50d4182b5e062112a7a662f51b03eccbadb29[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Mar 4 07:33:07 2014 +0800
+
+    bigfix: cycleTry will not work when spawnUrl is set to false #62
+
+[33mcommit 16ae066c62ae26d2514a06bb3f981f5d1bf482af[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 3 21:22:39 2014 +0800
+
+    update sample code in readme #63
+
+[33mcommit 4d628d80b43986ef52e36136101228e7df695255[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 3 08:24:55 2014 +0800
+
+    add redis scheduler
+
+[33mcommit ca29cd3ef214e77ff3b6872edbab09f059c7f48f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Mar 3 08:22:14 2014 +0800
+
+    add jokejimodel for example
+
+[33mcommit f094f31816ffce7d70f0cc1835aef939959f5d8c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 1 15:31:13 2014 +0800
+
+    update contributors
+
+[33mcommit 2768a1cae4ef9a86bd78c98531c035c903c4b063[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Mar 1 15:10:38 2014 +0800
+
+    add test for cycleTriedTimes and fix cycleTriedTimes inc error #60
+
+[33mcommit bbd0d7e600be29a1c5d30f8d60c0bd82be7db3cc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Feb 28 20:59:39 2014 +0800
+
+    update httpclient version to 4.3.3 #59
+
+[33mcommit 571061454a581510774d046023077710c916a577[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Feb 27 23:54:30 2014 +0800
+
+    #58 add CYCLE_TRIED_TIMES support to QueueScheduler and PriorityScheduler
+
+[33mcommit a79ae6a9e4f1a998872e1948bff50c39f85af70a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Feb 27 23:29:25 2014 +0800
+
+    add ui design for avalon
+
+[33mcommit 0b436aca4f5941c8dc0e26f6ec048a27952b98ba[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Feb 24 22:48:55 2014 +0800
+
+    remove fiel
+
+[33mcommit b93cc92fb5256bd0c4688c931968bc12abd8b8f8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Feb 24 22:47:51 2014 +0800
+
+    pages for spiders
+
+[33mcommit cd0b3a4df4ae4eab193f322d117764c642e92e3d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Feb 23 23:11:29 2014 +0800
+
+    invite ui from charisma
+
+[33mcommit 19843c063b82afcd0d0d930cf73504516a1780ac[m
+Merge: 0e98183 4fc8948
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Mon Feb 17 07:17:45 2014 +0800
+
+    Merge pull request #57 from d0ngw/master
+    
+    Fix chrome driver can't quit
+
+[33mcommit 4fc89485b67cd012f875a4241b1cdc7a7f9fbbef[m
+Author: d0ngw <agile.java@gmail.com>
+Date:   Sun Feb 16 22:04:12 2014 +0800
+
+    Fix chrome driver can't quit
+
+[33mcommit 0e98183f74c1d2b2c2805cbe361aad045dd5dd06[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Feb 12 09:35:57 2014 +0800
+
+    Change log4j to slf4j #55
+
+[33mcommit fa33b15843eeac095227f83e3d9be50add8851bb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Feb 11 23:07:31 2014 +0800
+
+    property loader
+
+[33mcommit 362fdd066278dfc631cc5821cec87fcbea5f31cb[m
+Merge: af809c4 7e8a5c7
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Feb 11 22:23:56 2014 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit af809c4d55e50166b112a1a9c452783e1bf26458[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Feb 11 22:16:01 2014 +0800
+
+    update version to 0.5.0-snapshot
+
+[33mcommit 7e8a5c7dd2d186f9fd95443d85d86d50ea23bf1f[m
+Merge: 31ff4cc 6cade5d
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Tue Jan 21 23:00:07 2014 -0800
+
+    Merge pull request #54 from bitdeli-chef/master
+    
+    Add a Bitdeli Badge to README
+
+[33mcommit 6cade5ddf324515545d7204a666003fe8bb1b7f3[m
+Author: Bitdeli Chef <chef@bitdeli.com>
+Date:   Wed Jan 22 07:03:10 2014 +0000
+
+    Add a Bitdeli badge to README
+
+[33mcommit 31ff4cc404fd86373a3030d8db4d54ca52473800[m
+Merge: 090827f a722f9b
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed Jan 8 17:49:44 2014 -0800
+
+    Merge pull request #53 from xuchaoo/master
+    
+    修复由于FileCacheQueueScheduler中fileCursor 文件再次打开时没有初始化抛出NullPointerExceptio...
+
+[33mcommit a722f9bb66a58bbd9f16d2bc231e2fee2fce6221[m
+Author: jon <xuchaoo@gmail.com>
+Date:   Wed Jan 8 21:24:58 2014 +0800
+
+    修复由于FileCacheQueueScheduler中fileCursor 文件再次打开时没有初始化抛出NullPointerException的错误
+
+[33mcommit 090827f124af3a8c385e040495cfc72dbfa90163[m
+Merge: 5d9fda0 a5a9b14
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Thu Dec 26 19:30:31 2013 -0800
+
+    Merge pull request #52 from d0ngw/master
+    
+    The SeleniumDownloader should call the setRawText
+
+[33mcommit a5a9b141b3e8f91538099cb6c335c20f166363ff[m
+Author: d0ngw <agile.java@gmail.com>
+Date:   Fri Dec 27 11:09:04 2013 +0800
+
+    The SeleniumDownloader should call the setRawText
+
+[33mcommit 6933029ea5c426e5ef2e72734c9cb9b73607fbf5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Dec 25 18:48:31 2013 +0800
+
+    update modules
+
+[33mcommit 5d9fda0614d5bee4a575c576775a9a8bcfad9290[m
+Merge: d9a15ad 2b46b11
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Fri Dec 20 16:43:49 2013 -0800
+
+    Merge pull request #51 from code4craft/test
+    
+    Update RegexSelector.java
+
+[33mcommit 2b46b11e55712110512ba34f56a7a463aea86d4d[m
+Author: Almark Ming <glide.ming@gmail.com>
+Date:   Tue Dec 17 16:57:22 2013 +0800
+
+    Update RegexSelector.java
+    Optimize regex format check
+    
+    Conflicts:
+            webmagic-core/src/main/java/us/codecraft/webmagic/selector/RegexSelector.java
+
+[33mcommit 2a8e1b654d3bf3d1ca3d05403bcd8fd0c7f3396f[m
+Merge: d9a15ad 1bdffc1
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Dec 21 07:59:28 2013 +0800
+
+    Merge branch 'master' of git.oschina.net:flashsword20/webmagic into osc
+    
+    Conflicts:
+            pom.xml
+
+[33mcommit d9a15ad66a134580cb6379092f7ea350125261bd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Dec 21 07:56:58 2013 +0800
+
+    404 page
+
+[33mcommit 1bdffc1e5619f5855f0192a8f8b11f0ae2433d14[m
+Merge: 0c3ff3d 91ed66e
+Author: 黄亿华 <flashsword20@163.com>
+Date:   Sat Dec 21 07:54:57 2013 +0800
+
+    Merge pull request !337 from Almark Ming/master
+
+[33mcommit 12a6390cbdea540acb88fabdb6b39fa20bc0d010[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Dec 18 01:02:59 2013 +0800
+
+    update spring4 configuration
+
+[33mcommit 7fd27d9b22286d8eb3644fac1e2ddb54a878656f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 17 23:57:23 2013 +0800
+
+    add spring 4 mvc for worker
+
+[33mcommit 91ed66ecacab02dfd4b29d4cfd2fc5f2398fe241[m
+Author: Almark Ming <glide.ming@gmail.com>
+Date:   Tue Dec 17 16:57:22 2013 +0800
+
+    Update RegexSelector.java
+
+[33mcommit 83926970b23856c3d23de69ae1d5d0b8ad7371cb[m
+Author: Almark Ming <glide.ming@gmail.com>
+Date:   Tue Dec 17 16:55:53 2013 +0800
+
+    Check valid left parenthesis
+
+[33mcommit 31fb0048a12f17a696d3ac6dacdc3af6e7b181e7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Dec 7 00:37:07 2013 +0800
+
+    add worker
+
+[33mcommit b51fb2696b85b2867c1dcf7dd852df4f0425977d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Dec 6 00:30:01 2013 +0800
+
+    update ut for cookie
+
+[33mcommit ff2f588c4164a768488e6bae70ad71f898327822[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Dec 4 22:11:20 2013 +0800
+
+    #48 nullpointer exception
+
+[33mcommit 0c3ff3d6b12b3e936e06dcf63ce592f383a14cf9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Dec 4 00:05:38 2013 +0800
+
+    remove duplicate logo in readme
+
+[33mcommit fc97cb58c569a0a1794ebe9aac2c5a58a3967df3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Dec 4 00:04:29 2013 +0800
+
+    update lib and version
+
+[33mcommit 7c41bec92f0a42da71d383568f8b3229ce2e5eb8[m
+Merge: 057b3a5 ac516f9
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 3 23:50:26 2013 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+    
+    Conflicts:
+            README.md
+            webmagic-samples/pom.xml
+            webmagic-selenium/pom.xml
+
+[33mcommit ac516f9b0e7744cf7e26f961305dc2af8dd94d2f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 3 23:46:31 2013 +0800
+
+    update version in docs
+
+[33mcommit cc241bc0f20603db363ee1e8c74cee1cb0e43909[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 3 23:40:47 2013 +0800
+
+    update versions
+
+[33mcommit d274310cb2407b87bf4ffc66a5ec9cf67b7d9ff1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 3 23:35:06 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit e8c32a32dc8edafc608f15e7fe5beb8024116761[m[33m ([m[1;33mtag: webmagic-0.4.2[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 3 23:34:57 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-0.4.2
+
+[33mcommit 93cb4308efc855715d4fd02337c3e8469b572d9a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 3 23:29:57 2013 +0800
+
+    update pom
+
+[33mcommit 6a828e923cb7650f60f69f200ef14061c9235f5c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Dec 3 09:59:54 2013 +0800
+
+    #46 Downloader thread hang up when timeout
+
+[33mcommit 486d9d276ff5b580af9788e7fb81e118821c4368[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 18:23:51 2013 +0800
+
+    #45 Remove multi in ExtractBy
+
+[33mcommit aaa53f58c7cb6ee3600a831025dd2a8636b21f65[m
+Merge: 07bcb06 4f53b07
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 16:27:49 2013 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit 07bcb06a3f948c47e45878812fada2d4bc2237d2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 16:27:36 2013 +0800
+
+    update version in readme
+
+[33mcommit 4f53b07e47a6f36aa69be82601366499bffd31e9[m
+Merge: cb84220 9a524aa
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed Nov 27 23:28:20 2013 -0800
+
+    Merge pull request #44 from supermicah/master
+    
+    double-check 中再取次httpClient的内容
+
+[33mcommit 9a524aa36412957685b73f466c47bf442086b9ff[m
+Author: shijinping <jinping.shi@kascend.com>
+Date:   Thu Nov 28 14:38:30 2013 +0800
+
+    double-check 中再取次httpClient的内容
+
+[33mcommit 057b3a530e241b8d192c24452538ba6fa16fe13a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 13:42:08 2013 +0800
+
+    update jar
+
+[33mcommit fd23cb6dc08195f52f2d0dfeb493205d79e0c4cf[m
+Merge: 3506802 e7083dc
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 13:40:24 2013 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+    
+    Conflicts:
+            README.md
+            pom.xml
+            webmagic-samples/pom.xml
+            webmagic-selenium/pom.xml
+
+[33mcommit cb84220d7afbd067e9abff0de9f3cba9cb58adab[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 13:37:10 2013 +0800
+
+    update version
+
+[33mcommit e7083dc39d72f3988dcda4b9775d8a237d96892e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 13:04:32 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit ae623567b35bd3e951be02e87d8627aa6d0d4965[m[33m ([m[1;33mtag: webmagic-0.4.1[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 13:04:22 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-0.4.1
+
+[33mcommit 7c43b5146e6eb8c309c3a6cdfd58bda70ab932ec[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 12:04:05 2013 +0800
+
+    scripts readme
+
+[33mcommit 633e0fe8347872bbd07db24e35a1df2a2efc20e6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 11:39:19 2013 +0800
+
+    document for avalon
+
+[33mcommit 18a3af4a0aebdb33ad551ac85579e1330b805b80[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 09:57:39 2013 +0800
+
+    add more sample for jsonpath #42
+
+[33mcommit 59ad4cad27676e8e551377df0bfc98fb5acffbb6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 08:25:16 2013 +0800
+
+    #42 Add jsonpath in annotation mode for json result
+
+[33mcommit c2d6d495b3732f920adcd622978a4098c81f0989[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 28 07:59:24 2013 +0800
+
+    #41 add getThreadAlive(),getStatus,getPageCount() to spider
+
+[33mcommit cf62d707e0690c10e0ee50a1acf9ce416185c549[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 27 23:33:18 2013 +0800
+
+    #36 Spider does not exit when success
+
+[33mcommit a01312930ae4813595abea87090bf7959940db4e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 27 22:01:34 2013 +0800
+
+    #39 Parsing html after page.getHtml()
+
+[33mcommit f63d33b457fadf16ab6e65d03b7224eacfbccb17[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 27 21:06:53 2013 +0800
+
+    update some comments
+
+[33mcommit 04fcf3193f541a5190cc194e08c0c796677cbaad[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Nov 23 13:56:55 2013 +0800
+
+    #38 Change algorithm of SmartContentSelector
+
+[33mcommit 296a68920e3d910473c84489bf39620b3fdb89e3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Nov 14 13:23:29 2013 +0800
+
+    fix javadoc and add setPipelines() for spider
+
+[33mcommit 948fa094b0dd7a338ddd675944c4866514fac772[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 13:19:36 2013 +0800
+
+    remove console pipeling
+
+[33mcommit 44794282770572bf091f2e420571962036706ac4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 13:11:31 2013 +0800
+
+    add multithread support
+
+[33mcommit b5f2498c998367a580d7cb96da4e2879177372fc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 11:55:56 2013 +0800
+
+    remove nativeobject for rhino
+
+[33mcommit 6e6b3cc896e38b28a4a4d7c0d22fecce433f3c66[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 11:52:34 2013 +0800
+
+    add more status code for check
+
+[33mcommit 47a03607836f0806dbff6c541614e6de72a695dd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 11:51:34 2013 +0800
+
+    #35 add status code to page
+
+[33mcommit f1d5e297bf717c2e0364d57bfeb2cd38820815e6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 11:42:42 2013 +0800
+
+    add scripts
+
+[33mcommit 4cd3e1d871d3993a98ee4678dbc14e32cc656eff[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 11:14:15 2013 +0800
+
+    add build script
+
+[33mcommit 81bb809dba18c7dfb7b24a65285fa1a1bec709c5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 10:38:12 2013 +0800
+
+    update scripts
+
+[33mcommit 7f26b8443921f74548e7a3a47669acf84f4831e9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 08:21:57 2013 +0800
+
+    remove test codes
+
+[33mcommit bc5c30de17646c16c0507b1a007abb1b9f80d9f2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 08:20:59 2013 +0800
+
+    update scripts
+
+[33mcommit 59f67b1e37a1ae0f5092b53e2ee9c8332edb0585[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 07:36:24 2013 +0800
+
+    update version of scripts module
+
+[33mcommit 3aea5e5dc3c8f4b6f6aea75b42195f6306cf4682[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Nov 12 07:35:50 2013 +0800
+
+    reupdate version
+
+[33mcommit da9e3c68f0d884a8d805a3ee838ac32fb0dae2c7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 11 15:08:09 2013 +0800
+
+    update logo psd
+
+[33mcommit f9daae39cfced0f1192c17be2ba13549c3c73927[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 11 14:33:11 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit fdb9441519bbb44f991e0101f520b7815d84d1a7[m[33m ([m[1;33mtag: webmagic-0.4.0[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 11 14:33:01 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-0.4.0
+
+[33mcommit a3678bf5755a4fb8f8f6ba0a774efc4a0c7b29ff[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 11 14:24:56 2013 +0800
+
+    remove script module
+
+[33mcommit 1d75ae7f5b5202d259b9ba574bdcf9fc55c73454[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 11 11:52:56 2013 +0800
+
+    rollback version to 0.4.0 because not deploy success
+
+[33mcommit 0633ea16ef621bff2f2228350fd7872dc5eb9174[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 11 07:48:39 2013 +0800
+
+    add javascript support
+
+[33mcommit 3506802a7001823924e42bf8e7242ae3f2dad228[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 10 23:27:56 2013 +0800
+
+    add github url
+
+[33mcommit 9ff9467de75a7d674c6ffdffa1425cd80ec43a68[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 10 23:15:31 2013 +0800
+
+    readme
+
+[33mcommit 351a73c59d8a83a68248ebc1f438e6dadcedac21[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 10 23:13:30 2013 +0800
+
+    update image
+
+[33mcommit df8ca8ad092307f95cf673c8db606edb57a12247[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 10 22:30:48 2013 +0800
+
+    add scripts
+
+[33mcommit c2e04ea5a0793dacb9eb37a2a920c98d8c6fb1b2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 10 20:03:56 2013 +0800
+
+    add logo
+
+[33mcommit 8ca972fe6107ab9b4255a1ddd576bddde2f7578b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 10 19:56:59 2013 +0800
+
+    logo
+
+[33mcommit 34095e59cf87f7aba35d2572e1cdb07a26a8e94d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Nov 8 21:47:15 2013 +0800
+
+    add mail-list
+
+[33mcommit b838c4e4331326e38e7c30c56d39be9d71fc930a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Nov 8 14:59:09 2013 +0800
+
+    #34 Close reader in FileCacheQueueScheduler
+
+[33mcommit 7adf0c56c6f5fbf8fb79bc7eff535a5fc467a156[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 23:04:41 2013 +0800
+
+    update version
+
+[33mcommit d48ccc6740ffa9a3070d651361f3bbb662b2e493[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 23:04:05 2013 +0800
+
+    update version
+
+[33mcommit 1bdf96c21d76de8b030ae264acb1be2b6caf90e8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:57:54 2013 +0800
+
+    add user manual
+
+[33mcommit b10de030c7857ae0a223f4f6c9712bcac3c9bbb2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:56:13 2013 +0800
+
+    update docs
+
+[33mcommit 5a0c4fea1629646d93882925a4d463d2c3537dbb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:55:08 2013 +0800
+
+    update jar and docs
+
+[33mcommit afe209c92b0cce1b95ba34fadf20f18519bb0f0f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:54:32 2013 +0800
+
+    update version
+
+[33mcommit 2c454a7ef605668d6a949e26b09ddbab86c93338[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:50:26 2013 +0800
+
+    update jar
+
+[33mcommit e40b48e77b508024661ea1ddda98f8aabf8d4f85[m
+Merge: 46e1094 0b4fadc
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:48:26 2013 +0800
+
+    Merge tag 'webmagic-0.4.0' of github.com:code4craft/webmagic
+    
+    [maven-release-plugin]  copy for tag webmagic-0.4.0
+    
+    Conflicts:
+            pom.xml
+            webmagic-core/pom.xml
+            webmagic-extension/pom.xml
+
+[33mcommit 775eb9732ff746b3d08a53125b56a8f6109112b4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:17:58 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit 0b4fadc24db519dd418b92fcfeb3072669993aef[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:17:47 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-0.4.0
+
+[33mcommit 35f96c5a5e7c3e949125b74d6a6d2b497f578d9d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:16:06 2013 +0800
+
+    fix docs
+
+[33mcommit 72dfdc300c856f449c171e1c43a1de69e05fdb35[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 22:01:09 2013 +0800
+
+    update docs
+
+[33mcommit fe6d9bb2e29c6970363f25428cda379e33da9821[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 21:53:39 2013 +0800
+
+    get keep-alive rework
+
+[33mcommit fd6d2fd6f89bd1b2b051d271924d1938e0288ba6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 21:19:14 2013 +0800
+
+    try to keepalive TCP connection
+
+[33mcommit 425df085236a9b6b216cb00a5be4a12644f0211a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 12:50:45 2013 +0800
+
+    update version to 0.4.0
+
+[33mcommit e046bb072391bd7ec06e5f4a310e60048b5fb58a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 12:48:14 2013 +0800
+
+    remove useless code
+
+[33mcommit 6e32a19f807fbbf7821dee4b9ff57db021f7672b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 12:46:50 2013 +0800
+
+    update api for direct download
+
+[33mcommit 807aefe9df05b6cfceab36d32350e54ec0e8672a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 07:37:34 2013 +0800
+
+    change EntityUtil to IOUtil because some encoding error
+
+[33mcommit 00b0a751b4ab877b7f87bd55193e4b6565306f2e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 06:57:58 2013 +0800
+
+    #33 ignore 'content-encoding' when redirect
+
+[33mcommit 8f774afc84898673d58ef79bb2b0ca28fb9ccd80[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Nov 6 06:41:04 2013 +0800
+
+    add direct download
+
+[33mcommit 86cfefb58ceb2781ae2d374886b4794f1b7ba2a1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 4 07:19:32 2013 +0800
+
+    update test
+
+[33mcommit c18b603399019b40e4120258149d74d46aa3a7dd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 4 07:09:44 2013 +0800
+
+    optimize long compare
+
+[33mcommit ed3f3583cc0600b90e8e6f815f27261517df2f09[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 4 01:03:23 2013 +0800
+
+    downloader refactor
+
+[33mcommit a37f40e6e60b6c038522cd643bd836166ee4e7d1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 4 00:59:48 2013 +0800
+
+    add cookie supoort
+
+[33mcommit 3c6fced48e3efe2883646d53176af4073bbcca70[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 4 00:53:01 2013 +0800
+
+    update connection client
+
+[33mcommit 09153ff71506eb502ec341c29f332b5eed24ff3c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 4 00:47:09 2013 +0800
+
+    #22 http proxy support #32 update httpclient to 4.3.1
+
+[33mcommit edfc319c454a6812841d1a9c9c01f622ee1c1293[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Nov 4 00:06:30 2013 +0800
+
+    update httpclient to 4.3.1
+
+[33mcommit 160a149b0590da553b96bddabfe023b5ddf8941d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 3 23:10:09 2013 +0800
+
+    todo bugfix
+
+[33mcommit 583a0eba8c04d29ab30bac74138a586aa4edc475[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 3 20:24:26 2013 +0800
+
+    #29 refactor some method name
+
+[33mcommit 6fa82a418ba31109c3c032976a7ec16bef6bcdc1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Nov 3 20:20:50 2013 +0800
+
+    #29 seed urls with more information
+
+[33mcommit 1446ada7327e08c2c96659b4288b9883d4b96a9f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Oct 31 22:50:22 2013 +0800
+
+    some refactor
+
+[33mcommit 84976c81ecc355d7ddb37415495c0b03f818c2ea[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Oct 31 22:48:18 2013 +0800
+
+    remove useless code
+
+[33mcommit b4fcf4116830c332992665e218551db64cd215b4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Oct 31 22:41:02 2013 +0800
+
+    add exit when comlete option
+
+[33mcommit 352887870c15a1601288508a1840c925576f1961[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Oct 31 22:22:14 2013 +0800
+
+    remove shutdown call
+
+[33mcommit a3f9ad198f18cc58a6dd46a2f92d8bfb9c0ab397[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Oct 31 21:52:43 2013 +0800
+
+    refactor multi thread code in Spider
+
+[33mcommit dbfb6b5803fa45d4c936c166538ea213778d679d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Oct 25 21:15:12 2013 +0800
+
+    update user-manual
+
+[33mcommit 43b79f284a4b3c5719b7a53c97addfcfdb049988[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Oct 25 21:14:24 2013 +0800
+
+    update user-manual
+
+[33mcommit 2e496402dc4789145bde88bd58c3199932fc65f1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Oct 24 13:16:48 2013 +0800
+
+    add more warning for 0.3.3
+
+[33mcommit 7fb44d2eec333f61504c210a3a95e1b24d933596[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Oct 14 23:22:04 2013 +0800
+
+    #30 reuse PoolingClientConnectionManager for HttpClientDownloader
+
+[33mcommit 5a226387e0f344555603e762b69afc4a9f0ebd57[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Oct 11 11:32:44 2013 +0800
+
+    #27 nullpointer fix
+
+[33mcommit 16e12e3bc936382a6503823fe21169120d9978a0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Oct 11 08:37:21 2013 +0800
+
+    #27 customize http header for downloader
+
+[33mcommit 1a2c84ea78d1f9cc20f59efc3a5a6954810f6683[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Oct 11 07:36:16 2013 +0800
+
+    #27 add timeout config to site
+
+[33mcommit 3b00190f9981bf005dae504496989269cc906cb2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Oct 10 00:40:44 2013 +0800
+
+    api without implementation for #28: add specific url crawl
+
+[33mcommit 719100d6e681f5916fa71c64fd7099c00009eec5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 08:02:29 2013 +0800
+
+    update xsoup usage doc
+
+[33mcommit e7657cca304fc49c3ba1e2c2f83bbd30b8030724[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 08:00:00 2013 +0800
+
+    update some code for annotation
+
+[33mcommit 122cebfa5fca43686ba8bf4f4c2dcf30c016a81a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:54:42 2013 +0800
+
+    update manual for objectformatter
+
+[33mcommit 9e6d55dbeec35b57de6c7e6bc1f0212e7ba8f353[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:52:32 2013 +0800
+
+    update manual for objectformatter
+
+[33mcommit 46e1094f10f6c4dea0592bbe511ecab00f7091ae[m
+Merge: 372cc0a ba05227
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:44:04 2013 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit ba05227594e9708b491234ab030b638858021ed7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:43:37 2013 +0800
+
+    update versions in other project
+
+[33mcommit 21dddb008f9a9bf159115fda6210795789e973e0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:38:03 2013 +0800
+
+    update user-manual
+
+[33mcommit 774e55ea1e30fe31f4a1ef2219f5caa22d0ca8d7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:37:03 2013 +0800
+
+    manual
+
+[33mcommit 613607b7dc3301151054f665aff5f056fa7765a7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:23:12 2013 +0800
+
+    add manual link
+
+[33mcommit 6c31582e1eabee502309baedb9140588fd2f2af0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Sep 28 07:22:03 2013 +0800
+
+    manual
+
+[33mcommit b29707ff595ee5f89e88f2cbaa616e2d7434b190[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Sep 24 20:33:07 2013 +0800
+
+    update version indocs
+
+[33mcommit 372cc0ad06dac547eb91414c7804123b1d8d3787[m
+Merge: bd1e2dc 4acbc19
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 13:21:40 2013 +0800
+
+    update jar
+
+[33mcommit 4acbc19cee6dc81488493498811116a7fe0ff14b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 13:12:32 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit cc3b787991a43bd9ea0c5f06851ec9815d56f00a[m[33m ([m[1;33mtag: webmagic-0.3.2[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 13:12:19 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-0.3.2
+
+[33mcommit 6f18eec77eda0118358783d31f0937f09e32bb16[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 13:07:33 2013 +0800
+
+    fix a test error
+
+[33mcommit b131878123cb90f6123255bbd21e71bc70a480b7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 13:01:28 2013 +0800
+
+    add example
+
+[33mcommit 95ab4edec3daca3353395909a13085079ff8606b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 08:38:54 2013 +0800
+
+    some bugfix
+
+[33mcommit 250cc5e66235eab0e13d6b6e99736805a7c11399[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 08:17:21 2013 +0800
+
+    change formatter to class
+
+[33mcommit b18216245b2130ccf9ed984011b799d0cb8ac8ad[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 23 07:53:33 2013 +0800
+
+    add type convert
+
+[33mcommit fba330872b7ebc211318c66003392e39deb46f80[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Sep 22 23:57:15 2013 +0800
+
+    fix a thread pool exception
+
+[33mcommit 3c79d031bd339bbc65d2e78db7011726f0d3d50e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Sep 22 22:52:52 2013 +0800
+
+    fix thread pool
+
+[33mcommit 81f75347573f70a39a83afd5d2f7d626b3b305bd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Sep 12 21:28:42 2013 +0800
+
+    update version
+
+[33mcommit a0d64b76357a449386755b9867163c91d04a2426[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Sep 12 21:06:05 2013 +0800
+
+    update version
+
+[33mcommit bd1e2dcb2c89aacb62b4ec0b670afb4e6a4f1525[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 9 12:50:15 2013 +0800
+
+    update jar
+
+[33mcommit 1b32ca5f5865c6b6ba85050089215ef3fa6a93e5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 9 12:49:37 2013 +0800
+
+    update jar
+
+[33mcommit a2fba8caa2684e3b2915c8c73577f5db2f9b7c01[m
+Merge: 4a4b570 fb693a4
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 9 12:48:01 2013 +0800
+
+    update to 0.3.1
+
+[33mcommit d11f8dac20efcd9b24cc9d06a6ac63270e59b56a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Sep 8 22:58:29 2013 +0800
+
+    update samples version
+
+[33mcommit fb693a4ac41667ba70f2d7c11c73b364fa569e67[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Sep 8 22:25:07 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit bfaaa042b90c19baedc72f01f61849705914de29[m[33m ([m[1;33mtag: webmagic-parent-0.3.1[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Sep 8 22:24:48 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-parent-0.3.1
+
+[33mcommit d7c7a78177f8b5271330e37d0a79ae5aac199d96[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Sep 8 22:19:02 2013 +0800
+
+    complete test cases
+
+[33mcommit c17a31a21d342ddc4349417557bc8b63aba0ba07[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Sep 8 21:09:49 2013 +0800
+
+    fix null pointe exception #26
+
+[33mcommit d2e0f0cd33a957af5eedb62485ad745abed40af7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Sep 6 21:35:23 2013 +0800
+
+    #25 use URL api in UrlUtils.canonicalizeUrl()
+
+[33mcommit 363fd38ccb5c0192541c09811c4f05c86b8f57d5[m
+Merge: ef4cf49 bf8e4fe
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Sep 6 21:18:13 2013 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit ef4cf49feea5ce38b2dc34b7a0e0a54632c07faf[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Sep 6 21:17:36 2013 +0800
+
+    add stop method to spider #24
+
+[33mcommit 4a4b57046bbeca4208fa487d208ae04422cfcd3f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Sep 5 20:57:56 2013 +0800
+
+    update jar
+
+[33mcommit a22cf0133b568aa2553d0a54e44e84bdd6357b15[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Sep 5 20:56:59 2013 +0800
+
+    update jar
+
+[33mcommit 58150a090d1e026f960a2c5ffbd4f4c9e3579541[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Sep 5 20:56:25 2013 +0800
+
+    update jar
+
+[33mcommit 57556ab879ee3f6eaa0a4cb2cdf056e371936b36[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Sep 5 20:53:15 2013 +0800
+
+    merege
+
+[33mcommit bf8e4fe9dc03c7e27af3941fd93cc0979ff036be[m
+Merge: ac4cd39 4d023b3
+Author: Yihua Huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 15:50:42 2013 -0700
+
+    Merge pull request #23 from linkerlin/master
+    
+    增强单元测试
+
+[33mcommit 4d023b3666cc2101e92540004e5630dd2aa01319[m
+Author: Linker Lin <linker.lin@me.com>
+Date:   Thu Sep 5 00:30:52 2013 +0800
+
+    增加剔除文件
+
+[33mcommit 2e8cf0a3dd27503423afe0bc8f3600bcf8ac832b[m
+Author: Linker Lin <linker.lin@me.com>
+Date:   Thu Sep 5 00:30:10 2013 +0800
+
+    将单元测试fork独立的JVM来跑。避免少数情况默认maven开的JVM堆太小。
+
+[33mcommit ac4cd391707da1190744a3891af7c62424fd8d37[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 20:37:42 2013 +0800
+
+    update version
+
+[33mcommit 692de76f869312dc22b479b81b7f0f8b809f1c2f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 15:27:51 2013 +0800
+
+    fix issue #21 charset detect error
+
+[33mcommit e1b6b54097a6657cfe1c43bb99ba8b47518c455f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 11:07:28 2013 +0800
+
+    update version for samples
+
+[33mcommit a9fc06a916008e9763dec67d240e84d81e94185d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 11:04:36 2013 +0800
+
+    release note
+
+[33mcommit e7bf425df4f875dce4de9479e0cfe8178e1b7c2e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 10:51:01 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit 77ff25231612ade51491da731af6c546de1b38c2[m[33m ([m[1;33mtag: webmagic-0.3.0[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 10:50:50 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-0.3.0
+
+[33mcommit 1fc8e104ab8277a5bd002c63659dc05d9f6594d8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 10:32:13 2013 +0800
+
+    add cycle retry
+
+[33mcommit 891d845e5f87f0bb24607a13024128f856d0b62a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 10:00:13 2013 +0800
+
+    fix test
+
+[33mcommit d141541ef30bc6a9b12a9432bd9a5795008f3d10[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 09:57:19 2013 +0800
+
+    add retry
+
+[33mcommit a1ef2523cca08c9e08c0ee3ed60de3ab8fbeb3b1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 09:38:40 2013 +0800
+
+    update xsoup version
+
+[33mcommit e06b0c1a991df0cd2de5888d9628f6f600466ac0[m
+Merge: b9eeb88 aefd056
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 09:37:03 2013 +0800
+
+    Merge branch 'xsoup'
+
+[33mcommit aefd0569a5bfb2f8a99de948ccac38302af19500[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 09:36:56 2013 +0800
+
+    update version
+
+[33mcommit 194518fd82f31e1a08f8966f26324c2e9381ddc3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 08:21:34 2013 +0800
+
+    add switch
+
+[33mcommit b9eeb88f7773a8de62a86f2b68ae2a31994c29e4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 07:51:18 2013 +0800
+
+    benchmark
+
+[33mcommit 2ec6abfa65d0c68d949c1d7257d17ed44cc53681[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 00:16:20 2013 +0800
+
+    fix grammer error in en
+
+[33mcommit 326b97c65a3e9516d06ef7e46da53757ac04f175[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Sep 4 00:15:54 2013 +0800
+
+    update
+
+[33mcommit 2c3574537afd2707251e82d248f260cc2e333356[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 2 14:14:24 2013 +0800
+
+    refactor in selectors
+
+[33mcommit 85b7cf1563337ae07e448d3de0f5c5939fa676b6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 2 13:52:41 2013 +0800
+
+    complete test
+
+[33mcommit d7cd9e5747859b41cc5d97fbebfc80bdc88ad78b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 2 11:56:01 2013 +0800
+
+    update pom
+
+[33mcommit 55d4a76ab7f6238a60e917371ea54164d569edab[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 2 08:21:32 2013 +0800
+
+    newselectors
+
+[33mcommit b1cba78bd6930bbbc3d44b4825fcc752932ca02c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Sep 2 07:30:31 2013 +0800
+
+    xsoup test
+
+[33mcommit e87489d5dc74d59bc407271bdc2d3f9c9493c118[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 30 17:32:27 2013 +0800
+
+    syntax hightlight
+
+[33mcommit d7abbd0e4bf5a922b3abc3e75ebed7328df124e9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 25 16:31:00 2013 +0800
+
+    fix compile error
+
+[33mcommit 5e9e8b2541a3b85dadd222bc923540d51f30b09c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 25 16:30:38 2013 +0800
+
+    add TextContentSelector
+
+[33mcommit 0cc0ccee3578ed3ce9a3cd920912bc8b1338da87[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 25 15:41:43 2013 +0800
+
+    add charset specific for easy call of HttpClientDownloader
+
+[33mcommit 478ace7e973d5ae924ed3345722cf4ef143c0df8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 22 07:29:18 2013 +0800
+
+    add FilePageModelPipeline
+
+[33mcommit 0b9e0465ed0fc18541408aa9d496edc0eb0ecf7d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 23:49:15 2013 +0800
+
+    add delay queue
+
+[33mcommit 91dcccf7b574549c7aed4740c74ed30bce6aa795[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 21:55:15 2013 +0800
+
+    add a sample
+
+[33mcommit 4fa82aad20b0d208c8c2b17af2644f82b26c1b75[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 07:44:39 2013 +0800
+
+    readme
+
+[33mcommit 6748fb6bdd142c5e7cbb906bc31fe4849ba75209[m
+Merge: 9bba0b2 3084aef
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 07:37:12 2013 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit 9bba0b2b725f22e867265ce7f39e4c5e7ac9de27[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 07:36:41 2013 +0800
+
+    update readme version
+
+[33mcommit 4f84b5f8d63027cd564918d31b5cac7f614c5586[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 07:33:59 2013 +0800
+
+    update jar
+
+[33mcommit 586fa1b86cadf6956bceb65d43bfe1f9cdff5175[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 07:25:44 2013 +0800
+
+    update jar
+
+[33mcommit eb99cf77557ed7385aa33aed6079fb5166af7bf9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 21 07:24:21 2013 +0800
+
+    update jar
+
+[33mcommit 3084aefe5e5ead3b07cc3d3fd1dd2265ba063873[m
+Merge: ad66d33 ce988d2
+Author: 黄亿华 <code4crafter@gmail.com>
+Date:   Tue Aug 20 16:07:16 2013 -0700
+
+    Merge pull request #17 from linkerlin/master
+    
+    增加了对文件编码的强制限定，限定于UTF-8
+
+[33mcommit ce988d2f19b1a9c29141fdfd7e309c6c961cf4fc[m
+Author: linkerlin <linker.lin@me.com>
+Date:   Wed Aug 21 06:55:18 2013 +0800
+
+    增加了对文件编码的强制限定，限定于UTF-8
+
+[33mcommit ad66d33f3877a10aec3e3c20792e5abdcf9f2e6a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 23:39:59 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit 9dc6b119544aa31533480cec170f01e6ad6baf61[m[33m ([m[1;33mtag: webmagic-parent-0.2.1[m[33m)[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 23:37:55 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-parent-0.2.1
+
+[33mcommit 4f62dfc8a4843af62ab392791d83fa095013bb2e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 23:37:20 2013 +0800
+
+    release
+
+[33mcommit 74c940c758e875584450cb44142a95a31edee068[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 23:19:58 2013 +0800
+
+    [maven-release-plugin] prepare for next development iteration
+
+[33mcommit a4bb4e3429a3340f6178dc918485a78c97e2f5b2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 23:19:27 2013 +0800
+
+    [maven-release-plugin] prepare release webmagic-parent-0.2.1
+
+[33mcommit 194f16aa75d58952d636bc6dac1e5955eb8046e2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 23:16:43 2013 +0800
+
+    update
+
+[33mcommit 09ffd468c02840385cd60315a3a6595877576fe1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 22:53:16 2013 +0800
+
+    fix comments
+
+[33mcommit 0f0f1a9bcd8c1652bf6eff193f370c5aa93cbc46[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 22:51:30 2013 +0800
+
+    release notes
+
+[33mcommit c1471718dfa4154570d5d7d4f552db6ba6f99515[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 22:44:53 2013 +0800
+
+    extractors
+
+[33mcommit 20705b34ac405f4b39d68030b5f1311d9b9fa85d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 22:13:30 2013 +0800
+
+    add more option to extractors
+
+[33mcommit c70ed5702593251853aa2f32ba3dfcd12c59b0d9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 21:55:58 2013 +0800
+
+    remove PriorityScheduler to core
+
+[33mcommit 7003426898ec684194a67130914c17c1566ed233[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 20 21:52:39 2013 +0800
+
+    update pom
+
+[33mcommit 606417fdc71be7a1ec3af3a80be0df6cf0b88bad[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 19 09:55:49 2013 +0800
+
+    update pom
+
+[33mcommit 7335c67fe47f612f54dc6d8cff95c189fb44a0ab[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 19 09:52:59 2013 +0800
+
+    update parent pom
+
+[33mcommit d460e136ef62ad2c328edcd9f05f6c6fb4e4dbee[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 19 09:52:15 2013 +0800
+
+    update version
+
+[33mcommit dcc5d790e4bcbebaa2a1168fd5f9919936bcb831[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 18 07:16:33 2013 +0800
+
+    update readme
+
+[33mcommit 98ca1cf29a81a1419377c743eae12ae31592339a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 18 07:05:17 2013 +0800
+
+    fix
+
+[33mcommit bfd944efe5e840847ff893f83adc7c8d81894b26[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 18 07:04:10 2013 +0800
+
+    add reference to readme
+
+[33mcommit b81b0a309b5689a6b052b2262d8601986c9bbd32[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 23:51:40 2013 +0800
+
+    update readme: and javadoc url
+
+[33mcommit a15a9f0517aab0875fe3a1bed7b76ada6f166077[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 23:42:54 2013 +0800
+
+    readme
+
+[33mcommit d25166a590c07e56358cf36b55060854b1bfdd72[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 23:39:55 2013 +0800
+
+    update docs
+
+[33mcommit fe3a603f87cf2cf1ebad193132b6db6a3b774316[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 23:38:32 2013 +0800
+
+    update default readme to English
+
+[33mcommit 0faf2074c92b2ab251f6cfefb477e863c9f9d29f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 23:38:13 2013 +0800
+
+    update readme
+
+[33mcommit c79d6ecf09105bd925fd70534d639b1b0e32e71c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 23:30:49 2013 +0800
+
+    complete all comments
+
+[33mcommit 90bbe9b9514246215217eaee4c59bd7870bf716d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 23:24:04 2013 +0800
+
+    webmagic-core
+
+[33mcommit 17f8ead28fa65b402f9bb7c0ae76d1c514076a5b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 21:33:54 2013 +0800
+
+    update comments for selector
+
+[33mcommit 77e6ca2945c6f6ff8a2dfd9b314314d6f3c7aed2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 21:26:44 2013 +0800
+
+    update comments
+
+[33mcommit 5073258237d94cacfd5baac218e83c42947033b8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 21:19:24 2013 +0800
+
+    closable
+
+[33mcommit d01c0eb8ce5fe78368e9b1df8c5d4b7a641e47f0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 21:15:36 2013 +0800
+
+    update comments of spider
+
+[33mcommit 5f1f4cbc4625c87ecbef5a60e957a05a7b4b7742[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 20:41:29 2013 +0800
+
+    update comments
+
+[33mcommit 6cc1d62a08d34d74697f9df6e4c178767cc1f93a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 19:42:51 2013 +0800
+
+    bugfix: rawhtml do not work
+
+[33mcommit a994b1c9fd4c8948589f644026964a178289924f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 19:35:45 2013 +0800
+
+    complete extension comments in en
+
+[33mcommit c59c1fe80d69d3a5f6a24e95b3b9a0a50bcf29b4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 19:19:27 2013 +0800
+
+    update  comments
+
+[33mcommit 59aad6a7f4939fcf65c3b9f480fa202ba2fe9dbc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 18:33:05 2013 +0800
+
+    comments in english
+
+[33mcommit e566a539365a6d9a333219102c63ef5a423ac4f5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 18:13:13 2013 +0800
+
+    update ignore test
+
+[33mcommit 1148450ff945c82a07dd1e91df4e6cbd519dc65f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 18:12:47 2013 +0800
+
+    update filecache to more useful
+
+[33mcommit 7829c8fe02369964e40c5c56bc0b70c3191fb10f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 17:37:41 2013 +0800
+
+    update pom
+
+[33mcommit 3ba7a76f44519487584d7b92e22e3770ae12e058[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 17:23:11 2013 +0800
+
+    add combo extract to replace Extract2 Extract3...
+
+[33mcommit f946fcdfea002468306c315c880c07fd3707cac9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 14:18:45 2013 +0800
+
+    backup docs in Chinese
+
+[33mcommit 5cb45af3a45f918ac0b69784c9f13cb8824755f8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 17 12:10:34 2013 +0800
+
+    +doc
+
+[33mcommit fd9ae6d93ea436128f72f21e1157baf29de5fe2c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 16 13:30:28 2013 +0800
+
+    update pom to saticify nexus standard
+
+[33mcommit 9b5936522ebcfa537bcbf526bc99b7325930b8d1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 16 13:08:29 2013 +0800
+
+    update en doc
+
+[33mcommit a074cd131176a68c673e6265c0f2b2f7fc16c647[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 16 12:44:14 2013 +0800
+
+    update en readme
+
+[33mcommit fc68c0f7d86fbfb7188b7dff6d812e269e48ddcb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 16 12:22:00 2013 +0800
+
+    add docs in en
+
+[33mcommit ef673b985e1e58fdb82559e49a54b0ce4c35e31d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 14 13:32:23 2013 +0800
+
+    add a method for httpclientdownloader
+
+[33mcommit 067f3ea0cbe17570a8ffb09575ecf2a740cf1851[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 14 13:30:09 2013 +0800
+
+    add some null pointer check for  httpclientdownloader
+
+[33mcommit 6c61c5476defe632e9c15b00dd556f1b11c01eb5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 13 13:03:24 2013 +0800
+
+    update docs
+
+[33mcommit a339e4ab5cb542199b32cc37d84e03c88bc8eaf6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 12 13:36:44 2013 +0800
+
+    add jsonpathselector
+
+[33mcommit 924d537da3a6a590d3e8bbfa3a3736bd50980038[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 12 10:19:31 2013 +0800
+
+    update manual
+
+[33mcommit 9e82256ce3cb476d5d43f9aa9c61b13d63408637[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 12 10:08:20 2013 +0800
+
+    update docs
+
+[33mcommit 0a902b441c767df909a109ff8d2c31672d025b8f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 12 09:55:17 2013 +0800
+
+    update docs
+
+[33mcommit b3308eb0f0aeccbf228f451b9e87eceef5cc057e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 12 09:38:23 2013 +0800
+
+    update readme
+
+[33mcommit 5d2bd925c2a568205452c665636812e166562ffc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 11 21:41:54 2013 +0800
+
+    new sample
+
+[33mcommit f21097421b67836100ff28c8c1ae163e3ec43917[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 11 18:53:13 2013 +0800
+
+    add new constructor to redisscheduler
+
+[33mcommit 0f2c5b5723de3bf6e39b1328ae6ef21d8c82aa23[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 11 18:28:12 2013 +0800
+
+    update redisscheduler
+
+[33mcommit 787b952932a12ad2055a32f4bffc296d2e05d11c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 11 10:21:26 2013 +0800
+
+    release notes and docs
+
+[33mcommit 1f86ce772050d15f5a7c2e2445a06949da0ebdf4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 10 20:35:43 2013 +0800
+
+    manual
+
+[33mcommit 8b15f3c63d867e22cc58a3aaab55a967756e6194[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 10 20:33:47 2013 +0800
+
+    add test
+
+[33mcommit ade5714d5054ec7fddfd5b31e382513c066a222c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 10 18:52:27 2013 +0800
+
+    add https support
+
+[33mcommit c81f1f2b8d39a7ced687b9814d672663eebaf567[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 10 16:41:45 2013 +0800
+
+    readme
+
+[33mcommit bc264f6c8ba1ec57fc71f26ce76f1e11ed797f42[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 10 08:37:58 2013 +0800
+
+    update docs
+
+[33mcommit 3b1993eaad23574983c77d44f684db9e2c3d0f56[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 10 08:31:03 2013 +0800
+
+    update docs
+
+[33mcommit 19229dd855fad7ca846d189d3cc799d5bb95aea7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 10 08:27:14 2013 +0800
+
+    add JsonFilePageModelPipeline
+
+[33mcommit a3256b501835ed5c2be7223d0245e548b220a9d3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 23:14:00 2013 +0800
+
+    docs
+
+[33mcommit 24747daef023cf5a0158d9da1b4c94c791c1278d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 23:11:14 2013 +0800
+
+    docs
+
+[33mcommit 479e141740ecf1d054ab6539a0d4ba37e5fe0c75[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 23:08:18 2013 +0800
+
+    docs
+
+[33mcommit a9721036a481c7f2cd41ce99ec17b158de1e9650[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 23:02:22 2013 +0800
+
+    docs
+
+[33mcommit 19d067fc5d8083c93b92847b3a018e2e0092b08e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 23:01:27 2013 +0800
+
+    docs
+
+[33mcommit 9832e38cdedc5150e4695832641e1e59bfcee412[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 22:52:30 2013 +0800
+
+    update release notes
+
+[33mcommit 6bd8238c86c6429e467e8731065abfe3e69650e7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 22:42:56 2013 +0800
+
+    remove duplicate doc
+
+[33mcommit 4c4fbe8d37b477634be8d5a41cfd95e72652711c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 22:37:15 2013 +0800
+
+    update readme
+
+[33mcommit 73f7e1d8699866c40a3b99c33065688e19040d56[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 22:20:46 2013 +0800
+
+    docs
+
+[33mcommit 2efe95e95fd95108f4e4350d1cf614b85a6b7ce5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 22:19:38 2013 +0800
+
+    update docs
+
+[33mcommit a16e5fd94586ee2284077af074bfd87b2a6da7fe[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 21:54:24 2013 +0800
+
+    release note
+
+[33mcommit 6bfff857cb66adf0281171738720281bcbfeae81[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 21:44:47 2013 +0800
+
+    release-note
+
+[33mcommit 23f6bb8d32859520d11dcb5071a2d140280434e3[m
+Merge: 9338e13 21eca68
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 21:00:20 2013 +0800
+
+    Merge branch 'annotation'
+
+[33mcommit 21eca688e991668af6f0747272bd1c42c263dba1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 20:56:33 2013 +0800
+
+    complete docs
+
+[33mcommit 17d2d98cecbe85c28785bc4e191bd31777d0a659[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 20:43:06 2013 +0800
+
+    remove invalid @date
+
+[33mcommit 72d29f0857d8c0a15ea83fa84734ed32da9ff6b3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 20:38:28 2013 +0800
+
+    add docs
+
+[33mcommit fcfa2c30c7aee8ebe24d01aa25727efbe33ed1f1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 20:36:27 2013 +0800
+
+    complete docs
+
+[33mcommit 7c0eba5e3f94912874b1953411e3b3ed63c337df[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 00:49:32 2013 +0800
+
+    update manual
+
+[33mcommit 31a84a1998d8f30897e14e5ec599bce057ff06a3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 00:48:35 2013 +0800
+
+    update manual
+
+[33mcommit e04d6253fa3a61fc8846b7d4b154704cbf4ea245[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 9 00:03:14 2013 +0800
+
+    add manual
+
+[33mcommit f41c8ef7554a8eecf1238815235dbb240d3ccb0f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 8 13:53:04 2013 +0800
+
+    remove uncore package from pom
+
+[33mcommit c78de7bcbb2e85cd5df1bcff63af3e3a5236fa3f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 8 13:10:05 2013 +0800
+
+    update notnull default to false
+
+[33mcommit f76def231df9884f25a3a40adfb49423943da74c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 23:36:48 2013 +0800
+
+    remove freemarker dp
+
+[33mcommit b713497a6b288d67960b77196fdef66722ec9d45[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 23:33:10 2013 +0800
+
+    remove freemarker
+
+[33mcommit 48fd0033942433d89c3a838b491c88fbc3971bcb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 23:32:22 2013 +0800
+
+    remove freemarker dep
+
+[33mcommit 521fbad9871f805796f0e19c29a0752b6e66b72e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 23:21:28 2013 +0800
+
+    move xpath2.0 support to seperate package
+
+[33mcommit 268bd8d0c4b1e2385e2d5f97749869c06792122c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 23:04:10 2013 +0800
+
+    remove saxon to extension
+
+[33mcommit c6132e0746123d501c1304e817389f591a5a6ed3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 22:32:58 2013 +0800
+
+    some refector
+
+[33mcommit 194152ab1306a300af7abcf1c8e6a67ec2cab5a6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 22:03:10 2013 +0800
+
+    modify class
+
+[33mcommit 76dcbe605a08904ccf7f4b93bc34745b3668e49d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 21:57:05 2013 +0800
+
+    update main class
+
+[33mcommit afec9d31b858dfea054892beaf06c5e7ee9da847[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 21:51:26 2013 +0800
+
+    add starter
+
+[33mcommit 7555ea0afc51560ade7ab9baeb592eb6efcfd3db[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 14:45:44 2013 +0800
+
+    update readme
+
+[33mcommit f1573b40a2601a1ebf05b952e4398ff4e2e9f4a7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 14:44:52 2013 +0800
+
+    set selenium dep to seperate package
+
+[33mcommit bd1384a5134c08ec690650e1ee10cefe1d961170[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 14:18:58 2013 +0800
+
+    remove samples
+
+[33mcommit 46c65f19c773aac1f11e7a689b4b28486166dcbe[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 14:06:49 2013 +0800
+
+    add maven jar plugin
+
+[33mcommit cff943f6989251bc223e55eb6fb533ee7bae382b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 13:05:12 2013 +0800
+
+    fix path format error
+
+[33mcommit 36384246b558f9492ae99229084c6b5458f5cad1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 12:51:21 2013 +0800
+
+    update package structure
+
+[33mcommit 5ef231a768008686c0c0c2c73921d468c5465b42[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 12:48:32 2013 +0800
+
+    update version
+
+[33mcommit 3f7257957e751b452fa65f78f42e2124790c3658[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 09:47:28 2013 +0800
+
+    add readme
+
+[33mcommit 570533cce51d41f1213077fe1c87f4db4466c39d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 09:45:00 2013 +0800
+
+    update readme
+
+[33mcommit 0954aa9a3ca71b2105073fcbdaf4708e963279ec[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Aug 7 08:05:14 2013 +0800
+
+    update maven dep
+
+[33mcommit e5cf2882b0b2e41068fb9ba473d1a6cf226f74b7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 23:32:02 2013 +0800
+
+    fix a lucene bug
+
+[33mcommit 9ef6de01e46182a26c03bdbf1f4f69f48b68d338[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 23:23:23 2013 +0800
+
+    update readme
+
+[33mcommit 0c8599e3b296df30e29880ee418bdc94e6438e4d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 23:17:07 2013 +0800
+
+    update packages structure
+
+[33mcommit e4c53c4400b840b081bd2a3e3a67ffde9ad9b81b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 23:11:43 2013 +0800
+
+    fix compile error
+
+[33mcommit 8b7e6a350b79d8e5a9c5fc1962b83540f85833a1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 23:11:00 2013 +0800
+
+    add test case back
+
+[33mcommit ac917039a3056b28aeaf586502205ce0408444ad[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 23:05:00 2013 +0800
+
+    orgnize dep
+
+[33mcommit 36494bcfa52d58157117a25c504e73de6b15e1da[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 23:01:43 2013 +0800
+
+    add xpath2.0 api
+
+[33mcommit 5c96407a3d7793e2fa1347c2b6d0d62a0476fd4e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 22:43:31 2013 +0800
+
+    fix a null domain error
+
+[33mcommit f4134504036eab888b0b39e134ae33744eb42f5d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 22:38:12 2013 +0800
+
+    remove duplicated class
+
+[33mcommit c7005a0227e26047030a89929e83a2c734b9dec9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 22:36:37 2013 +0800
+
+    json fix
+
+[33mcommit e5f4b3916f5ee3b50f4b62bf2727c18ffa174084[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 22:26:39 2013 +0800
+
+    change file dir
+
+[33mcommit a2d830f7b068d6f4ea2c0def34ddab2c71b7e049[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 22:25:27 2013 +0800
+
+    change serilizer to fastjson
+
+[33mcommit 5436ecbb7b42b4528358cf23594a9788c602aa91[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 22:12:52 2013 +0800
+
+    update email
+
+[33mcommit 7d277e84d46e3f4ac43841aa3e080cf14b6db4fb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 21:47:44 2013 +0800
+
+    update lucene pipeline
+
+[33mcommit 29f8cd2ec6b70c4a168d71429918e77a7c303465[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 21:26:03 2013 +0800
+
+    change freemarker dep to samples
+
+[33mcommit 789beccfb3ef0100e1ea0585e605dc097f57a997[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 21:23:29 2013 +0800
+
+    update package
+
+[33mcommit b40cca112235289023bb8150de60f1ab3bfd787b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Aug 6 20:41:35 2013 +0800
+
+    move model package to plugin
+
+[33mcommit 4eb3d6008352658e19587f04bf3aae06dbd1e85f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 22:06:39 2013 +0800
+
+    fix nullpointer exception
+
+[33mcommit b0af45f4bbdc075a6dbb124ccfe37d06575510e9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 21:44:29 2013 +0800
+
+    complete redis support
+
+[33mcommit f3a29d931520f893a43836364768f3fb3abd1926[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 21:03:47 2013 +0800
+
+    fix pagedmodel bug
+
+[33mcommit 629f8ac2d11925016142bbd25af6eef573f30c82[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 20:45:34 2013 +0800
+
+    add extractors chain
+
+[33mcommit 27ce3fc17660dc5c2bf3f8c32cf6e4fc55525ab2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 19:36:49 2013 +0800
+
+    lazy init
+
+[33mcommit dc9f574e27b6cfb9c5cfa70809852b92579dab6d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 18:17:52 2013 +0800
+
+    update request
+
+[33mcommit d56c681be1945379e117b8c61be8baec3cb4fcf6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 18:08:28 2013 +0800
+
+    add priority to request
+
+[33mcommit 971e7b6ce2c60efce42eb45a58e684a1bdce37ea[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Aug 5 13:53:13 2013 +0800
+
+    add core
+
+[33mcommit 619a12b3034b4038d1a2e730b967cc316213d834[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 4 21:22:15 2013 +0800
+
+    add paged support
+
+[33mcommit a5c85c3c8b85f2348e9431484a6d5c83231deeaa[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 4 15:12:06 2013 +0800
+
+    add annotation ExtractByRaw
+
+[33mcommit 1a50c64e331ea7c0a7a078cdf172528382209918[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 4 10:05:03 2013 +0800
+
+    update name
+
+[33mcommit a3a868f58466455e59618ff17c6dbd5e9dad156b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 4 09:55:50 2013 +0800
+
+    rename
+
+[33mcommit 04a7fa037ad47afc13410d7825a17c4925fdf733[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 4 09:53:01 2013 +0800
+
+    update pipeline
+
+[33mcommit 21cae2ff2ea8dec0a24b03039e571a9fd37e38b9[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 4 07:53:28 2013 +0800
+
+    update package
+
+[33mcommit cfb8990453a09fdfb79265f07840a8be8a47b60e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Aug 4 03:04:30 2013 +0800
+
+    update author
+
+[33mcommit b393e3832099f09372500cd7164119616f13a455[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 20:42:29 2013 +0800
+
+    add multi entity extract
+
+[33mcommit bfadac756a6db834b04c6033ca44281b9c85c921[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 18:36:03 2013 +0800
+
+    fix an attribute bug
+
+[33mcommit 145628557d39d162fc801c86f2f237a8d36f08f5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 18:01:17 2013 +0800
+
+    update afterextract api
+
+[33mcommit aca165b13257f3fa4116863403efa1ec28b3f468[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 17:38:36 2013 +0800
+
+    add and or selector
+
+[33mcommit 69245e8c03e88ea89e94a9c4ec076b843fbc6f93[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 17:17:59 2013 +0800
+
+    fix Class.assinable bug
+
+[33mcommit 65518f76720553bac0ab966ac164e97b469e85e4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 17:01:25 2013 +0800
+
+    add list support
+
+[33mcommit d4de60a56232a18de823e52c0243dec1f89e6524[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 16:35:12 2013 +0800
+
+    skip test
+
+[33mcommit d26cd82d59af26452cb412badad37db733fd69cf[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 16:29:50 2013 +0800
+
+    rename package
+
+[33mcommit f84b53514f172f46965bbac38a05874791496c0e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 15:55:54 2013 +0800
+
+    complete objectpipeline
+
+[33mcommit 866ab0a05607ab6bc17f7058e86a19207d550031[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 14:01:18 2013 +0800
+
+    update email
+
+[33mcommit 7c9e9ce8694693082d179c47427b053020f899aa[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Aug 3 07:28:46 2013 +0800
+
+    xpath2.0
+
+[33mcommit 7f27c28d4c43d3d0d285d9c997c676659a55f916[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 23:45:13 2013 +0800
+
+    simplify api
+
+[33mcommit d7899e94aeab00d0be2aaed2989c814f08e2cf2b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 23:39:34 2013 +0800
+
+    test saxon and invite XPath2.0 support
+
+[33mcommit 3fe3d8f04455af431647e1e56f4505f512e446e3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 13:51:42 2013 +0800
+
+    update
+
+[33mcommit 901d6fde1d2a851eadb13eb323012860a411ec72[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 08:22:59 2013 +0800
+
+    fix
+
+[33mcommit 29c6a03f6019265fe40bc63b935a9a6a5c006f05[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 08:22:28 2013 +0800
+
+    fix
+
+[33mcommit 516ff3310d3cdf77d79f2508e53b84489f7fac64[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 08:20:55 2013 +0800
+
+    add failfast
+
+[33mcommit 7ee567b8047ed83ea274a1a5dca91f067079fcbd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 08:13:40 2013 +0800
+
+    add some samples
+
+[33mcommit 7a4dbb1f15ecd244d777abb6898b68e939e6fabd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 08:09:37 2013 +0800
+
+    invite notnull
+
+[33mcommit 06a39af0f3e82ccef20a4aa8b91668415e2c07bc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 07:32:37 2013 +0800
+
+    add setter support
+
+[33mcommit abba3b7bff5a386d2a0f77cb82c4b7927bc4534c[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 06:59:25 2013 +0800
+
+    add extract by url
+
+[33mcommit f08ffc34fd6f63faeb6c25693b92f290f9acebfa[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Aug 2 06:33:48 2013 +0800
+
+    rename
+
+[33mcommit 9338e13c38d7b70e1a919c650ebea63f6f42beff[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 1 22:55:19 2013 +0800
+
+    fix a css selector bug=.=!
+
+[33mcommit c5cf05640a6ebcda8cd88d5b0415415bbcacc056[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 1 22:53:44 2013 +0800
+
+    processor
+
+[33mcommit 50edd22ef6351ce554e0c881512eb014ae8f2732[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Aug 1 22:40:57 2013 +0800
+
+    add annotation
+
+[33mcommit 7020b8648d2ddf70cbf39b476970f7ef807832e4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jul 30 21:39:43 2013 +0800
+
+    fix a thread problem
+
+[33mcommit 52fd5cfc1c8f4f5385aec7a2af04101074eeda40[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jul 30 15:24:59 2013 +0800
+
+    fix encoding
+
+[33mcommit 78cfb4d554a38294b408aa13fabe68f17a0814d3[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jul 30 09:36:00 2013 +0800
+
+    dep
+
+[33mcommit aa9bee7b1b1739fc848f84e08980ff834c0cb5ba[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jul 29 20:05:44 2013 +0800
+
+    add comments for selenium driver
+
+[33mcommit e87aabf8fdb76f431d02dd9bd0dbff01973f7856[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jul 29 20:01:44 2013 +0800
+
+    为downloader增加了一个新方法，可设置线程数
+
+[33mcommit 6a87a778fd3f1f0f1f941e698e16bdcb8c0b0c15[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jul 29 18:00:12 2013 +0800
+
+    add selenium download timeout
+
+[33mcommit 18fefa0c0a1de123c77736211a30cc2c97a473e6[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jul 29 10:59:23 2013 +0800
+
+    fix a spider init problem
+
+[33mcommit 54904851eafcee7e8211b4ff19e5c583f0ce9880[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 21:22:57 2013 +0800
+
+    add list output support
+
+[33mcommit 2bb6f847428e85226c7e0875ceff7602b5c43198[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 19:12:55 2013 +0800
+
+    fix redis null pointer exception
+
+[33mcommit 2c97dd90c7d60624864d5d2c2b2e93f725940e76[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 19:02:41 2013 +0800
+
+    fix redisScheduler thread problem
+
+[33mcommit 95ba78468595dd0f1b52f06149e6d61a9c20c2da[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 17:11:07 2013 +0800
+
+    delete
+
+[33mcommit 461cd31718469ab00622ecea2edd5d9a4bc2839a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 16:55:36 2013 +0800
+
+    update
+
+[33mcommit cc18d863f352fd4f21a65ae853e5a7af228389ec[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 16:34:09 2013 +0800
+
+    sleep time
+
+[33mcommit 42508af041ccae2e4c8441e7708ff3a9966c5cbe[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 16:32:51 2013 +0800
+
+    add huaban processor
+
+[33mcommit fe224cbf66f6872bc8b6ea38ffd977d980b17165[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 15:27:47 2013 +0800
+
+    release resource
+
+[33mcommit 5d55d4d7ff182169e9f1e3489ec6409b6fc26d4f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 15:09:01 2013 +0800
+
+    add selenium ignore
+
+[33mcommit 644a90c2d85dab09b7e367377a46de92522cd692[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 15:05:29 2013 +0800
+
+    complete selenium
+
+[33mcommit 86a20eabd97c863d5a79360af831c7084dace1f2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 14:41:30 2013 +0800
+
+    fix a httpclient pool size bug
+
+[33mcommit fcb09f2e08e8ee2e17d4eb3c4cf48200277ab7a7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 14:29:19 2013 +0800
+
+    invite selenium
+
+[33mcommit 74bd74a00599365e7644f1f46e04c506c7a9f327[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 12:05:22 2013 +0800
+
+    readme
+
+[33mcommit c0608615006474078b08a48a9939d327f736e466[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 12:04:08 2013 +0800
+
+    update structrue
+
+[33mcommit fed3c0c98a1695e4f7e3e4a70809cbc6c7f9783f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 11:55:40 2013 +0800
+
+    update readme
+
+[33mcommit d3e527fd6bc7b6281eb479152911b4a17b33ee10[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 11:52:23 2013 +0800
+
+    try invite selenium
+
+[33mcommit c2142f872b0a21be06c7802a82912d0b0e474f03[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 26 08:24:08 2013 +0800
+
+    add iteye sample
+
+[33mcommit 2a19d80311aa4265bdd973769f22cd862717c80d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jul 25 13:51:03 2013 +0800
+
+    release notes
+
+[33mcommit 72525815e554df916458eb699b90b79e42942391[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jul 25 13:48:56 2013 +0800
+
+    add results
+
+[33mcommit 65dc37215242b60047e7652d270a1373a8c0d9f5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jul 25 13:32:39 2013 +0800
+
+    update pipeline api
+
+[33mcommit 55d80129bfe271d9c692f30548bbba21c040abe7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jul 25 08:20:21 2013 +0800
+
+    invite redis for distribution
+
+[33mcommit 619aab439941bb12ad09ca48284c2ccfeb688790[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 22:10:48 2013 +0800
+
+    readme
+
+[33mcommit 0a2b9137fc160d407b674acbe34cfce386edc0ef[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 22:07:54 2013 +0800
+
+    release
+
+[33mcommit 2b3554c152e2b1fd43830b4ddbcb4e6cdec1364e[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 21:09:40 2013 +0800
+
+    release note
+
+[33mcommit 55903923306b3b8920128306bfbe81882a4c1dbc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 20:58:37 2013 +0800
+
+    readme
+
+[33mcommit b2daae61b7abbb6216643a1626a65758eb315bbc[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 20:48:58 2013 +0800
+
+    update docs
+
+[33mcommit cea866520d7b959174027624d4131b5f6ed2a1c0[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 20:45:45 2013 +0800
+
+    update version
+
+[33mcommit de006333c8a43304f27424c43e0ed3931e68804a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 20:38:49 2013 +0800
+
+    update java docs
+
+[33mcommit 827972d80f9a1e0532547f2d7cb0e4c55b21e554[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 19:49:00 2013 +0800
+
+    update java docs
+
+[33mcommit 96454fd74c5eeb90fb227e5ac79b84c47a99fef1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jul 24 18:26:54 2013 +0800
+
+    update java doc
+
+[33mcommit 81e7f7982e7d40fd6c2701b542893c745be4849f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jul 20 08:34:18 2013 +0800
+
+    invite jsoup and cssselector
+
+[33mcommit c7330460454d18dbedb56634b69aadd0b43b21c5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Fri Jul 19 12:34:22 2013 +0800
+
+    +sina blog
+
+[33mcommit 900172c9685c2a5f2ed3896248f4d4656b08d066[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jul 18 18:23:15 2013 +0800
+
+    ignore
+
+[33mcommit 70c22a979417b527df13536f22a47ff98cf77cbf[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jul 18 18:12:16 2013 +0800
+
+    remove
+
+[33mcommit 2b34dc9d3fe23861d6cfc117274c3710e64e7230[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jul 18 17:22:26 2013 +0800
+
+    add retry
+
+[33mcommit 5c79550fd93d1188ab8018e45a2e211766727b81[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 24 14:42:49 2013 +0800
+
+    add offline cache and process
+
+[33mcommit a7316a1f57f917a18e1d11c3badc731634c50b95[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 23 22:16:04 2013 +0800
+
+    add runasync
+
+[33mcommit cad2594a08716b5ff3867ae3271daf8f9d1f04a7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 23 21:09:26 2013 +0800
+
+    add multithread support
+
+[33mcommit 5a6a68a3181c8aa3b5ad98fa3f28512bff247304[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 23 18:56:31 2013 +0800
+
+    add gzip support
+
+[33mcommit adeed3bcaf1f7d1e82ae1d60b01894d4eea4386a[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 23 17:06:43 2013 +0800
+
+    add extra
+
+[33mcommit a0bcfb856729ba6a1179eab45f89640ed5cb5512[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 23 17:05:10 2013 +0800
+
+    add extra for page
+
+[33mcommit 7e17c71c3e05830e62048e5f18f0c2ca5fe67ab8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 23 16:57:01 2013 +0800
+
+    add page skip
+
+[33mcommit 9b1ba6e8bc5e2cd8232689ef65ab053809ed2dfd[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 20 17:57:31 2013 +0800
+
+    ignore unstable test
+
+[33mcommit 95c8b2a8a44262fc20c4d5eddb9cf7ba18cfb753[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 20 17:54:46 2013 +0800
+
+    add jdk
+
+[33mcommit e30872c7a33e2823c44dbe8d01373df3eaf3d3e5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 20 17:53:07 2013 +0800
+
+    ignore long time test
+
+[33mcommit 5357909339f498962f01599acece4bed8d272feb[m
+Author: yihua.huang <yihua.huang@dianping.com>
+Date:   Thu Jun 20 17:43:33 2013 +0800
+
+    bugfix
+
+[33mcommit 5cfdb10f8120e24c140a059da76ca75fbd028a07[m
+Author: yihua.huang <yihua.huang@dianping.com>
+Date:   Thu Jun 20 17:39:06 2013 +0800
+
+    update api to support jdk 1.6
+
+[33mcommit d2020d8c018c107ab9b12719563c1cc82ebdf690[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 20 08:22:53 2013 +0800
+
+    update readme
+
+[33mcommit e1e25cb5e75f31f796c15037698ef34587d5e632[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 20 08:21:48 2013 +0800
+
+    update javadoc
+
+[33mcommit b1f023ead5cd15a51fa20af4003924410757dce7[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 20 07:54:55 2013 +0800
+
+    fix spell error=.=
+
+[33mcommit 7bed01c9f267ee75b15eeb0c554d31bd5553f816[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 20 07:53:48 2013 +0800
+
+    update Spider api
+
+[33mcommit 69ff524d86cf786cea746ebce221a475a915df9f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 19 10:14:17 2013 +0800
+
+    update api in READEME
+
+[33mcommit 986ae0beafa72fd205774513b4d8cdf673605594[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 19 09:57:41 2013 +0800
+
+    update Select api: remove x() s() etc.
+
+[33mcommit 586d23ef6387e0f5905de2bd53329ae456b0f3b1[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Wed Jun 19 08:20:21 2013 +0800
+
+    add package infos
+
+[33mcommit 956d5cb3c812a68a29ff3a8daa531507dcd3bdc2[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 22:39:37 2013 +0800
+
+    docs
+
+[33mcommit fb0797b65c2e78b1cfe072685cdee873ff931746[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 22:13:40 2013 +0800
+
+    update docs
+
+[33mcommit 8f954c79975197bd27725defd617862089526367[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 18:30:45 2013 +0800
+
+    fix samples
+
+[33mcommit 312e1bce87981301dde04cfb7a61a04d887ad973[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 18:02:30 2013 +0800
+
+    fix compile error
+
+[33mcommit 019353b41e0b3dbb77a2418722de8311068d5619[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 17:46:00 2013 +0800
+
+    update readme, markdown syntax **
+
+[33mcommit 49a4ad66d3518078194d7cae8a15d776edfd7960[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 17:42:31 2013 +0800
+
+    add uuid to spider
+
+[33mcommit 6428e20543bf2fed89acdab1d8be43d732c158eb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 14:34:09 2013 +0800
+
+    add id
+
+[33mcommit 632ca0ef833837452ee6c91a919db612904ee608[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 11:21:53 2013 +0800
+
+    update readme
+
+[33mcommit f6ccb9c588e4ca9bb569d6d15529e8c261de385b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 10:02:11 2013 +0800
+
+    add warning
+
+[33mcommit 0ae7adf3241178fdb1ef8a679a519c70412add73[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 08:32:11 2013 +0800
+
+    add cookie support & add docs
+
+[33mcommit 8cef8774cb5e8793b5ebb495ca5c8344ba78c64f[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Tue Jun 18 07:24:19 2013 +0800
+
+    change author info
+
+[33mcommit 672db58db7d9e6af447eb973260f648a815cdbef[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 17 13:29:17 2013 +0800
+
+    format
+
+[33mcommit 67b0c580f8a5ff591a655bf72dc5600eb66b00e4[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 17 13:21:47 2013 +0800
+
+    add thanks
+
+[33mcommit 328f174d11315c63a21cec5b7a60d1d8f606ffd8[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 17 11:27:44 2013 +0800
+
+    fix pom
+
+[33mcommit e9200a57d7a6917c0e549968eecdcf3f9449229b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 17 11:23:29 2013 +0800
+
+    fix pom
+
+[33mcommit 0efbf19a383ecd2340223f7b9ebb6686732b553d[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 17 11:14:44 2013 +0800
+
+    invite travis
+
+[33mcommit f0fa1dad07a7d3c98b645a1a29b6b21578f80232[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 17 11:12:22 2013 +0800
+
+    clean some code
+
+[33mcommit 01f49aad3c377bb6600cade9774818aa9bf12c98[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 16 14:47:02 2013 +0800
+
+    fix a pom error
+
+[33mcommit f57ada8114407060bde32a3116faf33b54948cbb[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Thu Jun 13 15:58:42 2013 +0800
+
+    update readme
+
+[33mcommit 42a2ec03ee1bfd399fd703ae1e06a951cbbf9bef[m
+Author: 黄亿华 <code4crafter@gmail.com>
+Date:   Thu Jun 13 15:51:05 2013 +0800
+
+    update pom
+
+[33mcommit 1c1bf895225ada46154ab3a282861cfe4aa2b52b[m
+Merge: 8774cce 906e68c
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 10 12:18:04 2013 +0800
+
+    Merge branch 'master' of github.com:code4craft/webmagic
+
+[33mcommit 8774cce7dabd5fb906ff77956aea6fa9443c603b[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 10 12:17:53 2013 +0800
+
+    files
+
+[33mcommit 3d4ad02b2943e6102f2ba6ccf3f61ef10a686e29[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Mon Jun 10 12:15:29 2013 +0800
+
+    fix freemarker dir error
+
+[33mcommit 906e68cbfa918617583a3a40e308ef7fc6d25c08[m
+Author: 黄亿华 <code4crafter@gmail.com>
+Date:   Sun Jun 9 22:00:39 2013 +0800
+
+    update comment
+
+[33mcommit e6d415cd69a80eaafa18345ab467c3e5010612d1[m
+Author: 黄亿华 <code4crafter@gmail.com>
+Date:   Sun Jun 9 22:55:49 2013 +0900
+
+    update samples
+
+[33mcommit 412abeb8df60f07a5ae4377b95f34ff5cfa78bcf[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 9 18:06:29 2013 +0800
+
+    add comments
+
+[33mcommit c2e691a55f77d1b8bac45cbace82b810abfb0016[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 9 17:16:16 2013 +0800
+
+    add wp scripts
+
+[33mcommit ecb61d13857a0ddb35a406b540ac77b1f74819ba[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sun Jun 9 12:56:16 2013 +0800
+
+    update pipeline
+
+[33mcommit 755b9aa84e1b3a61e218efa6497e358a086bcb13[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jun 8 20:59:27 2013 +0800
+
+    remove samples in test
+
+[33mcommit 9d04fe3a76f7252ffe7add580738000b3c1c0203[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jun 8 20:49:43 2013 +0800
+
+    split modules
+
+[33mcommit 6dc88fa111b273b01694eca37cac8f5daba3fe14[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jun 8 20:48:27 2013 +0800
+
+    split modules
+
+[33mcommit 3c3f0011869f58fbb7524ebcade491236e79d1c5[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jun 8 20:29:53 2013 +0800
+
+    fix charset bug
+
+[33mcommit d1fc1cf305d51af303b0740f2e3b10a853b5e364[m
+Author: yihua.huang <code4crafter@gmail.com>
+Date:   Sat Jun 8 20:20:30 2013 +0800
+
+    add diaoyuwen
+
+[33mcommit 413b97c9043788ec859d3a52282e900d3f793b39[m
+Author: code4craft <code4crafter@gmail.com>
+Date:   Mon May 20 18:31:19 2013 +0800
+
+    add meican
+
+[33mcommit 1d870f3c915a07497001f254bdaa3214c158073d[m
+Author: code4craft <code4crafter@gmail.com>
+Date:   Wed Apr 24 07:54:16 2013 +0800
+
+    修复一个编码错误
+
+[33mcommit 546f4557d68363220d3ffd1b83731ada7550ca03[m
+Author: code4craft <code4crafter@gmail.com>
+Date:   Tue Apr 23 20:59:13 2013 +0800
+
+    readme
+
+[33mcommit 359e965c7f3ff5a3b9c7a835cfc1bb612bb491d3[m
+Author: code4craft <code4crafter@gmail.com>
+Date:   Tue Apr 23 20:58:03 2013 +0800
+
+    init

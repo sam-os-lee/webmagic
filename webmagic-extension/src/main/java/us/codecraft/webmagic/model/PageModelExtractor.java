@@ -22,19 +22,21 @@ import java.util.regex.Pattern;
 
 /**
  * The main internal logic of page model extractor.
+ * 
+ * 主要内部pagemodel提取类
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
  */
 class PageModelExtractor {
 
-    private List<Pattern> targetUrlPatterns = new ArrayList<Pattern>();
+    private List<Pattern> targetUrlPatterns = new ArrayList<Pattern>();  // 目标url集合
 
-    private Selector targetUrlRegionSelector;
+    private Selector targetUrlRegionSelector;  // 目标url提取
 
-    private List<Pattern> helpUrlPatterns = new ArrayList<Pattern>();
+    private List<Pattern> helpUrlPatterns = new ArrayList<Pattern>();  // 帮助url集合
 
-    private Selector helpUrlRegionSelector;
+    private Selector helpUrlRegionSelector;  // 帮助url提取
 
     private Class clazz;
 

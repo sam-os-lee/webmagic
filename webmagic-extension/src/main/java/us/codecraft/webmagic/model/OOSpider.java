@@ -13,6 +13,9 @@ import java.util.List;
  * The spider for page model extractor.<br>
  * In webmagic, we call a POJO containing extract result as "page model". <br>
  * You can customize a crawler by write a page model with annotations. <br>
+ * 
+ * 页面的提取,pojo类包含提取的页面结果
+ * 
  * Such as:
  * <pre>
  * {@literal @}TargetUrl("http://my.oschina.net/flashsword/blog/\\d+")
@@ -40,9 +43,9 @@ import java.util.List;
  */
 public class OOSpider<T> extends Spider {
 
-    private ModelPageProcessor modelPageProcessor;
+    private ModelPageProcessor modelPageProcessor;  // process
 
-    private ModelPipeline modelPipeline;
+    private ModelPipeline modelPipeline;  // pipeline
 
     private PageModelPipeline pageModelPipeline;
 

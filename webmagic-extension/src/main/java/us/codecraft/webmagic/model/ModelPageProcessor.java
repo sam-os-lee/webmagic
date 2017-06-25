@@ -19,6 +19,7 @@ import java.util.regex.Pattern;
  */
 class ModelPageProcessor implements PageProcessor {
 
+	// 页面model提取列集合
     private List<PageModelExtractor> pageModelExtractorList = new ArrayList<PageModelExtractor>();
 
     private Site site;
@@ -32,6 +33,10 @@ class ModelPageProcessor implements PageProcessor {
     }
 
 
+    /**
+     * @param clazz PageMode类
+     * @return
+     */
     public ModelPageProcessor addPageModel(Class clazz) {
         PageModelExtractor pageModelExtractor = PageModelExtractor.create(clazz);
         pageModelExtractorList.add(pageModelExtractor);
@@ -59,6 +64,13 @@ class ModelPageProcessor implements PageProcessor {
         }
     }
 
+    /**
+     * 提取页面链接
+     * 
+     * @param page
+     * @param urlRegionSelector
+     * @param urlPatterns
+     */
     private void extractLinks(Page page, Selector urlRegionSelector, List<Pattern> urlPatterns) {
         List<String> links;
         if (urlRegionSelector == null) {
