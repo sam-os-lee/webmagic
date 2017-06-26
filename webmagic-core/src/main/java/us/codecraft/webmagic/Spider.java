@@ -494,6 +494,8 @@ public class Spider implements Runnable, Task {
 
     /**
      * Add urls to crawl. <br>
+     * 
+     * 添加url到爬虫
      *
      * @param urls urls
      * @return this

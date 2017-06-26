@@ -4,6 +4,8 @@ import java.io.File;
 
 /**
  * Base object of file persistence.
+ * 
+ * 文件持久化类
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
@@ -15,6 +17,7 @@ public class FilePersistentBase {
     public static String PATH_SEPERATOR = "/";
 
     static {
+    	// 系统平台分隔符
         String property = System.getProperties().getProperty("file.separator");
         if (property != null) {
             PATH_SEPERATOR = property;
@@ -33,6 +36,11 @@ public class FilePersistentBase {
         return new File(fullName);
     }
 
+    /**
+     * 创建父目录
+     * 
+     * @param fullName
+     */
     public void checkAndMakeParentDirecotry(String fullName) {
         int index = fullName.lastIndexOf(PATH_SEPERATOR);
         if (index > 0) {

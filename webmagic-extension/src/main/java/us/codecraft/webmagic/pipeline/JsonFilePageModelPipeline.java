@@ -17,6 +17,8 @@ import java.io.PrintWriter;
  * Store results objects (page models) to files in JSON format.<br>
  * Use model.getKey() as file name if the model implements HasKey.<br>
  * Otherwise use SHA1 as file name.
+ * 
+ * 以Json格式保存结果到文件,
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
@@ -36,6 +38,9 @@ public class JsonFilePageModelPipeline extends FilePersistentBase implements Pag
         setPath(path);
     }
 
+    /**
+     * 将对象以json格式写入文件
+     */
     @Override
     public void process(Object o, Task task) {
         String path = this.path + PATH_SEPERATOR + task.getUUID() + PATH_SEPERATOR;

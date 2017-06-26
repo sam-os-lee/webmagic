@@ -11,6 +11,9 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * Basic Scheduler implementation.<br>
  * Store urls to fetch in LinkedBlockingQueue and remove duplicate urls by HashMap.
+ * 
+ * url调度
+ * 通过linkedBlockingQueue保存url,以及去除重复url
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0

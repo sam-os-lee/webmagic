@@ -4,6 +4,8 @@ import us.codecraft.webmagic.Task;
 
 /**
  * The scheduler whose requests can be counted for monitor.
+ * 
+ * 调度监视统计
  *
  * @author code4crafter@gmail.com
  * @since 0.5.0

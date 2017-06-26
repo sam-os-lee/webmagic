@@ -2,6 +2,8 @@ package us.codecraft.webmagic;
 
 /**
  * Interface for identifying different tasks.<br>
+ * 
+ * 标识不同任务
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0

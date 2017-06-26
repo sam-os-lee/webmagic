@@ -10,6 +10,8 @@ import us.codecraft.webmagic.utils.HttpConstant;
 
 /**
  * Remove duplicate urls and only push urls which are not duplicate.<br><br>
+ * 
+ * 去除重复url
  *
  * @author code4crafer@gmail.com
  * @since 0.5.0

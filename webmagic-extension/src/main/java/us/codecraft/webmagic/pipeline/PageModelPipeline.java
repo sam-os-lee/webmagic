@@ -4,6 +4,8 @@ import us.codecraft.webmagic.Task;
 
 /**
  * Implements PageModelPipeline to persistent your page model.
+ * 
+ * 持久化page model
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
