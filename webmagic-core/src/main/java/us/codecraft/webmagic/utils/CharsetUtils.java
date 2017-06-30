@@ -21,6 +21,14 @@ public abstract class CharsetUtils {
 
     private static Logger logger = LoggerFactory.getLogger(CharsetUtils.class);
 
+    /**
+     * 解析侦测内容编码
+     * 
+     * @param contentType
+     * @param contentBytes
+     * @return
+     * @throws IOException
+     */
     public static String detectCharset(String contentType, byte[] contentBytes) throws IOException {
         String charset;
         // charset

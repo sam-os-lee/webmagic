@@ -13,6 +13,8 @@ import java.util.regex.Pattern;
 
 /**
  * The extension to PageProcessor for page model extractor.
+ * 
+ * 提取的页面model被ModelPageProcessor处理
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
@@ -25,6 +27,7 @@ class ModelPageProcessor implements PageProcessor {
     private Site site;
 
     public static ModelPageProcessor create(Site site, Class... clazzs) {
+    	// ModelPageProcessor 四大组件之一PageProcess页面处理器
         ModelPageProcessor modelPageProcessor = new ModelPageProcessor(site);
         for (Class clazz : clazzs) {
             modelPageProcessor.addPageModel(clazz);

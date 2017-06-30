@@ -61,11 +61,14 @@ public class Xpath2Selector implements Selector {
 
         private void put(String prefix, String namespaceURI) {
             prefix2NamespaceMap.put(prefix, namespaceURI);
+            
             List<String> prefixes = namespace2PrefixMap.get(namespaceURI);
+            
             if (prefixes == null) {
                 prefixes = new ArrayList<String>();
                 namespace2PrefixMap.put(namespaceURI, prefixes);
             }
+            
             prefixes.add(prefix);
         }
 

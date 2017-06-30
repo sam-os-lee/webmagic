@@ -6,6 +6,8 @@ import java.util.List;
 /**
  * Selectable plain text.<br>
  * Can not be selected by XPath or CSS Selector.
+ * 
+ * 平文本选择器
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0

@@ -18,7 +18,7 @@ import java.io.PrintWriter;
  * Use model.getKey() as file name if the model implements HasKey.<br>
  * Otherwise use SHA1 as file name.
  * 
- * 以Json格式保存结果到文件,
+ * 将page模型以json格式保存结果到文件,
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
@@ -29,6 +29,8 @@ public class JsonFilePageModelPipeline extends FilePersistentBase implements Pag
 
     /**
      * new JsonFilePageModelPipeline with default path "/data/webmagic/"
+     * 
+     * 默认保存路径:/data/webmagic/
      */
     public JsonFilePageModelPipeline() {
         setPath("/data/webmagic/");

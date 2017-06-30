@@ -47,6 +47,11 @@ public class HttpClientGenerator {
         connectionManager.setDefaultMaxPerRoute(100);
     }
 
+    /**
+     * 构建ssl链接socket工厂
+     * 
+     * @return
+     */
 	private SSLConnectionSocketFactory buildSSLConnectionSocketFactory() {
 		try {
 			return new SSLConnectionSocketFactory(createIgnoreVerifySSL()); // 优先绕过安全证书
@@ -91,6 +96,12 @@ public class HttpClientGenerator {
         return generateClient(site);
     }
 
+    /**
+     * http请求协议头
+     * 
+     * @param site
+     * @return
+     */
     private CloseableHttpClient generateClient(Site site) {
         HttpClientBuilder httpClientBuilder = HttpClients.custom();
         
@@ -113,11 +124,12 @@ public class HttpClientGenerator {
             });
         }
         //解决post/redirect/post 302跳转问题
-        httpClientBuilder.setRedirectStrategy(new CustomRedirectStrategy());
+        httpClientBuilder.setRedirectStrategy(new CustomRedirectStrategy());  // 转发策略
 
         SocketConfig.Builder socketConfigBuilder = SocketConfig.custom();
         socketConfigBuilder.setSoKeepAlive(true).setTcpNoDelay(true);
         socketConfigBuilder.setSoTimeout(site.getTimeOut());
+        
         SocketConfig socketConfig = socketConfigBuilder.build();
         httpClientBuilder.setDefaultSocketConfig(socketConfig);
         connectionManager.setDefaultSocketConfig(socketConfig);
@@ -126,6 +138,12 @@ public class HttpClientGenerator {
         return httpClientBuilder.build();
     }
 
+    /**
+     * 生成cookie
+     * 
+     * @param httpClientBuilder
+     * @param site
+     */
     private void generateCookie(HttpClientBuilder httpClientBuilder, Site site) {
         CookieStore cookieStore = new BasicCookieStore();
         for (Map.Entry<String, String> cookieEntry : site.getCookies().entrySet()) {
@@ -133,6 +151,7 @@ public class HttpClientGenerator {
             cookie.setDomain(site.getDomain());
             cookieStore.addCookie(cookie);
         }
+        
         for (Map.Entry<String, Map<String, String>> domainEntry : site.getAllCookies().entrySet()) {
             for (Map.Entry<String, String> cookieEntry : domainEntry.getValue().entrySet()) {
                 BasicClientCookie cookie = new BasicClientCookie(cookieEntry.getKey(), cookieEntry.getValue());

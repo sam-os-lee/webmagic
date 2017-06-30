@@ -39,11 +39,15 @@ public class HttpUriRequestConverter {
 
     private HttpClientContext convertHttpClientContext(Request request, Site site, Proxy proxy) {
         HttpClientContext httpContext = new HttpClientContext();
+        // 设置代理
         if (proxy != null && proxy.getUsername() != null) {
             AuthState authState = new AuthState();
+            // 代理用户
             authState.update(new BasicScheme(), new UsernamePasswordCredentials(proxy.getUsername(), proxy.getPassword()));
             httpContext.setAttribute(HttpClientContext.PROXY_AUTH_STATE, authState);
         }
+        
+        // 设置cookie
         if (request.getCookies() != null && !request.getCookies().isEmpty()) {
             CookieStore cookieStore = new BasicCookieStore();
             for (Map.Entry<String, String> cookieEntry : request.getCookies().entrySet()) {
@@ -51,6 +55,7 @@ public class HttpUriRequestConverter {
                 cookie1.setDomain(UrlUtils.removePort(UrlUtils.getDomain(request.getUrl())));
                 cookieStore.addCookie(cookie1);
             }
+            
             httpContext.setCookieStore(cookieStore);
         }
         return httpContext;
@@ -59,6 +64,7 @@ public class HttpUriRequestConverter {
     private HttpUriRequest convertHttpUriRequest(Request request, Site site, Proxy proxy) {
         RequestBuilder requestBuilder = selectRequestMethod(request).setUri(request.getUrl());
         if (site.getHeaders() != null) {
+        	// 设置http请求头信息
             for (Map.Entry<String, String> headerEntry : site.getHeaders().entrySet()) {
                 requestBuilder.addHeader(headerEntry.getKey(), headerEntry.getValue());
             }
@@ -66,6 +72,7 @@ public class HttpUriRequestConverter {
 
         RequestConfig.Builder requestConfigBuilder = RequestConfig.custom();
         if (site != null) {
+        	// 设置链接超时信息
             requestConfigBuilder.setConnectionRequestTimeout(site.getTimeOut())
                     .setSocketTimeout(site.getTimeOut())
                     .setConnectTimeout(site.getTimeOut())
@@ -73,8 +80,10 @@ public class HttpUriRequestConverter {
         }
 
         if (proxy != null) {
+        	// 设置http代理
             requestConfigBuilder.setProxy(new HttpHost(proxy.getHost(), proxy.getPort()));
         }
+        
         requestBuilder.setConfig(requestConfigBuilder.build());
         HttpUriRequest httpUriRequest = requestBuilder.build();
         if (request.getHeaders() != null && !request.getHeaders().isEmpty()) {
@@ -85,6 +94,12 @@ public class HttpUriRequestConverter {
         return httpUriRequest;
     }
 
+    /**
+     * 获取http请求方法
+     * 
+     * @param request
+     * @return
+     */
     private RequestBuilder selectRequestMethod(Request request) {
         String method = request.getMethod();
         if (method == null || method.equalsIgnoreCase(HttpConstant.Method.GET)) {
@@ -104,6 +119,13 @@ public class HttpUriRequestConverter {
         throw new IllegalArgumentException("Illegal HTTP Method " + method);
     }
 
+    /**
+     * 设置表单参数
+     * 
+     * @param requestBuilder
+     * @param request
+     * @return
+     */
     private RequestBuilder addFormParams(RequestBuilder requestBuilder, Request request) {
         if (request.getRequestBody() != null) {
             ByteArrayEntity entity = new ByteArrayEntity(request.getRequestBody().getBody());

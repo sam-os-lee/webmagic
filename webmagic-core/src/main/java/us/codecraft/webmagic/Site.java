@@ -7,7 +7,8 @@ import java.util.*;
 /**
  * Object contains setting for crawler.<br>
  * 
- * 爬虫网络设置
+ * 爬虫网络设置类.
+ * 整个网站的整体配置.
  *
  * @author code4crafter@gmail.com <br>
  * @see us.codecraft.webmagic.processor.PageProcessor

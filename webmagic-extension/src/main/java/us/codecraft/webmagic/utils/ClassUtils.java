@@ -11,7 +11,7 @@ import java.util.Set;
 public abstract class ClassUtils {
 
 	/**
-	 * 迭代获取类所有的声明的字段
+	 * 迭代获取类所有声明的字段
 	 * 
 	 * @param clazz
 	 * @return

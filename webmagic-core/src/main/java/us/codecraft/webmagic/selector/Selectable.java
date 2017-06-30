@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * Selectable text.<br>
+ * 
+ * 文本选择器
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0

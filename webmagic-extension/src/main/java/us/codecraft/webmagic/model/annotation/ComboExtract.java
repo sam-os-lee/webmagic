@@ -6,6 +6,11 @@ import java.lang.annotation.Target;
 
 /**
  * Combo 'ExtractBy' extractor with and/or operator.
+ * 
+ * 提取时
+ * a)条件必须是and全部符合
+ * b)条件只要符合一个or
+ *  
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.1
@@ -28,7 +33,7 @@ public @interface ComboExtract {
          * All extractors will be arranged as a pipeline. <br>
          * The next extractor uses the result of the previous as source.
          * 
-         * 下一个提取使用上一次结果
+         * 所有提取将会安排给pipeline, 下一个提取使用上一次结果
          */
         And,
         /**

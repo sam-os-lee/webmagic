@@ -129,6 +129,12 @@ public class UrlUtils {
 
     private static final Pattern patternForCharset = Pattern.compile("charset\\s*=\\s*['\"]*([^\\s;'\"]*)");
 
+    /**
+     * 获取协议头编码
+     * 
+     * @param contentType
+     * @return
+     */
     public static String getCharset(String contentType) {
         Matcher matcher = patternForCharset.matcher(contentType);
         if (matcher.find()) {

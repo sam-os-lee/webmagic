@@ -7,6 +7,8 @@ import us.codecraft.webmagic.selector.Html;
 
 /**
  * Base class of downloader with some common methods.
+ * 
+ * downloader通用方法
  *
  * @author code4crafter@gmail.com
  * @since 0.5.0
@@ -15,7 +17,9 @@ public abstract class AbstractDownloader implements Downloader {
 
     /**
      * A simple method to download a url.
-     *
+     * 
+     * 简单下载方法
+     * 
      * @param url url
      * @return html
      */
@@ -25,6 +29,8 @@ public abstract class AbstractDownloader implements Downloader {
 
     /**
      * A simple method to download a url.
+     * 
+     * 简单下载方法
      *
      * @param url url
      * @param charset charset

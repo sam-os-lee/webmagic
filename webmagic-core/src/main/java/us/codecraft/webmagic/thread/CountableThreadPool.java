@@ -12,6 +12,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * New feature: <br><br>
  * 1. Block when thread pool is full to avoid poll many urls without process. <br><br>
  * 2. Count of thread alive for monitor.
+ * 
+ * 工作线程池
  *
  * @author code4crafer@gmail.com
  * @since 0.5.0
@@ -52,7 +54,7 @@ public class CountableThreadPool {
 
     public void execute(final Runnable runnable) {
 
-
+    	// 如果超过最大线程数目,限制执行
         if (threadAlive.get() >= threadNum) {
             try {
                 reentrantLock.lock();
@@ -71,6 +73,7 @@ public class CountableThreadPool {
             @Override
             public void run() {
                 try {
+                	// 直接调用run()函数
                     runnable.run();
                 } finally {
                     try {

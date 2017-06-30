@@ -20,6 +20,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Store urls and cursor in files so that a Spider can resume the status when shutdown.<br>
+ * 
+ * 保存文件url及游标.以便于恢复
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
@@ -28,11 +30,11 @@ public class FileCacheQueueScheduler extends DuplicateRemovedScheduler implement
 
     private String filePath = System.getProperty("java.io.tmpdir");
 
-    private String fileUrlAllName = ".urls.txt";
+    private String fileUrlAllName = ".urls.txt";  // url文件
 
     private Task task;
 
-    private String fileCursor = ".cursor.txt";
+    private String fileCursor = ".cursor.txt";  // 游标文件
 
     private PrintWriter fileUrlWriter;
 
@@ -67,9 +69,11 @@ public class FileCacheQueueScheduler extends DuplicateRemovedScheduler implement
         if (!file.exists()) {
             file.mkdirs();
         }
-        readFile();
-        initWriter();
-        initFlushThread();
+        
+        readFile();  // 读取文件
+        initWriter();  // 初始化写操作
+        initFlushThread();  // 初始化flush线程
+        
         inited.set(true);
         logger.info("init cache scheduler success");
     }
@@ -116,12 +120,17 @@ public class FileCacheQueueScheduler extends DuplicateRemovedScheduler implement
         }
     }
 
+    /**
+     * 读取文件
+     */
     private void readFile() {
         try {
             queue = new LinkedBlockingQueue<Request>();
             urls = new LinkedHashSet<String>();
-            readCursorFile();
-            readUrlFile();
+            
+            readCursorFile();  // 读取游标文件
+            readUrlFile();  // 读取url文件
+            
             // initDuplicateRemover();
         } catch (FileNotFoundException e) {
             //init
@@ -131,6 +140,11 @@ public class FileCacheQueueScheduler extends DuplicateRemovedScheduler implement
         }
     }
 
+    /**
+     * 读取url文件
+     * 
+     * @throws IOException
+     */
     private void readUrlFile() throws IOException {
         String line;
         BufferedReader fileUrlReader = null;
@@ -151,6 +165,11 @@ public class FileCacheQueueScheduler extends DuplicateRemovedScheduler implement
         }
     }
 
+    /**
+     * 读取游标文件
+     * 
+     * @throws IOException
+     */
     private void readCursorFile() throws IOException {
         BufferedReader fileCursorReader = null;
         try {

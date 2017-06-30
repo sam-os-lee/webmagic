@@ -9,6 +9,8 @@ import java.util.List;
 
 /**
  * XPath selector based on Xsoup.<br>
+ * 
+ * XPath 选择器
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.3.0

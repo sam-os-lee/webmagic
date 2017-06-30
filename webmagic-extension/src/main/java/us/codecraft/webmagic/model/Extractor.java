@@ -4,6 +4,9 @@ import us.codecraft.webmagic.selector.Selector;
 
 /**
  * The object contains 'ExtractBy' information.
+ * 
+ * 包含注解ExtractBy信息的类
+ * 
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
  */
@@ -19,6 +22,15 @@ class Extractor {
 
     static enum Source {Html, Url, RawHtml, RawText}
 
+    /**
+     * @param selector
+     * 				内容选择器
+     * @param source
+     * 				源内容格式
+     * @param notNull
+     * @param multi
+     * 				是否支持多页面
+     */			
     public Extractor(Selector selector, Source source, boolean notNull, boolean multi) {
         this.selector = selector;
         this.source = source;

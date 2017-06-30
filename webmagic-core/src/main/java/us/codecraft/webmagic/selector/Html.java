@@ -12,6 +12,8 @@ import java.util.List;
 
 /**
  * Selectable html.<br>
+ * 
+ * html选择器
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0
@@ -41,6 +43,8 @@ public class Html extends HtmlNode {
 
     /**
      * Store parsed document for better performance when only one text exist.
+     * 
+     * 保存解析文档
      */
     private Document document;
 

@@ -17,6 +17,8 @@ import java.util.Map;
 
 /**
  * Store results in files.<br>
+ * 
+ * 保存结果到文件当中
  *
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0

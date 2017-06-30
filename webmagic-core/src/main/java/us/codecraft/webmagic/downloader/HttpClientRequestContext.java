@@ -4,6 +4,8 @@ import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.client.protocol.HttpClientContext;
 
 /**
+ * http 客户端请求上下文
+ * 
  * @author code4crafter@gmail.com
  *         Date: 17/4/8
  *         Time: 19:43

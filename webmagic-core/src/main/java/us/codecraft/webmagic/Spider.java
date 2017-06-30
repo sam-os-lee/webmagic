@@ -50,6 +50,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * Spider.create(new SimplePageProcessor("http://my.oschina.net/",
  * "http://my.oschina.net/*blog/*")) <br>
  * .scheduler(new FileCacheQueueScheduler("/data/temp/webmagic/cache/")).run(); <br>
+ * 
  *
  * @author code4crafter@gmail.com <br>
  * @see Downloader
@@ -72,11 +73,11 @@ public class Spider implements Runnable, Task {
 
     protected String uuid;
 
-    protected Scheduler scheduler = new QueueScheduler();  // scheduler
+    protected Scheduler scheduler = new QueueScheduler();  // scheduler,url管理
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
-    protected CountableThreadPool threadPool;
+    protected CountableThreadPool threadPool;  // 工作线程池
 
     protected ExecutorService executorService;
 
@@ -181,6 +182,8 @@ public class Spider implements Runnable, Task {
 
     /**
      * set scheduler for Spider
+     * 
+     * 设置spider url管理scheduler
      *
      * @param scheduler scheduler
      * @return this
@@ -277,6 +280,9 @@ public class Spider implements Runnable, Task {
         return this;
     }
 
+    /**
+     * 初始化组件
+     */
     protected void initComponent() {
         if (downloader == null) {
             this.downloader = new HttpClientDownloader();
@@ -286,6 +292,7 @@ public class Spider implements Runnable, Task {
             pipelines.add(new ConsolePipeline());
         }
         
+        // 设置下载线程数目
         downloader.setThread(threadNum);
         if (threadPool == null || threadPool.isShutdown()) {
             if (executorService != null && !executorService.isShutdown()) {
@@ -308,8 +315,9 @@ public class Spider implements Runnable, Task {
 
     @Override
     public void run() {
-        checkRunningStat();
-        initComponent();
+        checkRunningStat();  // 检查运行统计
+        initComponent();  // 初始化组件
+        
         logger.info("Spider " + getUUID() + " started!");
         while (!Thread.currentThread().isInterrupted() && stat.get() == STAT_RUNNING) {
             final Request request = scheduler.poll(this);
@@ -324,8 +332,10 @@ public class Spider implements Runnable, Task {
                     @Override
                     public void run() {
                         try {
+                        	
                             processRequest(request);
                             onSuccess(request);
+                        
                         } catch (Exception e) {
                             onError(request);
                             logger.error("process request " + request + " error", e);
@@ -337,7 +347,9 @@ public class Spider implements Runnable, Task {
                 });
             }
         }
+        
         stat.set(STAT_STOPPED);
+        
         // release some resources
         if (destroyWhenExit) {
             close();
@@ -352,6 +364,11 @@ public class Spider implements Runnable, Task {
         }
     }
 
+    /**
+     * 通知spider的监听器
+     * 
+     * @param request
+     */
     protected void onSuccess(Request request) {
         if (CollectionUtils.isNotEmpty(spiderListeners)) {
             for (SpiderListener spiderListener : spiderListeners) {
@@ -375,13 +392,18 @@ public class Spider implements Runnable, Task {
         }
     }
 
+    /**
+     * 释放四大组件资源
+     */
     public void close() {
+    	
         destroyEach(downloader);
         destroyEach(pageProcessor);
         destroyEach(scheduler);
         for (Pipeline pipeline : pipelines) {
             destroyEach(pipeline);
         }
+        
         threadPool.shutdown();
     }
 
@@ -410,6 +432,8 @@ public class Spider implements Runnable, Task {
     }
 
     private void processRequest(Request request) {
+    	
+    	// 下载爬取请求
         Page page = downloader.download(request, this);
         if (page.isDownloadSuccess()){
             onDownloadSuccess(request, page);
@@ -418,21 +442,40 @@ public class Spider implements Runnable, Task {
         }
     }
 
+    /**
+     * 请求url下载成功
+     * 
+     * @param request
+     * @param page
+     */
     private void onDownloadSuccess(Request request, Page page) {
         onSuccess(request);
+        // 响应状态码验证通过
         if (site.getAcceptStatCode().contains(page.getStatusCode())){
+        	
+        	// 根据页面具体内容进行处理
             pageProcessor.process(page);
+            
+            // 提取并添加新的url链接
             extractAndAddRequests(page, spawnUrl);
+            
             if (!page.getResultItems().isSkip()) {
                 for (Pipeline pipeline : pipelines) {
                     pipeline.process(page.getResultItems(), this);
                 }
             }
         }
+        
         sleep(site.getSleepTime());
         return;
     }
 
+    /**
+     * 请求url下载失败
+     * 
+     * @param request
+     * @param page
+     */
     private void onDownloaderFail(Request request) {
         if (site.getCycleRetryTimes() == 0) {
             sleep(site.getSleepTime());
@@ -443,9 +486,15 @@ public class Spider implements Runnable, Task {
         onError(request);
     }
 
+    /**
+     * 循环重试
+     * 
+     * @param request
+     */
     private void doCycleRetry(Request request) {
         Object cycleTriedTimesObject = request.getExtra(Request.CYCLE_TRIED_TIMES);
         if (cycleTriedTimesObject == null) {
+        	// 重新将请求url添加到scheduler当中
             addRequest(SerializationUtils.clone(request).setPriority(0).putExtra(Request.CYCLE_TRIED_TIMES, 1));
         } else {
             int cycleTriedTimes = (Integer) cycleTriedTimesObject;
@@ -454,6 +503,7 @@ public class Spider implements Runnable, Task {
                 addRequest(SerializationUtils.clone(request).setPriority(0).putExtra(Request.CYCLE_TRIED_TIMES, cycleTriedTimes));
             }
         }
+        
         sleep(site.getRetrySleepTime());
     }
 
@@ -465,6 +515,12 @@ public class Spider implements Runnable, Task {
         }
     }
 
+    /**
+     * 添加新的链接
+     * 
+     * @param page
+     * @param spawnUrl
+     */
     protected void extractAndAddRequests(Page page, boolean spawnUrl) {
         if (spawnUrl && CollectionUtils.isNotEmpty(page.getTargetRequests())) {
             for (Request request : page.getTargetRequests()) {
@@ -480,6 +536,9 @@ public class Spider implements Runnable, Task {
         scheduler.push(request, this);
     }
 
+    /**
+     * 检查spider状态
+     */
     protected void checkIfRunning() {
         if (stat.get() == STAT_RUNNING) {
             throw new IllegalStateException("Spider is already running!");
@@ -567,6 +626,9 @@ public class Spider implements Runnable, Task {
         return this;
     }
 
+    /**
+     * 等待新链接的加入
+     */
     private void waitNewUrl() {
         newUrlLock.lock();
         try {
@@ -574,6 +636,7 @@ public class Spider implements Runnable, Task {
             if (threadPool.getThreadAlive() == 0 && exitWhenComplete) {
                 return;
             }
+            
             newUrlCondition.await(emptySleepTime, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
             logger.warn("waitNewUrl - interrupted, error {}", e);
@@ -605,6 +668,8 @@ public class Spider implements Runnable, Task {
 
     /**
      * start with more than one threads
+     * 
+     * 启动线程数目
      *
      * @param threadNum threadNum
      * @return this

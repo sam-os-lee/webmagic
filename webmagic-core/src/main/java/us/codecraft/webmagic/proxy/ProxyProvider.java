@@ -5,6 +5,8 @@ import us.codecraft.webmagic.Task;
 
 /**
  * Proxy provider. <br>
+ * 
+ * 代理提供类
  *     
  * @since 0.7.0
  */

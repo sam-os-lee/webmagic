@@ -33,7 +33,7 @@ class PageModelExtractor {
 
     private List<Pattern> targetUrlPatterns = new ArrayList<Pattern>();  // 目标url集合
 
-    private Selector targetUrlRegionSelector;  // 目标url提取
+    private Selector targetUrlRegionSelector;  // xpath region目标url提取
 
     private List<Pattern> helpUrlPatterns = new ArrayList<Pattern>();  // 帮助url集合
 
@@ -47,6 +47,12 @@ class PageModelExtractor {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
+    /**
+     * 
+     * @param clazz
+     *  		 具体的PageMode类
+     * @return
+     */
     public static PageModelExtractor create(Class clazz) {
         PageModelExtractor pageModelExtractor = new PageModelExtractor();
         pageModelExtractor.init(clazz);
@@ -58,15 +64,21 @@ class PageModelExtractor {
      * @return
      */
     private void init(Class clazz) {
+    	
         this.clazz = clazz;
+        
+        // 初始化class的定义注解
         initClassExtractors();
+        
         fieldExtractors = new ArrayList<FieldExtractor>();
-        // 迭代获取类所有声明的字段
+        
+        // 迭代获取类所有声明的字段,获取字段的注解
         for (Field field : ClassUtils.getFieldsIncludeSuperClass(clazz)) {
         	
             field.setAccessible(true);
             // 获取每个字段的ExtractBy注解
             FieldExtractor fieldExtractor = getAnnotationExtractBy(clazz, field);
+            
             // 获取每个字段的ComboExtract注解
             FieldExtractor fieldExtractorTmp = getAnnotationExtractCombo(clazz, field);
             
@@ -197,6 +209,7 @@ class PageModelExtractor {
         ComboExtract comboExtract = field.getAnnotation(ComboExtract.class);
         if (comboExtract != null) {
             
+        	// comboExtract.value值是ExtractBy注解数组
         	ExtractBy[] extractBies = comboExtract.value();
             Selector selector;
             
@@ -233,7 +246,7 @@ class PageModelExtractor {
         ExtractBy extractBy = field.getAnnotation(ExtractBy.class);
         if (extractBy != null) {
         	
-        	// 获取文本选择器
+        	// 获取内容选择器(XPath, Regex, Css, JsonPath)
             Selector selector = ExtractorUtils.getSelector(extractBy);
 
             // 字段源类型
@@ -253,8 +266,10 @@ class PageModelExtractor {
 
             }
 
+            // 字段提取类
             fieldExtractor = new FieldExtractor(field, selector, source,
                     extractBy.notNull(), extractBy.multi() || List.class.isAssignableFrom(field.getType()));
+            
             Method setterMethod = getSetterMethod(clazz, field);
             if (setterMethod != null) {
                 fieldExtractor.setSetterMethod(setterMethod);
@@ -284,7 +299,7 @@ class PageModelExtractor {
     }
 
     /**
-     * 获取pagemode类爬取提取的注解配置
+     * 获取pagemode类注解配置
      * annotation:
      * 		TargetUrl
      * 		HelpUrl
@@ -298,9 +313,13 @@ class PageModelExtractor {
         } else {
             TargetUrl targetUrl = (TargetUrl) annotation;
             String[] value = targetUrl.value();
+            
+            // 迭代预爬取目标链接,并转换关键字
             for (String s : value) {
                 targetUrlPatterns.add(Pattern.compile("(" + s.replace(".", "\\.").replace("*", "[^\"'#]*") + ")"));
             }
+            
+            // 如果定义了xpath格式语法
             if (!targetUrl.sourceRegion().equals("")) {
                 targetUrlRegionSelector = new XpathSelector(targetUrl.sourceRegion());
             }
@@ -311,9 +330,13 @@ class PageModelExtractor {
         if (annotation != null) {
             HelpUrl helpUrl = (HelpUrl) annotation;
             String[] value = helpUrl.value();
+            
+            // 迭代预爬取帮助链接,并转换关键字
             for (String s : value) {
                 helpUrlPatterns.add(Pattern.compile("(" + s.replace(".", "\\.").replace("*", "[^\"'#]*") + ")"));
             }
+            
+            // 如果定义了xpath格式语法
             if (!helpUrl.sourceRegion().equals("")) {
                 helpUrlRegionSelector = new XpathSelector(helpUrl.sourceRegion());
             }

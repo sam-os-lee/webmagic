@@ -20,6 +20,8 @@ import java.util.Map;
  * {@link #putField(String, Object)}  save extracted result            <br>
  * {@link #getResultItems()} get extract results to be used in {@link us.codecraft.webmagic.pipeline.Pipeline}<br>
  * {@link #addTargetRequests(java.util.List)} {@link #addTargetRequest(String)} add urls to fetch                 <br>
+ * 
+ * 保存提取结果
  *
  * @author code4crafter@gmail.com <br>
  * @see us.codecraft.webmagic.downloader.Downloader
@@ -65,6 +67,8 @@ public class Page {
 
     /**
      * store extract results
+     * 
+     * 存储提取结果
      *
      * @param key key
      * @param field field
@@ -75,6 +79,8 @@ public class Page {
 
     /**
      * get html content of page
+     * 
+     * 获取页面html
      *
      * @return html
      */
@@ -87,6 +93,8 @@ public class Page {
 
     /**
      * get json content of page
+     * 
+     * 获取页面json
      *
      * @return json
      * @since 0.5.0

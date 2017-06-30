@@ -22,6 +22,17 @@ class FieldExtractor extends Extractor {
 
     private ObjectFormatter objectFormatter;
 
+    /**
+     * @param field
+     * 				成员字段
+     * @param selector
+     * 				内容选择器
+     * @param source
+     * 				源内容格式
+     * @param notNull
+     * 				是否支持多页面
+     * @param multi
+     */
     public FieldExtractor(Field field, Selector selector, Source source, boolean notNull, boolean multi) {
         super(selector, source, notNull, multi);
         this.field = field;
